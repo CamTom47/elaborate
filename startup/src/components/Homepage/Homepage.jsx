@@ -1,48 +1,42 @@
 import React from "react";
-import { Link } from "react-router";
+import { faker } from "@faker-js/faker";
+import HomepageSection from "./HomepageSection";
+
+
 const Homepage = () => {
+	const aboutContent = {
+		title: "About Us",
+		description:
+			faker.lorem.paragraphs(3, '\n'),
+		linkText: "Learn More",
+		color: "light",
+		route: "/about"
+	};
+	const serviceContent = {
+		title: "Services",
+		description:
+			faker.lorem.paragraphs(3, '\n'),
+		linkText: "See More Details",
+		color: "dark",
+		route: "/services"
+
+	};
+	const portfolioContent = {
+		title: "Portfolio",
+		description:
+			faker.lorem.paragraphs(3, '\n'),
+		linkText: "See Projects",
+		color: "light",
+		route: "/portfolio"
+
+	};
 	return (
-		<div className='flex flex-col px-20 mx-10 my-30 gap-y-80'>
-			{/* About Section */}
-			<div className='flex justify-between items-top'>
-				<div className='bg-stone-200 h-150 w-5/8 rounded-3xl'></div>
-				<div className='flex flex-col items-end'>
-					<p className='text-white text-4xl mb-5'>Content</p>
-					<Link to='/about' className='bg-stone-200 text-center rounded-full p-2 hover:bg-stone-900 hover:text-stone-200 hover:border-2 hover:border-stone-200 duration-200'>
-						Learn More
-					</Link>
-				</div>
-			</div>
-			{/* Services Section */}
-			<div className='flex justify-between items-top'>
-				<div className='flex flex-col items-start'>
-					<p className='text-white text-4xl mb-5'>Content</p>
-					<Link to='/services' className='bg-stone-200 text-center rounded-full p-2 hover:bg-stone-900 hover:text-stone-200 hover:border-2 hover:border-stone-200 duration-200'>
-						See All Services
-					</Link>
-				</div>
-				<div className='bg-stone-200 h-150 w-5/8 rounded-3xl'></div>
-			</div>
-			{/* Case Study Section */}
-			<div className='flex justify-between items-top'>
-				<div className='bg-stone-200 h-150 w-5/8 rounded-3xl'></div>
-				<div className='flex flex-col items-end'>
-					<p className='text-white text-4xl mb-5'>Content</p>
-					<Link to='/portfolio' className='bg-stone-200 text-center rounded-full p-2 hover:bg-stone-900 hover:text-stone-200 hover:border-2 hover:border-stone-200 duration-200'>
-						Case Studies
-					</Link>
-				</div>
-			</div>
-			{/* Contact Section */}
-			<div className='flex justify-between items-top'>
-				<div className='flex flex-col items-start'>
-					<p className='text-white text-4xl mb-5'>Content</p>
-					<Link to='/services' className='bg-stone-200 text-center rounded-full p-2 hover:bg-stone-900 hover:text-stone-200 hover:border-2 hover:border-stone-200 duration-200'>
-						Contact Us
-					</Link>
-				</div>
-				<div className='bg-stone-200 h-150 w-5/8 rounded-3xl'></div>
-			</div>
+		<div className='flex flex-col justify-center items-center'>
+			<h3 className="text-center justify-center text-stone-800 text-4xl w-full py-30 opacity-90">We create <span className="text-stone-400">Beautiful</span> and <span className="text-stone-400">Intuitive</span> Applications</h3>
+			<HomepageSection content={aboutContent}></HomepageSection>
+			<HomepageSection content={serviceContent}></HomepageSection>
+			<HomepageSection content={portfolioContent}></HomepageSection>
+			<div className="h-20 fixed bottom-0 rotate-180 w-full homepage-div"></div>
 		</div>
 	);
 };

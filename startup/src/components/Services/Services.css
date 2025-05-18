@@ -1,0 +1,15 @@
+.section-container {
+	::-webkit-scrollbar { 
+		display: none;  /* Safari and Chrome */
+	}}
+.service-descriptions{
+		overflow: auto;
+		scroll-snap-type: y mandatory; /* Enable vertical snapping, mandatory */
+
+}
+.scroll-item {
+scroll-snap-align: start;  /* Align the item to the start of the viewport */
+scroll-snap-stop: always; /* Ensure the scroll stops at this item */
+padding-top: 120px;
+}
+

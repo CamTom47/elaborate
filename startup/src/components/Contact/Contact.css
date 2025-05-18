@@ -1,0 +1,4 @@
+.test{
+    mask: linear-gradient(black, black, transparent);
+    backdrop-filter: blur(8px);
+}
