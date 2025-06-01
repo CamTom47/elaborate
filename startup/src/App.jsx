@@ -10,14 +10,13 @@ import Contact from "./components/Contact/Contact";
 
 function App() {
 	return (
-		<div className='App flex flex-col font-comfortaa bg-stone-50 w-screen h-screen overflow-y-scroll'>
-			<img src="src/assets/photos/vecteezy_abstract-boxes-background-modern-technology-with-square_8171873.jpg" alt=""  className="w-screen h-screen absolute top-0 left-0 z-0 opacity-30"/>
+		<div className='App'>
 			<Navbar></Navbar>
-			<Routes className="z-10">
+			<Routes>
 				<Route path='/' element={<Homepage />} />
 				<Route path='/about' element={<Aboutpage />} />
 				<Route path='/services' element={<Services />} />
-				<Route path='/portfolio' element={<CaseStudies />} />
+				{/* <Route path='/portfolio' element={<CaseStudies />} /> */}
 				<Route path='/contact' element={<Contact />} />
 			</Routes>
 			<Footer></Footer>

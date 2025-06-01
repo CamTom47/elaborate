@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
 body{
-    font-family: Comfortaa,
+    font-family: Comfortaa;
+    ::-webkit-scrollbar {
+		display: none; /* Safari and Chrome */
+	}
 }

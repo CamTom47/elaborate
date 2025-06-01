@@ -1,5 +1,6 @@
-import React, { useState, useEffect, act } from "react";
+import React, { useState, useEffect } from "react";
 import ServiceScroller from "./ServiceScroller";
+import ServiceCard from "./ServiceCard";
 
 import "./Services.css";
 
@@ -17,7 +18,14 @@ const Services = () => {
 
 	const [activeSection, setActiveSection] = useState("Website Development");
 	const [sectionContent, setSectionContent] = useState(null);
+	const [scrollPosition, setScrollPosition] = useState(0);
 
+	const handleScroll = (e) => {
+		e.preventDefault();
+		const { scrollHeight, scrollTop, clientHeight } = e.target;
+		const position = Math.ceil((scrollTop / (scrollHeight - clientHeight)) * 100);
+		setScrollPosition(position);
+	};
 	const handleSelection = (e) => {
 		// setActiveSection(e.target.innerHTML);
 	};
@@ -127,44 +135,40 @@ const Services = () => {
 	}, [activeSection]);
 
 	return (
-		<div className='section-container h-full w-full flex items-start justify-between px-50 overflow-y-visible'>
-			<ServiceScroller handleSelection={handleSelection}></ServiceScroller>
-			<div className='service-descriptions flex flex-col gap-y-100 h-120 items-center text-stone-900 w-3/4 overflow-y-scroll *:flex *:flex-col *:items-center z-100 scroll-smooth [&_p]:text-center [&_div]:text-center'>
-				<div className='scroll-item'>
-					<div id='website-development' className='text-stone-900 text-5xl mb-10'>
+		<div className='section-container h-screen w-screen flex items-start justify-between px-50 pt-60'>
+			<ServiceScroller handleSelection={handleSelection} scrollPosition={scrollPosition}></ServiceScroller>
+			<div
+				onScroll={handleScroll}
+				className='service-descriptions flex flex-col gap-y-100 h-screen items-center text-stone-900 w-3/4 overflow-y-scroll *:flex *:flex-col *:items-center z-100 scroll-smooth [&_p]:text-center [&_div]:text-center'>
+				<div className='snap-start snap-always'>
+					<div tabIndex='0' id='website-development' className='text-stone-900 text-5xl mb-10'>
 						Website Development
 					</div>
-						{sectionContent}
+					{sectionContent}
 				</div>
-				<div className="scroll-item">
-					<div id="website-design" className='text-stone-900 text-5xl mb-10'>Website Designing</div>
-						{sectionContent}
+				<div className='snap-start snap-always'>
+					<div tabIndex='1' id='website-design' className='text-stone-900 text-5xl mb-10'>
+						Website Design
+					</div>
+					{sectionContent}
 				</div>
-				<div className="scroll-item">
-					<div id="website-redesigning" className='text-stone-900 text-5xl mb-10'>Website Redesigning</div>
-						{sectionContent}
+				<div className='snap-start snap-always'>
+					<div tabIndex='2' id='website-redesign' className='text-stone-900 text-5xl mb-10'>
+						Website Redesign
+					</div>
+					{sectionContent}
 				</div>
-				<div className="scroll-item">
-					<div id="cms-website-development" className='text-stone-900 text-5xl mb-10'>CMS Website Development</div>
-						{sectionContent}
+				<div className='snap-start snap-always'>
+					<div tabIndex='3' id='cms-website-development' className='text-stone-900 text-5xl mb-10'>
+						CMS Website Development
+					</div>
+					{sectionContent}
 				</div>
-				<div className="scroll-item">
-					<div id="web-app-dev" className='text-stone-900 text-5xl mb-10'>Web Application Development</div>
-						{sectionContent}
-				</div>
-				<div className="scroll-item">
-					<div id="maintenance" className='text-stone-900 text-5xl mb-10'>Ongoing Maintenance</div>
-						{sectionContent}
-				</div>
-				<div className="scroll-item">
-					<div id="hosting" className='text-stone-900 text-5xl mb-10'>Site Hosting</div>
-						{sectionContent}
-				</div>
-				<div className="scroll-item">
-					<div id="seo" className='text-stone-900 text-5xl mb-10'>SEO?</div>
-					<p>1
-						{sectionContent}
-					</p>
+				<div className='snap-start snap-always'>
+					<div tabIndex='4' id='web-app-dev' className='text-stone-900 text-5xl mb-10'>
+						Web Application Development
+					</div>
+					{sectionContent}
 				</div>
 			</div>
 		</div>

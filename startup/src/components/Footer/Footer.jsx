@@ -7,14 +7,14 @@ const Footer = () => {
 			<div className='w-full flex justify-around text-stone-400'>
 				<div className='flex flex-col items-center justify-between'>
 					email
-					<p>Blooming, LLC</p>
+					<p>Construe, LLC</p>
 				</div>
 
 				<div className='flex-col'>
 					<div className='flex flex-col'>
 						<Link to='/about'>About</Link>
 						<Link to='/services'>Services</Link>
-						<Link to='/portfolio'>Porfolio</Link>
+						{/* <Link to='/portfolio'>Porfolio</Link> */}
 						<Link to='/contact'>Contact</Link>
 					</div>
 					<div className='flex flex-col'>
