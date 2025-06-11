@@ -5,4 +5,7 @@ body{
     ::-webkit-scrollbar {
 		display: none; /* Safari and Chrome */
 	}
+  background-color: #0c0a09;
 }
+
+

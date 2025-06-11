@@ -135,42 +135,50 @@ const ServiceSection = () => {
 		generateHTML();
 	}, [activeSection]);
 	return (
-		<div className='flex flex-col justify-left items-left h-screen w-screen bg-stone-900 px-30 py-10'>
-			<h1 className='text-6xl text-right font-black text-lime-600 bg-stone-900'>Services</h1>
-			<div className='section-container hide-scroll overflow-x-hidden snap-y snap-mandatory m-0 p-0'>
-				<div className='snap-end bg-stone-900 h-180 w-screen'></div>
-				<div className=' flex justify-between h-screen text-stone-300 pt-20 snap-start'>
+		<div className='relative h-fit bg-stone-950'>
+			<h1 className='sticky top-0  w-full bg-stone-950 text-6xl text-right font-black text-lime-600 pt-20 pe-20 z-20 '>
+				Services
+			</h1>
+			<div className=' m-0 p-0'>
+				<div className=' bg-stone-950 h-180 w-screen'></div>
+				<div className='flex flex-col text-stone-300 pt-20'>
 					<ServiceScroller handleSelection={handleSelection} scrollPosition={scrollPosition}></ServiceScroller>
 					<div
 						onScroll={handleScroll}
-						className='service-descriptions hide-scroll gap-y-50 flex flex-col h-120  items-center text-stone-50 w-3/4 *:flex *:flex-col *:items-center scroll-smooth [&_p]:text-center [&_div]:text-center pb-100 '>
-						<div className='scroll-item'>
-							<div tabIndex='0' id='website-development' className='text-stone-50 text-5xl mb-10'>
-								Website Development
-							</div>
-							{sectionContent}
-						</div>
-						<div className='scroll-item'>
-							<div tabIndex='1' id='website-design' className='text-stone-50 text-5xl mb-10'>
+						className='relative overflow-y-scroll gap-y-80 flex flex-col h-fit text-stone-50 w-full *:flex *:flex-col *:items-left scroll-smooth py-100'>
+						<div className='bg-stone-800 rounded-2xl p-8 w-1/2 ms-10'>
+							<div tabIndex='0' id='website-design' className='scroll-m-88 text-lime-500 text-4xl mb-10'>
 								Website Design
 							</div>
 							{sectionContent}
+							<Link to='/services' target='#website-design' className="text-stone-800 bg-lime-500 rounded-md w-fit p-2 mt-4 hover:bg-stone-800 hover:text-lime-500 hover:outline duration-150">
+								Learn More
+							</Link>
+						</div>
+						<div className="bg-stone-800 rounded-2xl p-8 w-1/2 text-right self-end me-10">
+							<div tabIndex='1' id='web-development' className='scroll-m-88 text-lime-500 text-4xl mb-10'>
+								Web Development
+							</div>
+							{sectionContent}
+							<Link to='/services' target='#website-development' className="text-stone-800 bg-lime-500 rounded-md w-fit p-2 mt-4 hover:bg-stone-800 hover:text-lime-500 hover:outline duration-150">
+								Learn More
+							</Link>
 						</div>
 						<div className='scroll-item'>
-							<div tabIndex='2' id='website-redesign' className='text-stone-50 text-5xl mb-10'>
-								Website Redesign
+							<div tabIndex='2' id='mobile-development' className='scroll-m-88 text-stone-50 text-5xl mb-10'>
+								Mobile Development
 							</div>
 							{sectionContent}
 						</div>
 						<div className='scroll-item'>
-							<div tabIndex='3' id='cms-website-development' className='text-stone-50 text-5xl mb-10'>
+							<div tabIndex='3' id='cms-website-development' className='scroll-m-88 text-stone-50 text-5xl mb-10'>
 								CMS Website Development
 							</div>
 							{sectionContent}
 						</div>
 						<div className='scroll-item'>
-							<div tabIndex='4' id='web-app-dev' className='text-stone-50 text-5xl mb-10'>
-								Web Application Development
+							<div tabIndex='4' id='app-redesign' className='scroll-m-88 text-stone-50 text-5xl mb-10'>
+								Application/Website Redesign
 							</div>
 							{sectionContent}
 						</div>

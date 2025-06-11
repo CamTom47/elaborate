@@ -3,8 +3,8 @@ import { Link } from "react-router";
 
 const Footer = () => {
 	return (
-		<div className='relative flex flex-col w-full items-center justify-between bg-stone-50 h-40 pt-5 border-t border-stone-200'>
-			<div className='w-full flex justify-around text-stone-400'>
+		<div className='relative flex flex-col w-full items-center justify-between bg-stone-950 h-40 pt-5 border-t border-stone-200'>
+			<div className='w-full flex justify-around text-stone-100'>
 				<div className='flex flex-col items-center justify-between'>
 					email
 					<p>Construe, LLC</p>
