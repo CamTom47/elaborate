@@ -135,11 +135,29 @@ const ServiceSection = () => {
 		generateHTML();
 	}, [activeSection]);
 	return (
-		<div className='relative h-fit'>
-			<h1 className='sticky top-10 w-full bg-gray-950 text-6xl text-right font-semibold text-sky-500 pt-10 pb-10 z-20 '>
-				Services
-			</h1>
-			<div className=' m-0 p-0'>
+		<div className='flex h-screen w-full justify-between px-20 gap-x-12'>
+			<div className='w-5/8'>
+				<h1 className='text-6xl text-left font-semibold text-sky-500 mb-10 z-20'>What We Do</h1>
+				<p className='text-stone-100 text-3xl font-medium mb-10'>
+					We have an array of capabilities that will help you achieve your personal or business goals
+				</p>
+				<Link
+					to='/services'
+					className='text-stone-100 text-xl bg-sky-500 rounded-md w-fit p-2 hover:bg-stone-800 hover:text-sky-500 hover:outline duration-150'>
+					See More Detail
+				</Link>
+			</div>
+			<div className='grid grid-cols-2 grid-rows-2 me-20 mb-20 gap-12 w-full'>
+				<div className='bg-gray-600 h-80 rounded-xl '>
+					<h2 className='text-sky-400 text-2xl'>Web Design</h2>
+					<p className='text-stone-100'>fdsafads</p>
+				</div>
+
+				<div className='bg-gray-600 h-80 rounded-xl text-sky-400 text-2xl'>Web Design</div>
+				<div className='bg-gray-600 h-80 rounded-xl text-sky-400 text-2xl'>Web Design</div>
+				<div className='bg-gray-600 h-80 rounded-xl text-sky-400 text-2xl'>Web Design</div>
+			</div>
+			{/* <div className=' m-0 p-0'>
 				<div className=' h-180 w-screen'></div>
 				<div className='flex flex-col text-stone-300 pt-20'>
 					<ServiceScroller handleSelection={handleSelection} scrollPosition={scrollPosition}></ServiceScroller>
@@ -196,7 +214,7 @@ const ServiceSection = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

@@ -8,7 +8,7 @@ const AboutSection = () => {
 			<div className=' rounded-md w-3/4 p-8'>
 				<h1 className='w-full text-8xl text-wrap font-semibold mb-10 text-sky-500'>Custom Software Development</h1>
 				<div className='w-7/8 flex flex-col items-left text-left text-stone-900'>
-					<p className='text-4xl font-medium text-stone-100 text-wrap mb-10'>
+					<p className='text-3xl font-medium text-stone-100 text-wrap mb-10'>
 						We specialize in creating custom software solutions that are designed to meet your specific needs.
 					</p>
 					<Link
