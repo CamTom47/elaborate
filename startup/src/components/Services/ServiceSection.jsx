@@ -135,49 +135,61 @@ const ServiceSection = () => {
 		generateHTML();
 	}, [activeSection]);
 	return (
-		<div className='relative h-fit bg-stone-950'>
-			<h1 className='sticky top-0  w-full bg-stone-950 text-6xl text-right font-black text-lime-600 pt-20 pe-20 z-20 '>
+		<div className='relative h-fit'>
+			<h1 className='sticky top-10 w-full bg-gray-950 text-6xl text-right font-semibold text-sky-500 pt-10 pb-10 z-20 '>
 				Services
 			</h1>
 			<div className=' m-0 p-0'>
-				<div className=' bg-stone-950 h-180 w-screen'></div>
+				<div className=' h-180 w-screen'></div>
 				<div className='flex flex-col text-stone-300 pt-20'>
 					<ServiceScroller handleSelection={handleSelection} scrollPosition={scrollPosition}></ServiceScroller>
 					<div
 						onScroll={handleScroll}
-						className='relative overflow-y-scroll gap-y-80 flex flex-col h-fit text-stone-50 w-full *:flex *:flex-col *:items-left scroll-smooth py-100'>
-						<div className='bg-stone-800 rounded-2xl p-8 w-1/2 ms-10'>
-							<div tabIndex='0' id='website-design' className='scroll-m-88 text-lime-500 text-4xl mb-10'>
-								Website Design
+						className='relative overflow-y-scroll gap-y-80 flex flex-col h-fit text-stone-50 w-full scroll-smooth py-100'>
+						<div className='flex justify-between'>
+							<div className='p-8 w-1/2 ms-10'>
+								<div tabIndex='0' id='website-design' className='scroll-m-80 text-sky-500 text-5xl font-semibold mb-4'>
+									Website Design
+								</div>
+								<p className='mb-4'>{sectionContent}</p>
+								<Link
+									to='/services'
+									target='#website-design'
+									className='text-stone-800 bg-sky-500 rounded-md w-fit p-2 hover:bg-stone-800 hover:text-sky-500 hover:outline duration-150'>
+									Learn More
+								</Link>
 							</div>
-							{sectionContent}
-							<Link to='/services' target='#website-design' className="text-stone-800 bg-lime-500 rounded-md w-fit p-2 mt-4 hover:bg-stone-800 hover:text-lime-500 hover:outline duration-150">
-								Learn More
-							</Link>
+							<div className='h-100 w-160 bg-gray-600 me-10 rounded-x outline outline-sky-600 rounded-xl'></div>
 						</div>
-						<div className="bg-stone-800 rounded-2xl p-8 w-1/2 text-right self-end me-10">
-							<div tabIndex='1' id='web-development' className='scroll-m-88 text-lime-500 text-4xl mb-10'>
-								Web Development
+						<div className='flex justify-between p-8 text-right self-end me-10'>
+							<div className='h-100 w-160 bg-gray-600 me-10 rounded-x outline outline-sky-600 rounded-xl'></div>
+							<div className='p-8 w-1/2 ms-10'>
+								<div tabIndex='1' id='web-development' className='scroll-m-80 text-sky-500 text-5xl font-semibold mb-4'>
+									Web Development
+								</div>
+								<p className='mb-4'>{sectionContent}</p>
+								<Link
+									to='/services'
+									target='#website-development'
+									className='text-stone-800 bg-sky-500 rounded-md w-fit p-2 hover:bg-stone-800 hover:text-sky-500 hover:outline duration-150'>
+									Learn More
+								</Link>
 							</div>
-							{sectionContent}
-							<Link to='/services' target='#website-development' className="text-stone-800 bg-lime-500 rounded-md w-fit p-2 mt-4 hover:bg-stone-800 hover:text-lime-500 hover:outline duration-150">
-								Learn More
-							</Link>
 						</div>
 						<div className='scroll-item'>
-							<div tabIndex='2' id='mobile-development' className='scroll-m-88 text-stone-50 text-5xl mb-10'>
+							<div tabIndex='2' id='mobile-development' className='scroll-m-80 text-stone-50 text-5xl mb-4'>
 								Mobile Development
 							</div>
 							{sectionContent}
 						</div>
 						<div className='scroll-item'>
-							<div tabIndex='3' id='cms-website-development' className='scroll-m-88 text-stone-50 text-5xl mb-10'>
+							<div tabIndex='3' id='cms-website-development' className='scroll-m-80 text-stone-50 text-5xl mb-4'>
 								CMS Website Development
 							</div>
 							{sectionContent}
 						</div>
 						<div className='scroll-item'>
-							<div tabIndex='4' id='app-redesign' className='scroll-m-88 text-stone-50 text-5xl mb-10'>
+							<div tabIndex='4' id='app-redesign' className='scroll-m-80 text-stone-50 text-5xl mb-4'>
 								Application/Website Redesign
 							</div>
 							{sectionContent}
