@@ -66,7 +66,7 @@ const ServiceScroller = ({ handleSelection, scrollPosition, scrolling }) => {
 	};
 
 	return (
-		<div className='sticky top-45 bg-slate-600 z-20 py-1'>
+		<div className='sticky top-45 bg-gray-600 z-20 py-1'>
 			<ul className='flex w-full justify-around [&_button]:text-center [&_button]:text-md [&_button]:text-sky-500 [&_button]:hover:text-sky-300 [&_button]:focus:text-sky-200 [&_button]:focus:rounded-md [&_button]:focus:outline [&_button]:p-1 [&_button]:duration-500'>
 				<button id='website-design-nav' className='text-sky-500' value='website-design' onClick={handleClick}>
 					Website Design
