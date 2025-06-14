@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import ServiceScroller from "./ServiceScroller";
+import WebApp_Dev_ServicePage from "./WebApp_Dev_ServicePage/WebApp_Dev_ServicePage";
+import MobileApp_Dev_ServicePage from "./MobileApp_Dev_ServicePage/MobileApp_Dev_ServicePage";
+import Web_Design_ServicePage from "./Web_Design_ServicePage/Web_Design_ServicePage";
+import Web_Redesign_ServicePage from "./Web_Redesign_ServicePage/Web_Redesign_ServicePage";
 
 import "./Services.css";
 
@@ -134,41 +138,15 @@ const Services = () => {
 	}, [activeSection]);
 
 	return (
-		<div className='section-container h-screen w-screen flex items-start justify-between px-50 pt-60'>
+		<div className='section-container h-fit w-full flex flex-col items-start justify-between'>
 			<ServiceScroller handleSelection={handleSelection} scrollPosition={scrollPosition}></ServiceScroller>
 			<div
 				onScroll={handleScroll}
-				className='service-descriptions flex flex-col gap-y-100 h-screen items-center text-stone-900 w-3/4 overflow-y-scroll *:flex *:flex-col *:items-center z-100 scroll-smooth [&_p]:text-center [&_div]:text-center'>
-				<div className='snap-start snap-always'>
-					<div tabIndex='0' id='website-development' className='text-stone-900 text-5xl mb-10'>
-						Website Development
-					</div>
-					{sectionContent}
-				</div>
-				<div className='snap-start snap-always'>
-					<div tabIndex='1' id='website-design' className='text-stone-900 text-5xl mb-10'>
-						Website Design
-					</div>
-					{sectionContent}
-				</div>
-				<div className='snap-start snap-always'>
-					<div tabIndex='2' id='website-redesign' className='text-stone-900 text-5xl mb-10'>
-						Website Redesign
-					</div>
-					{sectionContent}
-				</div>
-				<div className='snap-start snap-always'>
-					<div tabIndex='3' id='cms-website-development' className='text-stone-900 text-5xl mb-10'>
-						CMS Website Development
-					</div>
-					{sectionContent}
-				</div>
-				<div className='snap-start snap-always'>
-					<div tabIndex='4' id='web-app-dev' className='text-stone-900 text-5xl mb-10'>
-						Web Application Development
-					</div>
-					{sectionContent}
-				</div>
+				className='service-descriptions flex flex-col gap-y-100 items-center text-stone-900 w-3/4 *:flex *:flex-col *:items-center scroll-smooth [&_p]:text-center [&_div]:text-center'>
+				<WebApp_Dev_ServicePage></WebApp_Dev_ServicePage>
+				<MobileApp_Dev_ServicePage></MobileApp_Dev_ServicePage>
+				<Web_Design_ServicePage></Web_Design_ServicePage>
+				<Web_Redesign_ServicePage></Web_Redesign_ServicePage>
 			</div>
 		</div>
 	);

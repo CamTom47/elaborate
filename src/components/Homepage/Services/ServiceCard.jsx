@@ -10,12 +10,12 @@ const ServiceCard = ({ title, description, url, icon }) => {
 		// 	</div>
 		// </Link>
 		<Link to={url}>
-			<div className='bg-sky-500 shadow-md h-40 rounded-xl p-4 hover:shadow-lg'>
-				<div className='flex justify-between items-start p-0'>
-					<h2 className='text-sky-950 font-semibold text-2xl pb-6'>{title}</h2>
-					<div className='outline-2 outline-slate-950 rounded-full p-2 size-fit'>{icon}</div>
+			<div className='flex flex-col justify-between bg-sky-500 shadow-md h-46 rounded-xl p-4 hover:shadow-lg'>
+				<div className="flex flex-col ">
+					<h2 className='text-sky-950 font-semibold text-2xl'>{title}</h2>
+					<p className='text-slate-100 pb-4'>{description}</p>
 				</div>
-				<p className='text-slate-950'>{description}</p>
+				<div className='outline-2 outline-slate-950 rounded-full p-2 size-fit self-end'>{icon}</div>
 			</div>
 		</Link>
 	);

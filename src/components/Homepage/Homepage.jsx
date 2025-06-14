@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router";
 import { faker } from "@faker-js/faker";
-import AboutSection from "../AboutSection/AboutSection";
+import AboutSection from "./About/AboutSection";
 import ServiceSection from "./Services/ServiceSection";
 
 const Homepage = () => {
