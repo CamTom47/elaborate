@@ -157,7 +157,7 @@ const ServiceSection = () => {
 			</div>
 			<Link
 				to='/services'
-				className='text-stone-100 text-xl bg-sky-500 rounded-md w-fit p-2 hover:bg-stone-950 hover:text-sky-500 hover:outline duration-150'>
+				className='text-stone-100 text-md bg-sky-500 rounded-md w-fit p-2 hover:bg-stone-950 hover:text-sky-500 hover:outline duration-150'>
 				See More Detail
 			</Link>
 		</div>

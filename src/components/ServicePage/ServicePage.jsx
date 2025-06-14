@@ -140,12 +140,10 @@ const Services = () => {
 	return (
 		<div className='section-container h-fit w-full flex flex-col items-start justify-between'>
 			<ServiceScroller handleSelection={handleSelection} scrollPosition={scrollPosition}></ServiceScroller>
-			<div
-				onScroll={handleScroll}
-				className='service-descriptions flex flex-col gap-y-100 items-center text-stone-900 w-3/4 *:flex *:flex-col *:items-center scroll-smooth [&_p]:text-center [&_div]:text-center'>
+			<div onScroll={handleScroll}>
+				<Web_Design_ServicePage></Web_Design_ServicePage>
 				<WebApp_Dev_ServicePage></WebApp_Dev_ServicePage>
 				<MobileApp_Dev_ServicePage></MobileApp_Dev_ServicePage>
-				<Web_Design_ServicePage></Web_Design_ServicePage>
 				<Web_Redesign_ServicePage></Web_Redesign_ServicePage>
 			</div>
 		</div>
