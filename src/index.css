@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+body{
+    font-family: Comfortaa;
+    ::-webkit-scrollbar {
+		display: none; /* Safari and Chrome */
+	}
+  background-color: #0c0a09;
+}
+
+

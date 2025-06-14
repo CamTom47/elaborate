@@ -1,0 +1,5 @@
+.section-container, .hide-scroll {
+	::-webkit-scrollbar {
+		display: none; /* Safari and Chrome */
+	}
+}
