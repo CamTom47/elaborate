@@ -4,7 +4,7 @@ const Web_Design_ServicePage = () => {
 	return (
 		<div className='flex snap-start snap-always mt-20 mx-20'>
 			<div className='w-1/2'>
-				<div tabIndex='4' id='website-design' className='text-sky-400 text-3xl mb-10 '>
+				<div tabIndex='4' id='website-design' className='text-black font-medium text-4xl mb-10 '>
 					Web Design
 				</div>
 				<p className='text-white'>Using innovative practices and customer collaboration we create and design</p>

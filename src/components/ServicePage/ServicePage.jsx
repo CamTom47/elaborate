@@ -138,7 +138,7 @@ const Services = () => {
 	}, [activeSection]);
 
 	return (
-		<div className='section-container h-fit w-full flex flex-col items-start justify-between'>
+		<div className='section-container h-fit w-full flex flex-col items-start justify-between bg-white'>
 			<ServiceScroller handleSelection={handleSelection} scrollPosition={scrollPosition}></ServiceScroller>
 			<div onScroll={handleScroll}>
 				<Web_Design_ServicePage></Web_Design_ServicePage>

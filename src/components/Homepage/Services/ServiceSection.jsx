@@ -142,24 +142,25 @@ const ServiceSection = () => {
 		"redesign": <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="m17.674 11.408l-1.905 5.715a.6.6 0 0 1-.398.386L3.693 20.98a.6.6 0 0 1-.74-.765L6.745 8.841a.6.6 0 0 1 .34-.365l5.387-2.218a.6.6 0 0 1 .653.13l4.404 4.406a.6.6 0 0 1 .145.614M3.296 20.602l6.364-6.364"/><path d="m17.792 11.056l2.828-2.829a2 2 0 0 0 0-2.828L18.5 3.277a2 2 0 0 0-2.829 0l-2.828 2.829m-1.062 6.01a1.5 1.5 0 1 0-2.121 2.122a1.5 1.5 0 0 0 2.121-2.122"/></g></svg>,
 	}
 	return (
-		<div className='flex flex-col h-screen w-full justify-around items-center px-20 bg-slate-950 rounded-md p-20'>
-			<div className='text-center'>
-				<h1 className='text-6xl font-semibold text-sky-500 mb-10 z-20'>What We Do</h1>
-				<p className='text-stone-100 text-3xl font-medium mb-10'>
-					We have an array of capabilities that will help you achieve your personal or business goals
+		<div className='flex items-top h-screen w-full justify-around bg-white p-20 gap-x-4'>
+			<div className='flex flex-col gap-y-10 w-1/2 text-wrap'>
+				<h1 className='w-full text-6xl font-semibold z-20 leading-20'>Build Flexible and Intuitive Applications Using Our <span className="text-wrap font-black text-black">Software Services</span></h1>
+				<p className='text-black text-3xl font-normal'>
+					We provide many different software services that tailor to your projects specific needs.
 				</p>
-			</div>
-			<div className='grid grid-cols-4 gap-12 w-full'>
-				<ServiceCard title={"Web Design"} description={"We make websites!"} url="/services/website-design-nav" icon={svgObject.webDesign}></ServiceCard>
-				<ServiceCard title={"Web Development"} description={"We make applications for the internet!"} url="/services/web-dev-nav" icon={svgObject.webDev}></ServiceCard>
-				<ServiceCard title={"Mobile Development"} description={"We make applications for not internet!"} url="/services/mobile-dev-nav" icon={svgObject.mobileDev}></ServiceCard>
-				<ServiceCard title={"App/Website Redesign"} description={"We remake bad stuff to good!"} url="/services/app-redesign-nav" icon={svgObject.redesign}></ServiceCard>
-			</div>
-			<Link
+				<Link
 				to='/services'
-				className='text-stone-100 text-md bg-sky-500 rounded-md w-fit p-2 hover:bg-stone-950 hover:text-sky-500 hover:outline duration-150'>
+				className='w-fit bg-sky-400 text-white text-xl py-2 px-3 rounded-sm hover:bg-sky-500 hover:outline-none duration-200'>
 				See More Detail
 			</Link>
+			</div>
+			<div className='grid grid-cols-2 gap-y-8 gap-x-10 h-1/2 w-1/2'>
+				<ServiceCard title={"Web Design"} description={"Design beautiful websites optimized to gain you maximum exposure"} url="/services/website-design-nav" icon={svgObject.webDesign}></ServiceCard>
+				<ServiceCard title={"Web Development"} description={"Develop applications to meet your needs using Front-end, Back-end, and Full-Stack toolsets"} url="/services/web-dev-nav" icon={svgObject.webDev}></ServiceCard>
+				<ServiceCard title={"Mobile Development"} description={"Develop native or hybrid mobile solutions"} url="/services/mobile-dev-nav" icon={svgObject.mobileDev}></ServiceCard>
+				<ServiceCard title={"App/Website Redesign"} description={"Update your existing Website or Application to your current needs."} url="/services/app-redesign-nav" icon={svgObject.redesign}></ServiceCard>
+			</div>
+			
 		</div>
 	);
 };

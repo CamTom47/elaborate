@@ -14,11 +14,11 @@ const Homepage = () => {
 	};
 	return (
 		<div className='scroll-smooth'>
-			<img
+			{/* <img
 				className='fixed bg-auto -z-10'
 				src='src/assets/photos/milad-fakurian-_S-zZyQiOr8-unsplash.jpg'
 				alt='Black and white photo of people look over a city skyline.'
-			/>
+			/> */}
 			{/* About Section */}
 			<AboutSection></AboutSection>
 			{/* Services Section */}
