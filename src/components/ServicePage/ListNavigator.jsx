@@ -1,9 +1,23 @@
 import React, { useEffect, useState } from "react";
-import "./ServiceScroller.css";
 
-const ServiceScroller = ({ handleSelection, scrollPosition, scrolling }) => {
+const ListNavigator = ({ handleSelection, scrollPosition, scrolling, navList }) => {
+	//Initial Selection of the different navs
 	const [initialLoad, setInitialLoad] = useState(true);
+	const [navListTabs, setNavListTabs] = useState([]);
 
+	//array to be used to populate list navigator component
+
+	const convertToId = (stringArray) => {
+		for (let string of stringArray) {
+			const newObj = {};
+			newObj.content = string;
+			const newString = string.replace(/-/gm, " ").toLowerCase().split(" ").join("-");
+			newObj.id = newString;
+			navListTabs.push(newObj);
+		}
+	};
+
+	//TODO revisit this. This will dictate the active nav when scrolling using breakpoints
 	const buttonSelectionObject = {
 		0: "website-design",
 		26: "web-development",
@@ -11,7 +25,6 @@ const ServiceScroller = ({ handleSelection, scrollPosition, scrolling }) => {
 		77: "cms-website-development",
 		100: "app-redesign",
 	};
-	// console.log(buttonSelectionObject);
 
 	const setActiveButton = (scrollPosition) => {
 		const activeButton = document.querySelector(".active");
@@ -65,25 +78,17 @@ const ServiceScroller = ({ handleSelection, scrollPosition, scrolling }) => {
 		document.getElementById(e.target.value).scrollIntoView({ behavior: "smooth" });
 	};
 
+	const navComponents = navListTabs.map((nav, idx) => <a href="" target="#" key={idx} id={nav.id} onClick={handleSelection}>{nav.content}</a>);
+
+	useEffect(() => {
+		convertToId(navList);
+	}, []);
+
 	return (
-		<div className='sticky top-14 w-screen bg-slate-950 outline-sky-400 outline z-20 py-1'>
-			<ul className='flex w-full justify-around [&_button]:text-center [&_button]:text-md [&_button]:text-sky-500 [&_button]:hover:text-sky-300 [&_button]:focus:text-sky-200 [&_button]:focus:rounded-md [&_button]:focus:outline [&_button]:p-1 [&_button]:duration-500'>
-				<button id='website-design-nav' className='text-sky-500' value='website-design' onClick={handleClick}>
-					Website Design
-				</button>
-				<button id='web-dev-nav' value='web-app-development' onClick={handleClick}>
-					Web Development
-				</button>
-				<button id='mobile-dev-nav' value='mobile-development' onClick={handleClick}>
-					Mobile Development
-				</button>
-				<button id='app-redesign-nav' value='app-redesign' onClick={handleClick}>
-					Application/Website Redesign
-				</button>
-				{/* <div id='slider' className='border-r-2 h-8 w-.5'></div> */}
-			</ul>
+		<div className='w-full rounded-2xl py-1 bg-sky-300 shadow-md text-black self-center'>
+			<ul className='flex justify-around font-semibold text-black'>{navComponents}</ul>
 		</div>
 	);
 };
 
-export default ServiceScroller;
+export default ListNavigator;
