@@ -9,7 +9,6 @@ const Navbar = () => {
 					Construe
 				</Link>
 				<div className='flex gap-x-10 *:text-md *:font-semibold text-sky-950 *:hover:text-sky-100 *:transition-all *:duration-300 *:focus:underline-offset-6 *:focus:underline *:focus:decoration-stone-900'>
-					<Link to='/about'>About</Link>
 					<Link to='/services'>Services</Link>
 					{/* <Link to='/portfolio'>Case Studies</Link> */}
 					<Link to='/contact'>Contact</Link>

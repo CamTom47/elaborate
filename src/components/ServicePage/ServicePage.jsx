@@ -138,7 +138,72 @@ const Services = () => {
 	}, [activeSection]);
 
 	return (
-		<div className='section-container h-fit w-full flex flex-col items-start justify-between bg-white'>
+		<div className='section-container h-fit w-full flex flex-col items-start justify-between bg-linear-to-r from-white to-sky-200'>
+			<div id='service-description'>
+				<h1 className='text-4xl font-semibold pt-10 ps-20'>Services</h1>
+			</div>
+			<div id='process-description'>
+				<div>
+					Our design and developmenet practices revolve around one thing. The Customer. 
+				</div>
+				<div className='grid grid-cols-3 gap-4 m-auto'>
+					<div className='relative flex flex-col justify-between bg-linear-to-r/oklab from-sky-100 to-sky-200 shadow-lg/20 size-80 rounded-xl p-4 hover:shadow-lg  hover:bg-linear-to-r/oklab hover:from-sky-200 hover:to-sky-300 hover:duration-150 '>
+						<div className='flex flex-col gap-y-4'>
+							<div className='flex gap-x-4'>
+								<h2 className='text-xl font-semibold'>01</h2>
+								<h2 className='text-sky-950 font-semibold text-xl'>Research</h2>
+							</div>
+							<p className='text-sm text-black pb-4'>Lorem ipsum dolor sit praesentium maxime!</p>
+						</div>
+					</div>
+					<div className='relative flex flex-col justify-between bg-linear-to-r/oklab from-sky-100 to-sky-200 shadow-lg/20 size-80 rounded-xl p-4 hover:shadow-lg  hover:bg-linear-to-r/oklab hover:from-sky-200 hover:to-sky-300 hover:duration-150 '>
+						<div className='flex flex-col gap-y-4'>
+							<div className='flex gap-x-4'>
+								<h2 className='text-xl font-semibold'>02</h2>
+								<h2 className='text-sky-950 font-semibold text-xl'>Design</h2>
+							</div>
+							<p className='text-sm text-black pb-4'>Lorem ipsum dolor sit praesentium maxime!</p>
+						</div>
+					</div>
+					<div className='relative flex flex-col justify-between bg-linear-to-r/oklab from-sky-100 to-sky-200 shadow-lg/20 size-80 rounded-xl p-4 hover:shadow-lg  hover:bg-linear-to-r/oklab hover:from-sky-200 hover:to-sky-300 hover:duration-150 '>
+						<div className='flex flex-col gap-y-4'>
+							<div className='flex gap-x-4'>
+								<h2 className='text-xl font-semibold'>03</h2>
+								<h2 className='text-sky-950 font-semibold text-xl'>Develop</h2>
+							</div>
+							<p className='text-sm text-black pb-4'>Lorem ipsum dolor sit praesentium maxime!</p>
+						</div>
+					</div>
+					<div className='relative flex flex-col justify-between bg-linear-to-r/oklab from-sky-100 to-sky-200 shadow-lg/20 size-80 rounded-xl p-4 hover:shadow-lg  hover:bg-linear-to-r/oklab hover:from-sky-200 hover:to-sky-300 hover:duration-150 '>
+						<div className='flex flex-col gap-y-4'>
+							<div className='flex gap-x-4'>
+								<h2 className='text-xl font-semibold'>04</h2>
+								<h2 className='text-sky-950 font-semibold text-xl'>Test</h2>
+							</div>
+							<p className='text-sm text-black pb-4'>Lorem ipsum dolor sit praesentium maxime!</p>
+						</div>
+					</div>
+					<div className='relative flex flex-col justify-between bg-linear-to-r/oklab from-sky-100 to-sky-200 shadow-lg/20 size-80 rounded-xl p-4 hover:shadow-lg  hover:bg-linear-to-r/oklab hover:from-sky-200 hover:to-sky-300 hover:duration-150 '>
+						<div className='flex flex-col gap-y-4'>
+							<div className='flex gap-x-4'>
+								<h2 className='text-xl font-semibold'>05</h2>
+								<h2 className='text-sky-950 font-semibold text-xl'>Deployment</h2>
+							</div>
+							<p className='text-sm text-black pb-4'>Lorem ipsum dolor sit praesentium maxime!</p>
+						</div>
+					</div>
+					<div className='relative flex flex-col justify-between bg-linear-to-r/oklab from-sky-100 to-sky-200 shadow-lg/20 size-80 rounded-xl p-4 hover:shadow-lg  hover:bg-linear-to-r/oklab hover:from-sky-200 hover:to-sky-300 hover:duration-150 '>
+						<div className='flex flex-col gap-y-4'>
+							<div className='flex gap-x-4'>
+								<h2 className='text-xl font-semibold'>06</h2>
+								<h2 className='text-sky-950 font-semibold text-xl'>Maintenance</h2>
+							</div>
+							<p className='text-sm text-black pb-4'>Lorem ipsum dolor sit praesentium maxime!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h1>Process</h1>
 			<ServiceScroller handleSelection={handleSelection} scrollPosition={scrollPosition}></ServiceScroller>
 			<div onScroll={handleScroll}>
 				<Web_Design_ServicePage></Web_Design_ServicePage>
