@@ -1,20 +1,26 @@
 import React, { useEffect, useState } from "react";
 
-const ListNavigator = ({ handleSelection, scrollPosition, scrolling, navList }) => {
+const SliderNav = ({ handleSelection, scrollPosition, scrolling, navList }) => {
 	//Initial Selection of the different navs
 	const [initialLoad, setInitialLoad] = useState(true);
 	const [navListTabs, setNavListTabs] = useState([]);
 
+	useEffect(() => {
+		convertToId(navList);
+	}, []);
+
 	//array to be used to populate list navigator component
 
-	const convertToId = (stringArray) => {
+	const convertToId = (stringArray = []) => {
+		const newArray = [];
 		for (let string of stringArray) {
 			const newObj = {};
 			newObj.content = string;
 			const newString = string.replace(/-/gm, " ").toLowerCase().split(" ").join("-");
 			newObj.id = newString;
-			navListTabs.push(newObj);
+			newArray.push(newObj);
 		}
+		setNavListTabs(newArray);
 	};
 
 	//TODO revisit this. This will dictate the active nav when scrolling using breakpoints
@@ -78,17 +84,17 @@ const ListNavigator = ({ handleSelection, scrollPosition, scrolling, navList }) 
 		document.getElementById(e.target.value).scrollIntoView({ behavior: "smooth" });
 	};
 
-	const navComponents = navListTabs.map((nav, idx) => <a href="" target="#" key={idx} id={nav.id} onClick={handleSelection}>{nav.content}</a>);
-
-	useEffect(() => {
-		convertToId(navList);
-	}, []);
+	let navComponents = navListTabs.map((nav, idx) => (
+		<a href='' target='#' key={idx} id={nav.id} onClick={handleSelection}>
+			{nav.content}
+		</a>
+	));
 
 	return (
-		<div className='w-full rounded-2xl py-1 bg-sky-300 shadow-md text-black self-center'>
-			<ul className='flex justify-around font-semibold text-black'>{navComponents}</ul>
+		<div className='w-full rounded-lg py-1 bg-white shadow-md text-black self-center'>
+			<div className='flex justify-around font-semibold text-blue-500'>{navComponents}</div>
 		</div>
 	);
 };
 
-export default ListNavigator;
+export default SliderNav;

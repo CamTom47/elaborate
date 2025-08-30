@@ -13,20 +13,10 @@ const Homepage = () => {
 		route: "/portfolio",
 	};
 	return (
-		<div className='scroll-smooth'>
-			{/* <img
-				className='fixed bg-auto -z-10'
-				src='src/assets/photos/milad-fakurian-_S-zZyQiOr8-unsplash.jpg'
-				alt='Black and white photo of people look over a city skyline.'
-			/> */}
-			{/* About Section */}
+		<div className='scroll-smooth bg-blue-500 py-20'>
 			<AboutSection></AboutSection>
-			{/* Services Section */}
 			<ServiceSection></ServiceSection>
-
-			{/* Portfolio Section */}
 			
-			<div className='h-20 fixed bottom-0 rotate-180 w-full homepage-div'></div>
 		</div>
 	);
 };

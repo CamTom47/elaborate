@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ListNavigator from "../ListNavigator";
+import SliderNav from "../../../components/SliderNav";
 import { useParams } from "react-router";
 
 const Web_Design_ServicePage = () => {
@@ -26,7 +26,7 @@ const Web_Design_ServicePage = () => {
 				</p>
 			</div>
 			<div className='flex justify w-full mb-10'>
-				<ListNavigator navList={services} handleSelection={handleSelection}></ListNavigator>
+				<SliderNav navList={services} handleSelection={handleSelection}></SliderNav>
 			</div>
 			<div className='flex flex-col gap-y-10'>
 				<div className='flex w-full justify-between'>
