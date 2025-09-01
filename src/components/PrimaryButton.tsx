@@ -4,11 +4,10 @@ import { Link } from "react-router";
 interface PrimaryButtonProps {
 	label: string;
 	action?: () => void;
-	url: string;
 	type: string;
 }
 
-const PrimaryButton = ({ label, action, url, type }: PrimaryButtonProps): React.JSX.Element => {
+const PrimaryButton = ({ label, action, type }: PrimaryButtonProps): React.JSX.Element => {
 	return (
 		<div
 			onClick={action}
