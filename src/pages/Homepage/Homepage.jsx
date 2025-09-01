@@ -13,7 +13,7 @@ const Homepage = () => {
 		route: "/portfolio",
 	};
 	return (
-		<div className='scroll-smooth bg-blue-500 py-20'>
+		<div className='scroll-smooth bg-linear-to-r from-blue-600 from-10% via-blue-500 via-50% to-blue-600 to-90% py-20'>
 			<AboutSection></AboutSection>
 			<ServiceSection></ServiceSection>
 			

@@ -3,7 +3,7 @@ import ButtonLink from "../../../components/ButtonLink";
 
 const AboutSection = () => {
 	return (
-		<div className='flex justify-start h-fit px-80 pb-10 bg-blue-500 '>
+		<div className='flex justify-start h-fit px-80 pb-10 '>
 			<div className='flex flex-col gap-y-10 border-b-2 border-blue-200 pb-20'>
 				<h1 className='w-full text-6xl leading-20 font-bold text-white'>
 					Give Shape And Meaning To Your Business Ideas With

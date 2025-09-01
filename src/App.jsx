@@ -9,7 +9,7 @@ import Contact from "./pages/Contact/Contact";
 
 function App() {
 	return (
-		<div className='App'>
+		<div className='App bg-linear-to-r from-blue-600 from-10% via-blue-500 via-90% to-blue-600'>
 			<Navbar></Navbar>
 			<Routes>
 				<Route path='/' element={<Homepage />} />

@@ -5,7 +5,7 @@ import ButtonLink from "../../components/ButtonLink";
 const Navbar = () => {
 	return (
 		<div className='sticky top-0 w-full flex items-center bg-blue-900 z-50 shadow-sm px-80'>
-			<div className='flex justify-start gap-x-4 items-end sticky top-0 py-3 px-20 w-full'>
+			<div className='flex justify-start gap-x-4 items-end sticky top-0 py-3 w-full'>
 				<Link className='text-4xl text-white font-bold' to='/'>
 					Simply
 				</Link>

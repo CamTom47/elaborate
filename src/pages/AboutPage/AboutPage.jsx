@@ -5,7 +5,7 @@ const AboutPage = () => {
 	const paragraph2 = faker.lorem.paragraph(2);
 	const processArray = ["Planning", "Design", "Implementation", "Testing", "Deployment", "Maintenance"];
 	return (
-		<div className=' flex flex-col w-full h-fit bg-blue-500 px-80 py-20 items-center'>
+		<div className=' flex flex-col w-full h-fit bg-linear-to-r from-blue-600 from-10% via-blue-500 via-50% to-blue-600 to-90%  px-80 py-20 items-center'>
 			<div className='flex flex-col w-full items-center '>
 				<h1 className='text-5xl text-white font-bold pb-10'>The Process</h1>
 				<div className='w-full'>
