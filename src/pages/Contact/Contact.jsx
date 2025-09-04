@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
-import Primarybutton from "../../components/PrimaryButton.tsx";
-import { error, type } from "jquery";
-
+import PrimaryButton from "../../components/PrimaryButton.tsx";
+import "../../styles/forms.scss";
 const Contact = () => {
 	const [activeInput, setActiveInput] = useState(null);
 	const [name, setName] = useState("");
@@ -9,10 +8,6 @@ const Contact = () => {
 	const [email, setEmail] = useState("");
 	const [projectDetails, setProjectDetails] = useState("");
 	const [errorObject, setErrorObject] = useState({});
-
-	useEffect( () => {
-		handle
-	})
 
 	const handleInputClick = (e) => {
 		setActiveInput(e.target.id);
@@ -37,7 +32,6 @@ const Contact = () => {
 	};
 
 	const handleNumberInput = (value) => {
-
 		//verify that the input is a number
 		const integer = new Number(value);
 		if (isNaN(integer)) {
@@ -56,6 +50,7 @@ const Contact = () => {
 			{/* Contact Us Next Step Instructions */}
 			<div className='w-3/8'>
 				<h2 className='text-4xl font-bold text-white mb-6'>Contact Us</h2>
+				<p>For General Inquiries and question please contact us at hello@simply.com</p>
 				<h3 className='text-white text-xl mb-6'>Next Steps</h3>
 				<div className='flex flex-col gap-y-6'>
 					<div className='flex gap-x-4 items-center'>
@@ -81,78 +76,115 @@ const Contact = () => {
 				</div>
 			</div>
 			{/* General Inquiry Section */}
-			<form
-				className='flex flex-col justify-between items-center bg-white h-fit gap-y-12 rounded-xl w-1/2 p-12 [&_input]:w-full [&_input]:pb-2 [&_input]:text-xl'
-				action='submit'>
-				<span className='border-b border-black  w-full relative'>
-					<span
-						className={`${
-							activeInput === "Name" || name ? "text-md -translate-y-full" : "text-xl"
-						} absolute duration-200`}>
-						Name
-					</span>
-					<input
-						id='Name'
-						className={`focus:outline-none`}
-						type='text'
-						onClick={handleInputClick}
-						onChange={handleInput}
-						value={name}
-					/>
-				</span>
-				<span className='border-b border-black  w-full relative'>
-					<label
-						className={`${
-							activeInput === "Phone Number" || number ? "text-md -translate-y-full" : "text-xl"
-						} absolute duration-200`}>
-						Phone Number
-					</label>
-					<input
-						id='Phone Number'
-						className='focus:outline-none'
-						type='text'
-						onClick={handleInputClick}
-						onChange={handleInput}
-						value={number}
-					/>
-					{errorObject.numberError && <span className='text-red-500'>{errorObject.numberError.message}</span>}
-				</span>
-				<span className='border-b border-black  w-full relative'>
-					<label
-						className={`${
-							activeInput === "Email" || email ? "text-md -translate-y-full" : "text-xl"
-						} absolute duration-200`}>
-						Email
-					</label>
-					<input
-						id='Email'
-						className='focus:outline-none'
-						type='text'
-						onClick={handleInputClick}
-						value={email}
-						onChange={handleInput}
-					/>
-				</span>
+			<form className='contactForm' action='submit'>
+				<div className='form-header'>General Information</div>
+				<p>* Required Field</p>
+				<div className='input-container'>
+					<div className='form-row'>
+						<div className='form-div'>
+							<label className={`form-label ${activeInput === "Name" || name ? "active" : ""} `}>*Name</label>
+							<input
+								id='Name'
+								className='form-input'
+								type='text'
+								onClick={handleInputClick}
+								onChange={handleInput}
+								value={name}
+							/>
+						</div>
+						<div className='form-div'>
+							<label className={`form-label ${activeInput === "Phone Number" || number ? "active" : ""}`}>
+								*Phone Number
+							</label>
+							<input
+								id='Phone Number'
+								className='form-input'
+								type='text'
+								onClick={handleInputClick}
+								onChange={handleInput}
+								value={number}
+							/>
+							{errorObject.numberError && <span className='text-red-500'>{errorObject.numberError.message}</span>}
+						</div>
+					</div>
+					<div className='form-div'>
+						<label className={`form-label ${activeInput === "Email" || email ? "active" : ""} `}>*Email</label>
+						<input
+							id='Email'
+							className='form-input'
+							type='text'
+							onClick={handleInputClick}
+							value={email}
+							onChange={handleInput}
+						/>
+					</div>
 
-				<span className='relative flex flex-col border-b border-black  w-full'>
-					<label
-						className={`${
-							activeInput === "Project Details" || projectDetails ? "text-md translate-y-full" : "text-xl"
-						} absolute duration-200 bottom-0`}>
-						Project Details
-					</label>
-					<textarea
-						id='Project Details'
-						className='focus:outline-none resize-none focus:border focus:rounded-md duration-200 p-2'
-						type='textarea'
-						rows='5'
-						cols='33'
-						onChange={handleInput}
-						onClick={handleInputClick}
-						value={projectDetails}></textarea>
-				</span>
+					{/* <div className={`projectDetails ${activeInput === "Project Details" || projectDetails ? "active" : ""}`}>
+						<label className={`${activeInput === "Project Details" || projectDetails ? "active" : ""}`}>
+							Project Details
+						</label>
+						<textarea
+							id='Project Details'
+							className={`contactForm ${activeInput === "Project Details" ? "active" : ""}`}
+							type='textarea'
+							rows='5'
+							cols='33'
+							onChange={handleInput}
+							onClick={handleInputClick}
+							value={projectDetails}></textarea>
+					</div> */}
+				</div>
 
-				<Primarybutton label='Submit' type='primary' />
+				{/* <div className='input-container close'>
+					<div className='form-header'>Project Details</div>
+					<p>Type Of Project</p>
+					<div className='form-row'>
+						<div className='form-row start'>
+							<input type='checkbox' className='checkbox-input'></input>
+							<label htmlFor=''>Web Design</label>
+						</div>
+						<div className='form-row start'>
+							<input type='checkbox' className='checkbox-input'></input>
+							<label htmlFor=''>Web Development</label>
+						</div>
+					</div>
+					<div className='form-row'>
+						<div className='form-row start'>
+							<input type='checkbox' className='checkbox-input'></input>
+							<label htmlFor=''>Mobile Development</label>
+						</div>
+						<div className='form-row start'>
+							<input type='checkbox' className='checkbox-input'></input>
+							<label htmlFor=''>Redesign</label>
+						</div>
+					</div>
+					<p>Stage Of Project</p>
+					<div className='form-row'>
+						<div className='form-row start'>
+							<input type='radio' className='radio-input'></input>
+							<label htmlFor=''>Web Design</label>
+						</div>
+						<div className='form-row start'>
+							<input type='radio' className='radio-input'></input>
+							<label htmlFor=''>Web Development</label>
+						</div>
+					</div>
+					<div className='form-row'>
+						<div className='form-row start'>
+							<input type='radio' className='radio-input'></input>
+							<label htmlFor=''>Mobile Development</label>
+						</div>
+						<div className='form-row start'>
+							<input type='radio' className='radio-input'></input>
+							<label htmlFor=''>Redesign</label>
+						</div>
+					</div>
+				</div> */}
+				<div className='input-container'>
+					<div className='form-button'>
+						<PrimaryButton label='Submit' type='primary' />
+					</div>
+				</div>
 			</form>
 		</div>
 	);

@@ -1,4 +1,4 @@
-import "./App.css";
+import './styles/app.scss'
 import { Routes, Route } from "react-router";
 import Homepage from "./pages/Homepage/Homepage";
 import AboutPage from "./pages/AboutPage/AboutPage";
@@ -9,7 +9,7 @@ import Contact from "./pages/Contact/Contact";
 
 function App() {
 	return (
-		<div className='App bg-linear-to-r from-blue-600 from-10% via-blue-500 via-90% to-blue-600'>
+		<div className='main-app '>
 			<Navbar></Navbar>
 			<Routes>
 				<Route path='/' element={<Homepage />} />

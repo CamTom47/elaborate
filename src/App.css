@@ -25,8 +25,3 @@
     font-family: 'Reddit-Sans';
     src: url('../src/assets/fonts/Reddit_Sans/RedditSans-VariableFont_wght.ttf');
 }
-
-.App{
-    /* font-family: "Manrope", sans-serif; */
-    font-family: "Reddit-Sans", sans-serif;
-}

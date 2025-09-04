@@ -1,0 +1,14 @@
+@use "theme.scss";
+@use "aboutpage.scss";
+@use "forms.scss";
+@use "homepage.scss";
+
+.main-app {
+	background-image: linear-gradient(
+		to right,
+		theme.$primary-600 10%,
+		theme.$primary-500 50%,
+		theme.$primary-600
+	);
+	font-family: "Reddit-Sans", sans-serif;
+}

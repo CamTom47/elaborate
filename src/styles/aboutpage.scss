@@ -1,0 +1,66 @@
+@use "theme";
+
+.about-page-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: fit-content;
+	padding: 80px 320px;
+	align-items: center;
+}
+
+.page-header {
+	font-size: 48px;
+	color: white;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+
+.about-page-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 40px 0;
+	margin: 40px 0;
+
+	h2{
+		font-size: 36px;
+		color: white;
+		font-weight: 600;
+	}
+
+	p{
+		font-size: 24px;
+		text-align: center;
+		color: white;
+		padding-bottom: 40px;
+	}
+}
+
+.icon-section{
+	display: flex;
+	color:white; 
+	justify-content: space-around;
+	border-top: 2px solid theme.$primary-300;
+	border-bottom: 2px solid theme.$primary-300;
+
+	p{
+		text-align: center;
+	}
+}
+
+.process-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 320px;
+	width: 320px;
+	padding: 16px;
+
+	p{
+		font-size: 24px;
+	}
+	
+}

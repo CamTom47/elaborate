@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass": "sass src/styles.scss dist/styles.css"
+
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.5",
@@ -29,6 +31,7 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
+    "sass": "^1.91.0",
     "sass-embedded": "^1.89.0",
     "vite": "^6.3.1"
   }
