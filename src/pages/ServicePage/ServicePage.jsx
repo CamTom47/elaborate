@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-
-import "./Services.css";
 import DropdownNav from "../../components/DropdownNav";
 import ServicePageCard from "../../components/ServicePageCard";
 import ButtonLink from "../../components/ButtonLink";
@@ -35,18 +33,11 @@ const Services = () => {
 	};
 
 	return (
-		<div className='section-container h-fit w-full flex flex-col gap-y-20 items-center justify-between bg-linear-to-r from-blue-600 from-10% via-blue-500 via-50% to-blue-600 to-90% py-10 px-80'>
-			{/* <div className='text-center'>
-				<h1 className='text-5xl font-bold text-white'>Services</h1>
-				<p className='text-2xl text-white'>
-					At Simply, we offer a variety of services that are tailored to meet your project needs.{" "}
-				</p>
-			</div> */}
-			{/* <DropdownNav navList={services} handleSelection={handleSelection} scrollPosition={scrollPosition}></DropdownNav> */}
-			<div className='flex flex-col snap-start snap-always gap-y-20'>
-				<div tabIndex='4' id='website-design' className='font-bold text-4xl text-left flex text-white justify-between'>
-					<p className='w-1/4'>Web Design</p>
-					<p className='text-xl font-medium w-1/2'>
+		<div className="service-page-container">
+			<div className='service-page-section'>
+				<div tabIndex='4' id='website-design' className='service-page-section-header'>
+					<h2>Web Design</h2>
+					<p>
 						A well designed website is often a person's first interaction with your company and should reflect what you
 						bring to the table
 					</p>
@@ -85,16 +76,16 @@ const Services = () => {
 				</div>
 				<hr className='text-blue-300' />
 			</div>
-			<div className='flex flex-col snap-start snap-always gap-y-10'>
+			<div className='service-page-section'>
 				<div
 					tabIndex='4'
 					id='web-app-development'
-					className='font-bold text-4xl text-left flex text-white justify-between'>
+					className='service-page-section-header'>
 					<p className='text-xl font-medium w-1/2'>
 						A well designed website is often a person's first interaction with your company and should reflect what you
 						bring to the table
 					</p>
-					<p className='w-1/4 text'>Web Development</p>
+					<h2>Web Development</h2>
 				</div>
 				<div className='grid grid-cols-3 gap-6 gap-y-10'>
 					<ServicePageCard
@@ -112,12 +103,12 @@ const Services = () => {
 				</div>
 				<hr className='text-blue-300' />
 			</div>
-			<div className='flex flex-col snap-start snap-always gap-y-10'>
+			<div className='service-page-section'>
 				<div
 					tabIndex='3'
 					id='mobile-development'
-					className='font-bold text-4xl text-left flex text-white justify-between'>
-					<p className='w-1/4'>Mobile Development</p>
+					className='service-page-section-header'>
+					<h2>Mobile Development</h2>
 					<p className='text-xl font-medium w-1/2'>
 						A well designed website is often a person's first interaction with your company and should reflect what you
 						bring to the table
@@ -145,13 +136,13 @@ const Services = () => {
 				</div>
 				<hr className='text-blue-300' />
 			</div>
-			<div className='flex flex-col snap-start snap-always gap-y-10'>
-				<div tabIndex='2' id='app-redesign' className='font-bold text-4xl text-left flex text-white justify-between'>
+			<div className='service-page-section'>
+				<div tabIndex='2' id='app-redesign' className='service-page-section-header'>
 					<p className='text-xl font-medium w-1/2'>
 						A well designed website is often a person's first interaction with your company and should reflect what you
 						bring to the table
 					</p>
-					<p className='w-1/4'>Website Redesign</p>
+					<h2>Website Redesign</h2>
 				</div>
 				<div className='grid grid-cols-3 gap-6 gap-y-10'>
 					<ServicePageCard

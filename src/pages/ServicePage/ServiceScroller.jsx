@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./ServiceScroller.css";
 
 const ServiceScroller = ({ handleSelection, scrollPosition, scrolling }) => {
 	const [initialLoad, setInitialLoad] = useState(true);

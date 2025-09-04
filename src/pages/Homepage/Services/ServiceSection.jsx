@@ -3,7 +3,6 @@ import { Link } from "react-router";
 import ServiceScroller from "../../ServicePage/ServiceScroller";
 import ServiceCard from "../../../components/ServiceCard";
 
-import "../../ServicePage/Services.css";
 
 const ServiceSection = () => {
 	const svgObject = {

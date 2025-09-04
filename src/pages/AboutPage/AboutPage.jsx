@@ -18,7 +18,7 @@ const AboutPage = () => {
 				</p>
 				<div className='icon-section'>
 					<div className='process-container'>
-						<p className='text-3xl'>Project Scope</p>
+						<h3>Project Scope</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<g fill='none' fill-rule='evenodd'>
 								<path d='m12.594 23.258l-.012.002l-.071.035l-.02.004l-.014-.004l-.071-.036q-.016-.004-.024.006l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.016-.018m.264-.113l-.014.002l-.184.093l-.01.01l-.003.011l.018.43l.005.012l.008.008l.201.092q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.003-.011l.018-.43l-.003-.012l-.01-.01z' />
@@ -28,11 +28,11 @@ const AboutPage = () => {
 								/>
 							</g>
 						</svg>
-						<p className='text-lg'>Create a comprehensive list of project requirements.</p>
+						<p>Create a comprehensive list of project requirements.</p>
 					</div>
-					<span className='border-1 border-blue-300'></span>
+					<span className='border-blue'></span>
 					<div className='process-container'>
-						<p className='text-3xl'>Project Objectives</p>
+						<h3>Project Objectives</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'>
 								<path d='M11 12a1 1 0 1 0 2 0a1 1 0 1 0-2 0' />
@@ -40,11 +40,11 @@ const AboutPage = () => {
 								<path d='M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0' />
 							</g>
 						</svg>
-						<p className='text-lg'>Establish milestones and goals to track project success. </p>
+						<p>Establish milestones and goals to track project success. </p>
 					</div>
-					<span className='border-1 border-blue-300'></span>
+					<span className='border-blue'></span>
 					<div className='process-container'>
-						<p className='text-3xl'>Resource Planning</p>
+						<h3>Resource Planning</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<g fill='none'>
 								<path d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z' />
@@ -54,7 +54,7 @@ const AboutPage = () => {
 								/>
 							</g>
 						</svg>
-						<p className='text-lg'>Refine the project schedule and timeline</p>
+						<p>Refine the project schedule and timeline</p>
 					</div>
 				</div>
 			</div>
@@ -67,7 +67,7 @@ const AboutPage = () => {
 				</p>
 				<div className='icon-section'>
 					<div className='process-container'>
-						<p className='text-3xl'>Draft Design</p>
+						<h3>Draft Design</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<path
 								fill='none'
@@ -78,22 +78,22 @@ const AboutPage = () => {
 								d='M12 9v2m4 0V7m-8 4h.01M3 3h1m17 0h-1m0 0v12h-6m6-12H4m0 0v12h6m0 0l-2 6m2-6h4m0 0l2 6'
 							/>
 						</svg>
-						<p className='text-lg'>Create low fidelity prototypes that communicate core structure </p>
+						<p>Create low fidelity prototypes that communicate core structure </p>
 					</div>
-					<span className='border-1 border-blue-300'></span>
+					<span className='border-blue'></span>
 					<div className='process-container'>
-						<p className='text-3xl'>Mock Design</p>
+						<h3>Mock Design</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<path
 								fill='currentColor'
 								d='M3 13V5q0-.825.588-1.412T5 3h6v10zM13 3h6q.825 0 1.413.588T21 5v4h-8zm0 18V11h8v8q0 .825-.587 1.413T19 21zM3 15h8v6H5q-.825 0-1.412-.587T3 19z'
 							/>
 						</svg>
-						<p className='text-lg'>Refine design with focus aesthetics of the project</p>
+						<p>Refine design with focus aesthetics of the project</p>
 					</div>
-					<span className='border-1 border-blue-300'></span>
+					<span className='border-blue'></span>
 					<div className='process-container'>
-						<p className='text-3xl'>Design Buyoff</p>
+						<h3>Design Buyoff</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<g fill='none'>
 								<path d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z' />
@@ -103,31 +103,31 @@ const AboutPage = () => {
 								/>
 							</g>
 						</svg>
-						<p className='text-lg'>Complete project design and prepare for development</p>
+						<p>Complete project design and prepare for development</p>
 					</div>
 				</div>
 			</div>
 			{/* Implementation */}
 			<div className='about-page-section'>
 				<h2>Implementation</h2>
-				<p className='text-center'>
+				<p>
 					By combining information from the planning and design phases, our team will begin to bring your project to
 					life.
 				</p>
 				<div className='icon-section'>
 					<div className='process-container'>
-						<p className='text-3xl'>Development Checkins</p>
+						<h3>Development Checkins</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<path
 								fill='currentColor'
 								d='M17 19h-2q-.425 0-.712-.288T14 18t.288-.712T15 17h2v-2q0-.425.288-.712T18 14t.713.288T19 15v2h2q.425 0 .713.288T22 18t-.288.713T21 19h-2v2q0 .425-.288.713T18 22t-.712-.288T17 21zM5 20q-.825 0-1.412-.587T3 18V6q0-.825.588-1.412T5 4h1V3q0-.425.288-.712T7 2t.713.288T8 3v1h6V3q0-.425.288-.712T15 2t.713.288T16 3v1h1q.825 0 1.413.588T19 6v5q0 .425-.288.713T18 12t-.712-.288T17 11v-1H5v8h6q.425 0 .713.288T12 19t-.288.713T11 20zM5 8h12V6H5zm0 0V6z'
 							/>
 						</svg>
-						<p className='text-lg'>Create low fidelity prototypes that communicate core structure </p>
+						<p>Create low fidelity prototypes that communicate core structure </p>
 					</div>
-					<span className='border-1 border-blue-300'></span>
+					<span className='border-blue'></span>
 					<div className='process-container'>
-						<p className='text-3xl'>Milestone Prototyping</p>
+						<h3>Milestone Prototyping</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<g fill='none'>
 								<path d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z' />
@@ -137,25 +137,24 @@ const AboutPage = () => {
 								/>
 							</g>
 						</svg>
-						<p className='text-lg'>Refine design with focus aesthetics of the project</p>
+						<p>Refine design with focus aesthetics of the project</p>
 					</div>
-					<span className='border-1 border-blue-300'></span>
+					<span className='border-blue'></span>
 					<div className='process-container'>
-						<p className='text-3xl'>Progress Reporting</p>
+						<h3>Progress Reporting</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<path
 								fill='currentColor'
 								d='M12 22q-2.05 0-3.875-.788t-3.187-2.15t-2.15-3.187T2 12q0-2.075.788-3.887t2.15-3.175t3.187-2.15T12 2v2Q8.675 4 6.337 6.338T4 12t2.338 5.663T12 20t5.663-2.337T20 12h2q0 2.05-.788 3.875t-2.15 3.188t-3.175 2.15T12 22'
 							/>
 						</svg>
-						<p className='text-lg'>Complete project design and prepare for development</p>
+						<p>Complete project design and prepare for development</p>
 					</div>
 				</div>
-			</div>
 			<div className='flex flex-col justify-around gap-y-4 text-white text-2xl '>
 				<div className='flex text-white justify-around [&_p]:text-center border-b-2 border-blue-300'>
 					<div className='process-container'>
-						<p className='text-3xl'>Data Migration</p>
+						<h3>Data Migration</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<g fill='none'>
 								<path d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z' />
@@ -165,11 +164,11 @@ const AboutPage = () => {
 								/>
 							</g>
 						</svg>
-						<p className='text-lg'>Create low fidelity prototypes that communicate core structure </p>
+						<p>Create low fidelity prototypes that communicate core structure </p>
 					</div>
-					<span className='border-1 border-blue-300'></span>
+					<span className='border-blue'></span>
 					<div className='process-container'>
-						<p className='text-3xl'>External Integrations</p>
+						<h3>External Integrations</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<g fill='none'>
 								<path d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z' />
@@ -179,9 +178,10 @@ const AboutPage = () => {
 								/>
 							</g>
 						</svg>
-						<p className='text-lg'>Refine design with focus aesthetics of the project</p>
+						<p>Refine design with focus aesthetics of the project</p>
 					</div>
 				</div>
+			</div>
 			</div>
 			{/* Testing Section */}
 			<div className='about-page-section'>
@@ -191,7 +191,7 @@ const AboutPage = () => {
 				</p>
 				<div className='icon-section'>
 					<div className='process-container'>
-						<p className='text-3xl'>Built In Testing</p>
+						<h3>Built In Testing</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<path
 								fill='none'
@@ -203,11 +203,11 @@ const AboutPage = () => {
 							/>
 						</svg>
 
-						<p className='text-lg'>Create low fidelity prototypes that communicate core structure </p>
+						<p>Create low fidelity prototypes that communicate core structure </p>
 					</div>
-					<span className='border-1 border-blue-300'></span>
+					<span className='border-blue'></span>
 					<div className='process-container'>
-						<p className='text-3xl'>Stakeholder Testing</p>
+						<h3>Stakeholder Testing</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<g fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'>
 								<circle cx='9' cy='9' r='4' />
@@ -216,7 +216,7 @@ const AboutPage = () => {
 							</g>
 						</svg>
 
-						<p className='text-lg'>Refine design with focus aesthetics of the project</p>
+						<p>Refine design with focus aesthetics of the project</p>
 					</div>
 				</div>
 			</div>
@@ -226,7 +226,7 @@ const AboutPage = () => {
 				<p className='text-center'>After making this available to the world. This is where we hand you the keys!</p>
 				<div className='icon-section'>
 					<div className='process-container'>
-						<p className='text-3xl'>Account Transfers</p>
+						<h3>Account Transfers</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<path
 								fill='none'
@@ -238,13 +238,13 @@ const AboutPage = () => {
 							/>
 						</svg>
 
-						<p className='text-lg'>
+						<p>
 							All applicable accounts necessary for your project to run will be transferred into your full control
 						</p>
 					</div>
-					<span className='border-1 border-blue-300'></span>
+					<span className='border-blue'></span>
 					<div className='process-container'>
-						<p className='text-3xl'>Project Handoff</p>
+						<h3>Project Handoff</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<path
 								fill='none'
@@ -256,11 +256,11 @@ const AboutPage = () => {
 							/>
 						</svg>
 
-						<p className='text-lg'>Our team will train necessary personnel on how the project functions</p>
+						<p>Our team will train necessary personnel on how the project functions</p>
 					</div>
-					<span className='border-1 border-blue-300'></span>
+					<span className='border-blue'></span>
 					<div className='process-container'>
-						<p className='text-3xl'>Project Release</p>
+						<h3>Project Release</h3>
 						<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
 							<g fill='none'>
 								<circle
@@ -286,14 +286,14 @@ const AboutPage = () => {
 							</g>
 						</svg>
 
-						<p className='text-lg'>We'll handle the lift of making your project available to the world</p>
+						<p>We'll handle the lift of making your project available to the world</p>
 					</div>
 				</div>
 			</div>
 			{/* Deployment Section */}
 			<div className='about-page-section'>
 				<h2>Maintenance</h2>
-				<p className='text-center'>
+				<p>
 					Post Deployment project maintenance will vary project to project based on agreed upon terms upon contract
 					execution.
 				</p>

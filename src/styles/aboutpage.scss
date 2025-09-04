@@ -21,16 +21,17 @@
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	height: fit-content;
 	padding: 40px 0;
 	margin: 40px 0;
 
-	h2{
+	h2 {
 		font-size: 36px;
 		color: white;
 		font-weight: 600;
 	}
 
-	p{
+	p {
 		font-size: 24px;
 		text-align: center;
 		color: white;
@@ -38,14 +39,14 @@
 	}
 }
 
-.icon-section{
+.icon-section {
 	display: flex;
-	color:white; 
+	color: white;
 	justify-content: space-around;
 	border-top: 2px solid theme.$primary-300;
 	border-bottom: 2px solid theme.$primary-300;
 
-	p{
+	p {
 		text-align: center;
 	}
 }
@@ -59,8 +60,14 @@
 	width: 320px;
 	padding: 16px;
 
-	p{
+	h3 {
 		font-size: 24px;
 	}
-	
+
+	p {
+		font-size: 20px;
+	}
+}
+.border-blue {
+	border: 1px solid theme.$primary-300;
 }
