@@ -160,14 +160,12 @@ const Services = () => {
 				</div>
 				<hr className='text-blue-300' />
 			</div>
-			<div className='flex flex-col items-center'>
-				<div className='font-bold text-4xl mb-10 text-center text-white '>
-					<p className='text-xl font-medium'>
+			<div className='additional-scope'>
+					<p>
 						Not seeing what you're looking for? We're always looking to grow our skills set. Please feel free to contact
 						us to discuss.
 					</p>
-				</div>
-				<ButtonLink label='Contact Us' url='/contact' type='secondary'></ButtonLink>
+				<ButtonLink label='Contact Us' url='/contact' type='secondary' size="large"></ButtonLink>
 			</div>
 		</div>
 	);

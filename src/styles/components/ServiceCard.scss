@@ -1,0 +1,65 @@
+@use "../theme.scss";
+
+@media (min-width: theme.$breakpoint-mobile) and (max-width: 900px) {
+	.servicecard-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: white;
+		padding: 2rem;
+		border-radius: 0.5rem;
+		height: 20rem;
+		width: 40rem;
+		box-shadow: 20px;
+
+		.card-row {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			color: theme.$primary-500;
+		}
+
+		.card-header {
+			font-weight: 600;
+			font-size: 2.4rem;
+		}
+
+		.card-description {
+			font-size: 1.8rem;
+			color: black;
+			padding-bottom: 1rem;
+		}
+	}
+}
+
+@media (min-width: 900px) and (max-width: theme.$breakpoint-desktop) {
+	.servicecard-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: white;
+		padding: 1rem;
+		border-radius: 0.5rem;
+		height: 20rem;
+		width: 45rem;
+		box-shadow: 20px;
+
+		.card-row {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			color: theme.$primary-500;
+		}
+
+		.card-header {
+			font-weight: 600;
+			font-size: 2.4rem;
+		}
+
+		.card-description {
+			font-size: 1.8rem;
+			color: black;
+			padding-bottom: 1rem;
+		}
+	}
+}

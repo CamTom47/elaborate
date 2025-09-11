@@ -5,15 +5,15 @@
 	flex-direction: column;
 	width: 100%;
 	height: fit-content;
-	padding: 80px 320px;
+	padding: 8.0rem 28.0rem;
 	align-items: center;
 }
 
 .page-header {
-	font-size: 48px;
+	font-size: 4.8rem;
 	color: white;
 	font-weight: 700;
-	padding-bottom: 20px;
+	padding-bottom: 2.0rem;
 }
 
 .about-page-section {
@@ -22,20 +22,20 @@
 	align-items: center;
 	width: 100%;
 	height: fit-content;
-	padding: 40px 0;
-	margin: 40px 0;
+	padding: 4.0rem 0;
+	margin: 4.0rem 0;
 
 	h2 {
-		font-size: 36px;
+		font-size: 3.6rem;
 		color: white;
 		font-weight: 600;
 	}
 
 	p {
-		font-size: 24px;
+		font-size: 2.4rem;
 		text-align: center;
 		color: white;
-		padding-bottom: 40px;
+		padding-bottom: 4.0rem;
 	}
 }
 
@@ -43,8 +43,8 @@
 	display: flex;
 	color: white;
 	justify-content: space-around;
-	border-top: 2px solid theme.$primary-300;
-	border-bottom: 2px solid theme.$primary-300;
+	border-top: .2rem solid theme.$primary-300;
+	border-bottom: .2rem solid theme.$primary-300;
 
 	p {
 		text-align: center;
@@ -56,18 +56,18 @@
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	height: 320px;
-	width: 320px;
-	padding: 16px;
+	height: 32.0rem;
+	width: 32.0rem;
+	padding: 1.6rem;
 
 	h3 {
-		font-size: 24px;
+		font-size: 2.4rem;
 	}
 
 	p {
-		font-size: 20px;
+		font-size: 2.0rem;
 	}
 }
 .border-blue {
-	border: 1px solid theme.$primary-300;
+	border: .1rem solid theme.$primary-300;
 }

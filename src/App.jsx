@@ -2,7 +2,7 @@ import './styles/app.scss'
 import { Routes, Route } from "react-router";
 import Homepage from "./pages/Homepage/Homepage";
 import AboutPage from "./pages/AboutPage/AboutPage";
-import Navbar from "../src/pages/Navbar/Navbar";
+import Navbar from "../src/components/Navbar";
 import Footer from "./pages/Footer/Footer";
 import ServicePage from "./pages/ServicePage/ServicePage";
 import Contact from "./pages/Contact/Contact";

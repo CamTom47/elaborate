@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import '../styles/components/SliderNav.scss'
 
 const SliderNav = ({ handleSelection, scrollPosition, scrolling, navList }) => {
 	//Initial Selection of the different navs
@@ -85,14 +86,14 @@ const SliderNav = ({ handleSelection, scrollPosition, scrolling, navList }) => {
 	};
 
 	let navComponents = navListTabs.map((nav, idx) => (
-		<a href='' target='#' key={idx} id={nav.id} onClick={handleSelection}>
+		<a className="navcomponent" href='' target='#' key={idx} id={nav.id} onClick={handleSelection}>
 			{nav.content}
 		</a>
 	));
 
 	return (
-		<div className='w-full rounded-lg py-1 bg-white shadow-md text-black self-center'>
-			<div className='flex justify-around font-semibold text-blue-500'>{navComponents}</div>
+		<div className='navslider-container'>
+			<div className='navcomponents'>{navComponents}</div>
 		</div>
 	);
 };

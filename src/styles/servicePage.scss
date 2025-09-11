@@ -1,37 +1,59 @@
-.service-page-container {
-	width: 100%;
-	height: fit-content;
-	display: flex;
-	flex-direction: column;
-    justify-content: space-between;
-	align-items: center;
-    row-gap: 40px;
-	padding: 80px 320px;
+@use "theme";
+
+@media (min-width: theme.$breakpoint-mobile) and (max-width: 900px) {
 }
 
-.service-page-section{
-	display: flex;
-	flex-direction: column;
-	row-gap: 80px;
-}
-
-.service-page-section-header{
-	display: flex;
-	justify-content: space-between;
-	color: white;
-	font-size: 36px;
-	text-align: left;
-	font-weight: 700;
-
-	h2{
-		width: 25%;
+@media (min-width: 900px) and (max-width: theme.$breakpoint-desktop) {
+	.service-page-container {
+		width: 100%;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		row-gap: 4rem;
+		padding: 8rem 28rem;
 	}
-	
-	p{
-		font-size: 24px;
-		font-weight: 500;
-		width: 50%;
 
-		
+	.service-page-section {
+		display: flex;
+		flex-direction: column;
+		row-gap: 8rem;
+	}
+
+	.service-page-section-header {
+		display: flex;
+		justify-content: space-between;
+		color: white;
+		font-size: 3.6rem;
+		text-align: left;
+		font-weight: 700;
+
+		h2 {
+			width: 25%;
+		}
+
+		p {
+			font-size: 2.4rem;
+			font-weight: 500;
+			width: 50%;
+		}
+	}
+
+	.additional-scope{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-weight: 700;
+		margin-bottom: 2rem;
+		text-align: center;
+		color: white;
+		row-gap: 2rem;
+
+		p{
+		font-size: 2rem;
+
+		}
+
 	}
 }

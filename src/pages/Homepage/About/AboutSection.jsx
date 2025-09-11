@@ -7,9 +7,9 @@ const AboutSection = () => {
 				<h1>
 					Give Shape And Meaning To Your Business Ideas With
 				</h1>
-				<span> Custom Software Development Solutions</span>
+				<span> Custom Software Solutions</span>
 				<h2>Achieve your goals with efficiency and intuitive Software Solutions</h2>
-					<ButtonLink label='Learn More' url='/about' />
+					<ButtonLink label='Learn More' url='/about' size='large'/>
 			</div>
 		</div>
 	);

@@ -1,14 +1,14 @@
-import { faker } from "@faker-js/faker";
 import AboutSection from "./About/AboutSection";
 import ServiceSection from "./Services/ServiceSection";
+
+import '../../styles/homepage.scss';
 
 const Homepage = () => {
 	
 	return (
-		<div className='main-app scroll-smooth py-20'>
+		<div className='homepage-container'>
 			<AboutSection></AboutSection>
 			<ServiceSection></ServiceSection>
-			
 		</div>
 	);
 };

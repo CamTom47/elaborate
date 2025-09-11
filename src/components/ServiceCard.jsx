@@ -1,13 +1,15 @@
 import ButtonLink from "./ButtonLink";
+import "../styles/components/ServiceCard.scss";
+
 const ServiceCard = ({ title, description, url, icon }) => {
 	return (
-		<div className='flex flex-col justify-between bg-white p-4 rounded-xl h-50 shadow-xl'>
-			<div className='flex w-full justify-between'>
-				<h2 className='text-blue-500 font-semibold text-2xl'>{title}</h2>
-				<span className="text-blue-500">{icon}</span>
+		<div className='servicecard-container'>
+			<div className='card-row'>
+				<h2 className='card-header'>{title}</h2>
+				<span>{icon}</span>
 			</div>
-			<p className='text-md text-black pb-4'>{description}</p>
-			<ButtonLink label={`See ${title} Services`} url={url} type="primary"/>
+			<p className='card-description'>{description}</p>
+			<ButtonLink label={`${title} Services`} url={url} type='primary' />
 		</div>
 	);
 };

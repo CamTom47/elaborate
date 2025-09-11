@@ -1,0 +1,73 @@
+@use "../theme.scss";
+
+@media (min-width: theme.$breakpoint-mobile) and (max-width: 900px){
+	.primary-button {
+		color: theme.$primary-500;
+		background-color: white;
+		font-size: 2em;
+		font-weight: 600;
+		padding: .2em .6em;
+		border-radius: 6px;
+		border: none;
+		transition-duration: 200ms;
+		height: fit-content;
+		width: 100%;
+		text-wrap: none;
+		text-align: center;
+
+		&.blue {
+			color: white;
+			background-color: theme.$primary-500;
+
+			&:hover {
+				background-color: white;
+				outline: 0.1rem solid theme.$primary-500;
+				color: theme.$primary-500;
+			}
+		}
+
+		&:hover {
+			background-color: theme.$primary-500;
+			outline: 0.1rem solid white;
+			color: white;
+		}
+	}
+}
+
+@media (min-width: 900px) and (max-width: theme.$breakpoint-laptop){
+	.primary-button {
+		color: theme.$primary-500;
+		background-color: white;
+		font-size: 1.6em;
+		font-weight: 600;
+		padding: .2em .6em;
+		border-radius: 6px;
+		border: none;
+		transition-duration: 200ms;
+		height: fit-content;
+		width: fit-content;
+		text-wrap: none;
+		text-align: center;
+
+		&.blue {
+			color: white;
+			background-color: theme.$primary-500;
+
+			&:hover {
+				background-color: white;
+				outline: 0.1rem solid theme.$primary-500;
+				color: theme.$primary-500;
+			}
+		}
+
+		&.large {
+			font-size: 2.0rem;
+		}
+
+		&:hover {
+			background-color: theme.$primary-500;
+			outline: 0.1rem solid white;
+			color: white;
+		}
+	}
+}

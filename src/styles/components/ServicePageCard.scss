@@ -1,0 +1,30 @@
+@use "../theme.scss";
+
+@media (min-width: theme.$breakpoint-mobile) and (max-width: 900px) {
+}
+
+@media (min-width: 900px) and (max-width: theme.$breakpoint-desktop) {
+	.servicepage-card {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		justify-content: space-between;
+		padding: 1rem;
+		box-shadow: 1rem;
+		background-color: white;
+		border-radius: 1rem;
+		.title {
+			color: theme.$primary-500;
+			font-weight: 500;
+			font-size: 3rem;
+			margin-bottom: 1rem;
+		}
+
+		.content {
+			color: black;
+			padding-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 600;
+		}
+	}
+}

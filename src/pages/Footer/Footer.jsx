@@ -1,24 +1,19 @@
-import React from "react";
 import { Link } from "react-router";
+import "../../styles/components/Footer.scss";
 
 const Footer = () => {
 	return (
-		<div className='relative flex flex-col w-full items-center justify-between h-40 pt-5 px-80 border-t border-blue-300'>
-			<div className='w-full flex justify-between text-white'>
-				<div className='flex flex-col justify-end gap-y-2'>
-					<div className='flex '>
-						<p className='font-semibold text-xl'>Simply, LLC</p>
-					</div>
+		<div className='footer-container'>
+			<div className='footer-content'>
+				<div className='contact-information'>
+					<p className='font-semibold text-xl'>Simply, LLC</p>
 					<p>hello@simply.com</p>
-					<img className='size-6' src='src/assets/linkedIn/in-logo/InBug-White.png' />
+					<img src='src/assets/linkedIn/in-logo/InBug-White.png' />
 				</div>
-				<div className='flex items-end gap-x-6'>
-					<div className='flex flex-col'>
-						<Link to='/about'>About</Link>
-						<Link to='/services'>Services</Link>
-						{/* <Link to='/portfolio'>Porfolio</Link> */}
-						<Link to='/contact'>Contact</Link>
-					</div>
+				<div className='link-container'>
+						<Link className="footer-link" to='/about'>About</Link>
+						<Link className="footer-link" to='/services'>Services</Link>
+						<Link className="footer-link" to='/contact'>Contact</Link>
 				</div>
 			</div>
 		</div>

@@ -9,7 +9,7 @@ interface PrimaryButtonProps {
 
 const PrimaryButton = ({ label, action, type }: PrimaryButtonProps): React.JSX.Element => {
 	return (
-		<div
+		<button
 			onClick={action}
 			className={`w-fit ${
 				type === "primary"
@@ -17,7 +17,7 @@ const PrimaryButton = ({ label, action, type }: PrimaryButtonProps): React.JSX.E
 					: "text-blue-500 bg-white hover:bg-blue-500 hover:outline-white hover:outline hover:text-white"
 			}  text-lg py-2 px-3 rounded-md  duration-200`}>
 			{label}
-		</div>
+		</button>
 	);
 };
 
