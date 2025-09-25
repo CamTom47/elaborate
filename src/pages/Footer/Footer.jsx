@@ -6,14 +6,23 @@ const Footer = () => {
 		<div className='footer-container'>
 			<div className='footer-content'>
 				<div className='contact-information'>
-					<p className='font-semibold text-xl'>Simply, LLC</p>
-					<p>hello@simply.com</p>
-					<img src='src/assets/linkedIn/in-logo/InBug-White.png' />
+					<p>hello@elaboratedev.com</p>
+					<img className='footer-image' src='src/assets/linkedIn/in-logo/InBug-White.png' />
+				</div>
+				<div className='company-info'>
+					<p className='font-semibold text-xl'>Elaborate Development, LLC</p>
+					<p className='font-semibold text-xl'>Est. 2025</p>
 				</div>
 				<div className='link-container'>
-						<Link className="footer-link" to='/about'>About</Link>
-						<Link className="footer-link" to='/services'>Services</Link>
-						<Link className="footer-link" to='/contact'>Contact</Link>
+					<Link className='footer-link' reloadDocument scrollrestoration='true' to='/about'>
+						About
+					</Link>
+					<Link className='footer-link' reloadDocument scrollrestoration='true' to='/services'>
+						Services
+					</Link>
+					<Link className='footer-link' reloadDocument scrollrestoration='true' to='/contact'>
+						Contact
+					</Link>
 				</div>
 			</div>
 		</div>

@@ -1,34 +1,31 @@
 @use "../theme.scss";
 
 @media (min-width: theme.$breakpoint-mobile) and (max-width: 900px) {
-
 }
 
 @media (min-width: 900px) and (max-width: theme.$breakpoint-laptop) {
-    .navslider-container{
-        width: 100%;
-        border-radius: 1rem;
-        background-color: white;
-        box-shadow: 5px;
-        color: black;
-    }
-    .navcomponents{
-        display: flex;
-        justify-content: space-around;
-        font-weight: 500;
-        font-size: 2rem;
-        color: theme.$primary-500;
-        padding: .5rem 2rem;
+	.navslider-container {
+		width: 100%;
+		border-radius: 1rem;
+		background-color: white;
+		box-shadow: 5px;
+		color: black;
+	}
+	.navcomponents {
+		display: flex;
+		justify-content: space-around;
+		font-weight: 500;
+		font-size: 1.8rem;
+		color: theme.$primary-100;
+		padding: 0.5rem 2rem;
+	}
 
-    }
-
-    .navcomponent{
-
-         &.active{
-            padding: .5rem 1rem;
-            border-radius: 1rem;
-            color:white;
-            background-color: theme.$primary-500;
-        }
-    }
+	.navcomponent {
+		&.active {
+			padding: 0.5rem 1rem;
+			border-radius: 1rem;
+			color: white;
+			background-color: theme.$primary-100;
+		}
+	}
 }

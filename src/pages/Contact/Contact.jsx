@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import PrimaryButton from "../../components/PrimaryButton.tsx";
+import ButtonPrimary from "../../components/ButtonPrimary.tsx";
 import "../../styles/forms.scss";
 const Contact = () => {
 	const [activeInput, setActiveInput] = useState(null);
@@ -7,6 +7,7 @@ const Contact = () => {
 	const [lastName, setLastname] = useState("");
 	const [number, setNumber] = useState("");
 	const [email, setEmail] = useState("");
+	const [companyName, setCompanyName] = useState("");
 	const [projectDetails, setProjectDetails] = useState("");
 	const [errorObject, setErrorObject] = useState({});
 	const [formStep, setFormStep] = useState(null);
@@ -16,12 +17,11 @@ const Contact = () => {
 		setActiveInput(e.target.id);
 	};
 
-
 	const subServices = {
 		"Web Design": ["E-Commerce", "Personal Website", "Portfolio", "Business", "Blog", "Other"],
 		"Web Development": ["Api", "Custom Software"],
 		"Mobile Development": ["iOS", "Android", "Multiplatformed"],
-		'Redesign': ["Website", "Application"],
+		Redesign: ["Website", "Application"],
 	};
 
 	const handleInput = (e) => {
@@ -41,6 +41,9 @@ const Contact = () => {
 				break;
 			case "Project Details":
 				setProjectDetails(e.target.value);
+				break;
+			case "input-company-name":
+				setCompanyName(e.target.value);
 				break;
 		}
 	};
@@ -71,35 +74,30 @@ const Contact = () => {
 		<div className='contact-page-container'>
 			{/* Contact Us Next Step Instructions */}
 			<div className='text-content'>
-				<div className='container-header text-white'>
+				<div className='container-header'>
 					<h2>Contact Us</h2>
 					<p>For General Inquiries and question please contact us at hello@simply.com</p>
 				</div>
 				{/* General Inquiry Section */}
-				<form className='contactForm' action='submit'>
+				<form className='contact-form' action='submit'>
 					{!formStep && (
-						<div className='form-content'>
-							<div className='form-container left'>
-								<h2 className=''>Let's Discuss Your Project</h2>
-								<h3 className=''>We just have a few questions</h3>
-								<PrimaryButton
-									label='Get Started'
-									type='primary'
-									action={() => setFormStep("General Information")}></PrimaryButton>
-							</div>
-							<div className='form-container right'>
-								<p>
-									Providing some basic information will allow us to gain a rough idea of your project's scope, duration,
-									and cost.
-								</p>
-								<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident deserunt, eius alias ad arc</p>
-							</div>
+						<div className='form-content column'>
+							<h2 className='content-description'>
+								If you're ready to get your project started, curious about how much it'll cost, or are wondering if your
+								idea is feasible.{" "}
+							</h2>
+							<h3 className='content-description'>We're ready to help.</h3>
+							<ButtonPrimary
+								label='Get Started'
+								type=''
+								outline={true}
+								action={() => setFormStep("General Information")}></ButtonPrimary>
 						</div>
 					)}
 					{formStep === "General Information" && (
 						<div className='form-content'>
 							<div className='form-container left'>
-								<h2 className=''>Let's start off with some basic information</h2>
+								<h2 className='content-description'>Let's start off with some basic information</h2>
 							</div>
 							<div className='form-container right'>
 								<div className='form-header'>General Information</div>
@@ -132,6 +130,39 @@ const Contact = () => {
 											/>
 										</div>
 									</div>
+
+									<div className='form-row'>
+										<div className='form-div'>
+											<label className={`form-label ${activeInput === "Phone Number" || number ? "active" : ""}`}>
+												Phone Number
+											</label>
+											<input
+												id='Phone Number'
+												className='form-input'
+												type='text'
+												onClick={handleInputClick}
+												onChange={handleInput}
+												value={number}
+											/>
+											{errorObject.numberError && (
+												<span className='text-red-500'>{errorObject.numberError.message}</span>
+											)}
+										</div>
+										<div className='form-div'>
+											<label
+												className={`form-label ${activeInput === "input-company-name" || companyName ? "active" : ""}`}>
+												Company Name
+											</label>
+											<input
+												id='input-company-name'
+												className='form-input'
+												type='text'
+												onClick={handleInputClick}
+												onChange={handleInput}
+												value={companyName}
+											/>
+										</div>
+									</div>
 									<div className='form-div'>
 										<label className={`form-label ${activeInput === "Email" || email ? "active" : ""} `}>*Email</label>
 										<input
@@ -143,36 +174,20 @@ const Contact = () => {
 											onChange={handleInput}
 										/>
 									</div>
-									<div className='form-div'>
-										<label className={`form-label ${activeInput === "Phone Number" || number ? "active" : ""}`}>
-											*Phone Number
-										</label>
-										<input
-											id='Phone Number'
-											className='form-input'
-											type='text'
-											onClick={handleInputClick}
-											onChange={handleInput}
-											value={number}
-										/>
-										{errorObject.numberError && <span className='text-red-500'>{errorObject.numberError.message}</span>}
-									</div>
 								</div>
 
 								<div className='input-container'>
 									<div className='form-button'>
-										<PrimaryButton label='Next' type='primary' action={() => setFormStep("Project Details")} />
+										<ButtonPrimary label='Next' type='primary' action={() => setFormStep("Project Details")} />
 									</div>
 								</div>
 							</div>
-
-
 						</div>
 					)}
 					{formStep === "Project Details" && (
 						<div className='form-content'>
 							<div className='form-container left'>
-								<h2 className=''>Now let's discuss project specifics</h2>
+								<h2 className='content-description'>Now let's discuss project specifics</h2>
 							</div>
 							<div className='form-container right'>
 								<div className='form-header'>Project Details</div>
@@ -199,7 +214,7 @@ const Contact = () => {
 										</div>
 									</div>
 									<div className='form-column'>
-										<div className='column-content'>
+										<div className='form-column'>
 											<label className='input-header' htmlFor=''>
 												Phase of Project
 											</label>
@@ -208,13 +223,12 @@ const Contact = () => {
 												{selectedService && subServiceComponents}
 											</select>
 										</div>
-										<div className='column-content'>
+										<div className='form-column'>
 											<label className='input-header' htmlFor=''>
 												Phase Of Project
 											</label>
 											<select className='form-div select' name='' id=''>
 												<option default> Select A Phase</option>
-
 												<option value=''>Ideation</option>
 												<option value=''>Technical Documentation</option>
 												<option value=''>MVP</option>
@@ -229,8 +243,9 @@ const Contact = () => {
 								</div>
 
 								<div className='input-container'>
-									<div className='form-button'>
-										<PrimaryButton label='Submit' type='primary' action={() => setFormStep("Complete")} />
+									<div className='form-row center'>
+										<ButtonPrimary label='Previous' type='primary' action={() => setFormStep("General Information")} />
+										<ButtonPrimary label='Submit' type='primary' action={() => setFormStep("Complete")} />
 									</div>
 								</div>
 							</div>

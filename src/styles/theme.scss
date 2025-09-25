@@ -1,39 +1,50 @@
-$background-color-dark: #1e3a8a;
-$background-color: #3b82f6;
-$background-color-light: #2563eb;
+//color theme
+$primary-100: #19bae6;
+$primary-200: #349ebb;
+$primary-300: #407f91;
+$primary-dark-100: #090A0A;
+$primary-dark-200: #141617;
+$primary-dark-300: #2c3133;
+$primary-dark-400: #2e393c;
+$primary-dark-500: #3e5d66;
 
-$button-color: #3b82f6;
+//helper variables
+$navbar-height: 8rem;
+$navbar-padding-x: 1rem;
+$navbar-padding-y: 12rem;
 
-$text-color: #3b82f6;
-
-$primary-color-light: #3b82f6;
-
-$primary-300: #93c5fd;
-$primary-400: #60a5fa;
-$primary-500: #3b82f6;
-$primary-600: #2563eb;
-$primary-900: #1e3a8a;
-
+$page-height: calc(100vh - $navbar-height - $navbar-padding-y);
 
 //Media Break Point Variables
 $breakpoint-desktop: 1920px;
 $breakpoint-laptop: 1512px;
 $breakpoint-mobile: 430px;
 
-@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-laptop){
-    html{
-        font-size: 67.5%;
-    }
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-laptop) {
+	html {
+		font-size: 72.5%;
+	}
 }
 
-@media (min-width: $breakpoint-laptop){
-    html{
-        font-size: 62.5%;
-    }
+@media (min-width: $breakpoint-laptop) {
+	html {
+		font-size: 62.5%;
+	}
+	a {
+		text-decoration: none;
+	}
 }
 
-@media (max-width: $breakpoint-desktop){
-    html{
-        font-size: 57.5%;
-    }
+// @media (max-width: $breakpoint-desktop){
+//     html{
+//         font-size: 57.5%;
+//     }
+// }
+
+h1,
+h2,
+h3,
+p {
+	margin: 0;
+	padding: 0;
 }
