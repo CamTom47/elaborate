@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
-import '../styles/components/SliderNav.scss'
+import "../styles/components/SliderNav.scss";
 
-const SliderNav = ({ handleSelection, navList, activeSelection }) => {
+const SliderNav = ({ navList }) => {
 	//Initial Selection of the different navs
-	const [initialLoad, setInitialLoad] = useState(true);
 	const [navListTabs, setNavListTabs] = useState([]);
+	const [activeSection, setActiveSection] = useState("planning");
 
 	useEffect(() => {
 		convertToId(navList);
@@ -25,25 +25,27 @@ const SliderNav = ({ handleSelection, navList, activeSelection }) => {
 	};
 
 	const handleClick = (e) => {
-		// 	handleSelection();
-		scrollToSection(e);
-		if (initialLoad === true) {
-			setInitialLoad(false);
-		}
-	};
-	const scrollToSection = (e) => {
-		const element = document.getElementById(e.target.id);
-		document.getElementById(e.target.value).scrollIntoView({ behavior: "smooth" });
+		const elementId = e.target.id.split("-")[1];
+		console.log(elementId);
+		setActiveSection(elementId);
+		e.preventDefault();
+		console.log(document.getElementById(elementId));
 	};
 
 	let navComponents = navListTabs.map((nav, idx) => (
-		<a className={`navcomponent ${activeSelection === nav}`} href='' target='#' key={idx} id={nav.id} onClick={handleSelection}>
+		<a
+			className={`navcomponent ${activeSection === nav.id ? "active" : ""}`}
+			href=''
+			target={`#${nav.id}`}
+			key={idx}
+			id={`nav-${nav.id}`}
+			onClick={handleClick}>
 			{nav.content}
 		</a>
 	));
 
 	return (
-		<div id="slider-nav" className='navslider-container'>
+		<div id='slider-nav' className='navslider-container'>
 			<div className='navcomponents'>{navComponents}</div>
 		</div>
 	);

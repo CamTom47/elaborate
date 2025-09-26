@@ -7,7 +7,7 @@
 	.navslider-container {
 		width: 100%;
 		border-radius: 1rem;
-		background-color: white;
+		background-color: theme.$primary-dark-200;
 		box-shadow: 5px;
 		color: black;
 	}
@@ -21,10 +21,16 @@
 	}
 
 	.navcomponent {
+		color: theme.$primary-100;
+
+		&:hover{
+			color:white;
+			transition-duration: 80ms;
+		}
 		&.active {
 			padding: 0.5rem 1rem;
 			border-radius: 1rem;
-			color: white;
+			color: theme.$primary-dark-100;
 			background-color: theme.$primary-100;
 		}
 	}

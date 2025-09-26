@@ -7,22 +7,13 @@ const AboutPage = () => {
 
 	const [sliderNavStuck, setSliderNavStuck] = useState(false);
 	const [lastScrollStop, setLastScrollStop] = useState(window.screenTop);
-	const [activeSection, setActiveSection] = useState();
-
-	const getWindowHeight = (e) => {
-		console.log(e);
-		if (lastScrollStop > 105) setSliderNavStuck(true);
-		else setSliderNavStuck(false);
-		setLastScrollStop(window.scrollY);
-	};
-	window.addEventListener("scroll", getWindowHeight);
 
 	return (
 		<div className='about-page-container'>
 			<div className='cover-background'></div>
 			<h1 className='page-header'>The Process</h1>
 			<div className={`slider-container slider-stop`}>
-				<SliderNav navList={processArray} active={activeSection}></SliderNav>
+				<SliderNav navList={processArray}></SliderNav>
 			</div>
 			<div className='overflow-section'>
 				{/* Planning Section */}
@@ -48,8 +39,8 @@ const AboutPage = () => {
 										/>
 									</g>
 								</svg>
-							</div>
 							<p>Create a comprehensive list of project requirements.</p>
+							</div>
 						</div>
 						<span className='border-blue'></span>
 						<div className='process-container'>
@@ -62,8 +53,8 @@ const AboutPage = () => {
 										<path d='M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0' />
 									</g>
 								</svg>
-							</div>
 							<p>Establish milestones and goals to track project success. </p>
+							</div>
 						</div>
 						<span className='border-blue'></span>
 						<div className='process-container'>
@@ -78,8 +69,8 @@ const AboutPage = () => {
 										/>
 									</g>
 								</svg>
-							</div>
 							<p>Refine the project schedule and timeline</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -107,8 +98,8 @@ const AboutPage = () => {
 										d='M12 9v2m4 0V7m-8 4h.01M3 3h1m17 0h-1m0 0v12h-6m6-12H4m0 0v12h6m0 0l-2 6m2-6h4m0 0l2 6'
 									/>
 								</svg>
-							</div>
 							<p>Create low fidelity prototypes to communicate core structure </p>
+							</div>
 						</div>
 						<span className='border-blue'></span>
 						<div className='process-container'>
@@ -120,8 +111,8 @@ const AboutPage = () => {
 										d='M3 13V5q0-.825.588-1.412T5 3h6v10zM13 3h6q.825 0 1.413.588T21 5v4h-8zm0 18V11h8v8q0 .825-.587 1.413T19 21zM3 15h8v6H5q-.825 0-1.412-.587T3 19z'
 									/>
 								</svg>
-							</div>
 							<p>Refine design with focus aesthetics of the project</p>
+							</div>
 						</div>
 						<span className='border-blue'></span>
 						<div className='process-container'>
@@ -136,9 +127,9 @@ const AboutPage = () => {
 										/>
 									</g>
 								</svg>
-							</div>
 
 							<p>Complete project design and prepare for development</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -161,9 +152,8 @@ const AboutPage = () => {
 										d='M17 19h-2q-.425 0-.712-.288T14 18t.288-.712T15 17h2v-2q0-.425.288-.712T18 14t.713.288T19 15v2h2q.425 0 .713.288T22 18t-.288.713T21 19h-2v2q0 .425-.288.713T18 22t-.712-.288T17 21zM5 20q-.825 0-1.412-.587T3 18V6q0-.825.588-1.412T5 4h1V3q0-.425.288-.712T7 2t.713.288T8 3v1h6V3q0-.425.288-.712T15 2t.713.288T16 3v1h1q.825 0 1.413.588T19 6v5q0 .425-.288.713T18 12t-.712-.288T17 11v-1H5v8h6q.425 0 .713.288T12 19t-.288.713T11 20zM5 8h12V6H5zm0 0V6z'
 									/>
 								</svg>
-							</div>
-
 							<p>Create low fidelity prototypes that communicate core structure </p>
+							</div>
 						</div>
 						<span className='border-blue'></span>
 						<div className='process-container'>
@@ -178,9 +168,8 @@ const AboutPage = () => {
 										/>
 									</g>
 								</svg>
-							</div>
-
 							<p>Refine design with focus aesthetics of the project</p>
+							</div>
 						</div>
 						<span className='border-blue'></span>
 						<div className='process-container'>
@@ -192,13 +181,11 @@ const AboutPage = () => {
 										d='M12 22q-2.05 0-3.875-.788t-3.187-2.15t-2.15-3.187T2 12q0-2.075.788-3.887t2.15-3.175t3.187-2.15T12 2v2Q8.675 4 6.337 6.338T4 12t2.338 5.663T12 20t5.663-2.337T20 12h2q0 2.05-.788 3.875t-2.15 3.188t-3.175 2.15T12 22'
 									/>
 								</svg>
-							</div>
-
 							<p>Complete project design and prepare for development</p>
+							</div>
 						</div>
 					</div>
-					<div className='about-page-section'>
-						<div className='icon-section'>
+						<div className='icon-section lower'>
 							<div className='process-container'>
 								<div className='inner-container'>
 									<h3>Data Migration</h3>
@@ -211,9 +198,8 @@ const AboutPage = () => {
 											/>
 										</g>
 									</svg>
-								</div>
-
 								<p>Create low fidelity prototypes that communicate core structure </p>
+								</div>
 							</div>
 							<span className='border-blue'></span>
 							<div className='process-container'>
@@ -228,11 +214,10 @@ const AboutPage = () => {
 											/>
 										</g>
 									</svg>
-								</div>
 								<p>Refine design with focus aesthetics of the project</p>
+								</div>
 							</div>
 						</div>
-					</div>
 				</div>
 				{/* Testing Section */}
 				<div className='about-page-section'>
@@ -256,9 +241,9 @@ const AboutPage = () => {
 										d='M18 14a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0 0V9a2 2 0 0 0-2-2h-1m-2 0l2-2v2m-2 0h2m-2 0l2 2V7m-9 4a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 0v5a2 2 0 0 0 2 2h1m2 0l-2 2v-2m2 0H9m2 0l-2-2v2'
 									/>
 								</svg>
-							</div>
 							<p>Create low fidelity prototypes that communicate core structure </p>
 						</div>
+							</div>
 						<span className='border-blue'></span>
 						<div className='process-container'>
 							<div className='inner-container'>
@@ -270,8 +255,8 @@ const AboutPage = () => {
 										<path d='M22 19c0-3.314-3.134-6-7-6c-.807 0-2.103-.293-3-1.235' />
 									</g>
 								</svg>
-							</div>
 							<p>Refine design with focus aesthetics of the project</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -295,9 +280,9 @@ const AboutPage = () => {
 										d='M15 15a6 6 0 1 0-5.743-4.257L9 11l-5.707 5.707a1 1 0 0 0-.293.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1a1 1 0 0 1 1-1a1 1 0 0 0 1-1a1 1 0 0 1 1-1h.586a1 1 0 0 0 .707-.293L13 15l.257-.257A6 6 0 0 0 15 15m2-6a2 2 0 0 0-2-2'
 									/>
 								</svg>
-							</div>
 
 							<p>Transfer all applicable accounts necessary for your project to run into your control</p>
+							</div>
 						</div>
 						<span className='border-blue'></span>
 						<div className='process-container'>
@@ -313,9 +298,9 @@ const AboutPage = () => {
 										d='M21 15V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10m6-6v.172a2 2 0 0 1-.586 1.414l-3.828 3.828a2 2 0 0 1-1.414.586H15m6-6h-4a2 2 0 0 0-2 2v4M7 7h10M7 11h10M7 15h4'
 									/>
 								</svg>
-							</div>
 
 							<p>Our team will train necessary personnel on how the project functions</p>
+							</div>
 						</div>
 						<span className='border-blue'></span>
 						<div className='process-container'>
@@ -345,9 +330,9 @@ const AboutPage = () => {
 										/>
 									</g>
 								</svg>
-							</div>
 
 							<p>We'll handle the lift of making your project available to the world</p>
+							</div>
 						</div>
 					</div>
 				</div>

@@ -152,8 +152,9 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		padding: 12rem 24rem;
+		padding: 12rem 12rem;
 		align-items: center;
+		background-color: theme.$primary-dark-100;
 
 		.header-section {
 			text-align: center;
@@ -166,12 +167,7 @@
 		z-index: 1;
 		position: fixed;
 		top: 0;
-		background-image: linear-gradient(
-			to right,
-			theme.$primary-dark-300 10%,
-			theme.$primary-100 50%,
-			theme.$primary-dark-300
-		);
+		background-color: theme.$primary-dark-100;
 	}
 	.overflow-section {
 		// overflow-y: scroll;
@@ -197,26 +193,34 @@
 	.about-page-section {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		height: fit-content;
+		background-color: theme.$primary-dark-200;
+		padding: 2rem;
+		border-radius: 2rem;
+		border: 1px solid theme.$primary-dark-300;
+		box-shadow: 0 0 3rem 0.5rem theme.$primary-dark-300;
 		margin: 4rem 0;
-		overflow-y: hidden;
-		scroll-snap-align: center;
-		scroll-snap-stop: normal;
-		z-index: 2;
+		// height: fit-content;
+		// margin: 4rem 0;
+		// overflow-y: hidden;
+		// scroll-snap-align: center;
+		// scroll-snap-stop: normal;
+		// z-index: 2;
 
 		h2 {
 			font-size: 3rem;
 			color: white;
 			font-weight: 500;
+			text-align: center;
+			padding-bottom: .5rem;
+			color: theme.$primary-100;
 		}
 
 		p {
-			font-size: 2rem;
+			font-size: 1.6rem;
 			text-align: center;
 			color: white;
 			padding-bottom: 4rem;
+			width: 100%;
 		}
 	}
 
@@ -224,12 +228,11 @@
 		display: flex;
 		color: white;
 		justify-content: center;
-		border-top: 0.2rem solid theme.$primary-300;
-		border-bottom: 0.2rem solid theme.$primary-300;
 
 		p {
 			text-align: center;
 		}
+
 	}
 
 	.process-container {
@@ -253,18 +256,20 @@
 			text-align: center;
 			height: 100%;
 			width: 100%;
+			border: 1px solid theme.$primary-100;
+			border-radius: 2rem;
 		}
 
 		p {
 			height: 4rem;
-			font-size: 1.8rem;
+			font-size: 1.6rem;
 			font-weight: 300;
 			text-wrap: wrap;
 			width: 80%;
 		}
-	}
-	.border-blue {
-		border: 0.1rem solid theme.$primary-300;
+		svg{
+			color: theme.$primary-100;
+		}
 	}
 
 	.slider-container {
