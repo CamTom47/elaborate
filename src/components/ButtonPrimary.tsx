@@ -7,13 +7,16 @@ interface ButtonPrimaryProps {
 	type: string;
 	size: string;
 	outline?: boolean;
+	dark: boolean
 }
 
-const ButtonPrimary = ({ label, action, type, size, outline }: ButtonPrimaryProps): React.JSX.Element => {
+const ButtonPrimary = ({ label, action, type, size, outline, dark }: ButtonPrimaryProps): React.JSX.Element => {
 	return (
 		<button
 			onClick={action}
-			className={`primary-button ${type === "primary" ? "blue" : ""} ${size} ${outline === true ? "outline" : ""}`}>
+			className={`primary-button ${type === "primary" ? "blue" : ""} ${size} ${outline === true ? "outline" : ""} ${
+				dark === true ? "dark" : ""
+			}`}>
 			{label}
 		</button>
 	);

@@ -76,7 +76,7 @@ const Contact = () => {
 			<div className='text-content'>
 				<div className='container-header'>
 					<h2>Contact Us</h2>
-					<p>For General Inquiries and question please contact us at hello@simply.com</p>
+					<p>For general inquiries and question please contact us at hello@elaboratedev.com</p>
 				</div>
 				{/* General Inquiry Section */}
 				<form className='contact-form' action='submit'>
@@ -90,7 +90,7 @@ const Contact = () => {
 							<ButtonPrimary
 								label='Get Started'
 								type=''
-								outline={true}
+								dark={true}
 								action={() => setFormStep("General Information")}></ButtonPrimary>
 						</div>
 					)}

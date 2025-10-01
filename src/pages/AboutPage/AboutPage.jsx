@@ -11,7 +11,52 @@ const AboutPage = () => {
 	return (
 		<div className='about-page-container'>
 			<div className='cover-background'></div>
-			<h1 className='page-header'>The Process</h1>
+			<div className='page-header-container'>
+				<div className='left'>
+					<div>
+						<h1 className='page-header'>About Us</h1>
+						<p className='header-content'>
+							<span>Elaborate Development</span> is a software development agency that focuses on building one of a kind, custom
+							software that meets the needs of <b>Individiual Clients</b>, <b> Start Ups</b>, and{" "}
+							<b>Small Businesses</b>. We specialize in many different services including:
+							<ul>
+								<li>Web Design</li>
+								<li>Web Development</li>
+								<li>Mobile Development</li>
+								<li>Redesign</li>
+							</ul>
+						</p>
+					</div>
+					<div className='image-container'>
+						<img className='img-1' src='src/assets/photos/business-man-working-late-office.jpg' alt='' />
+						<img className='img-2' src='src/assets/photos/colleagues-looking-tablet-discussing-new-ideas.jpg' alt='' />
+						<img className='img-3' src='src/assets/photos/couturier-adding-credit-card-online.jpg' alt='' />
+						<img
+							className='img-4'
+							src='src/assets/photos/smiling-asian-girl-barista-working-cafe-counter-processing-orders-using-pos-terminal-receiving.jpg'
+							alt=''
+						/>
+						<img className='img-5' src='src/assets/photos/young-man-barista-coffee-shop.jpg' alt='' />
+					</div>
+				</div>
+				<div className='right'>
+					<img className='process-img' src='src/assets/photos/sdlc/7076118.jpg' alt='' />
+					<div>
+						<h1 className='page-header'>The Process</h1>
+						<p className='header-content'>
+							Our development process is closely aligned with Software Development Life Cycle standards to ensure the
+							following:
+							<ul>
+								<li>Increased <span className="normal">transparency</span> for project stakeholders.</li>
+								<li><span className="normal">Reliable</span> estimation and schedule forecasting.</li>
+								<li><span className="normal">Streamlined</span> processes for development and customer satisfaction.</li>
+								<li>Allowance for project <span className="normal">flexibility</span> as development progresses.</li>
+							</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+
 			<div className={`slider-container slider-stop`}>
 				<SliderNav navList={processArray}></SliderNav>
 			</div>
@@ -19,8 +64,10 @@ const AboutPage = () => {
 				{/* Planning Section */}
 				<div className='about-page-section'>
 					<div className='header-section'>
-						<h2 id='planning' className="header-title">Planning</h2>
-						<p className="header-content">
+						<h2 id='planning' className='header-title'>
+							Planning
+						</h2>
+						<p className='header-content'>
 							During the planning phase our primary goal is to gain an understanding of your vision. We'll discuss the
 							details of what you aim to achieve and develop a plan that will act as a strong foundation to start the
 							project off in the right direction
@@ -39,10 +86,9 @@ const AboutPage = () => {
 										/>
 									</g>
 								</svg>
-							<p>Create a comprehensive list of project requirements.</p>
+								<p>Create a comprehensive list of project requirements.</p>
 							</div>
 						</div>
-						<span className='border-blue'></span>
 						<div className='process-container'>
 							<div className='inner-container'>
 								<h3>Project Objectives</h3>
@@ -53,10 +99,9 @@ const AboutPage = () => {
 										<path d='M3 12a9 9 0 1 0 18 0a9 9 0 1 0-18 0' />
 									</g>
 								</svg>
-							<p>Establish milestones and goals to track project success. </p>
+								<p>Establish milestones and goals to track project success. </p>
 							</div>
 						</div>
-						<span className='border-blue'></span>
 						<div className='process-container'>
 							<div className='inner-container'>
 								<h3>Resource Planning</h3>
@@ -69,7 +114,7 @@ const AboutPage = () => {
 										/>
 									</g>
 								</svg>
-							<p>Refine the project schedule and timeline</p>
+								<p>Refine the project schedule and timeline</p>
 							</div>
 						</div>
 					</div>
@@ -77,7 +122,7 @@ const AboutPage = () => {
 				{/* Design section */}
 				<div className='about-page-section'>
 					<div className='header-section'>
-						<h2 className="header-title">Design</h2>
+						<h2 className='header-title'>Design</h2>
 						<p className='header-content'>
 							Before we dive into the technical side of things, let's talk design. By collaborating back and forth and
 							landing on an effective User Interface, our team is able to steam like the remainder of the
@@ -98,10 +143,9 @@ const AboutPage = () => {
 										d='M12 9v2m4 0V7m-8 4h.01M3 3h1m17 0h-1m0 0v12h-6m6-12H4m0 0v12h6m0 0l-2 6m2-6h4m0 0l2 6'
 									/>
 								</svg>
-							<p>Create low fidelity prototypes to communicate core structure </p>
+								<p>Create low fidelity prototypes to communicate core structure </p>
 							</div>
 						</div>
-						<span className='border-blue'></span>
 						<div className='process-container'>
 							<div className='inner-container'>
 								<h3>Mock Design</h3>
@@ -111,10 +155,9 @@ const AboutPage = () => {
 										d='M3 13V5q0-.825.588-1.412T5 3h6v10zM13 3h6q.825 0 1.413.588T21 5v4h-8zm0 18V11h8v8q0 .825-.587 1.413T19 21zM3 15h8v6H5q-.825 0-1.412-.587T3 19z'
 									/>
 								</svg>
-							<p>Refine design with focus aesthetics of the project</p>
+								<p>Refine design with focus aesthetics of the project</p>
 							</div>
 						</div>
-						<span className='border-blue'></span>
 						<div className='process-container'>
 							<div className='inner-container'>
 								<h3>Design Buyoff</h3>
@@ -128,7 +171,7 @@ const AboutPage = () => {
 									</g>
 								</svg>
 
-							<p>Complete project design and prepare for development</p>
+								<p>Complete project design and prepare for development</p>
 							</div>
 						</div>
 					</div>
@@ -136,8 +179,8 @@ const AboutPage = () => {
 				{/* Implementation */}
 				<div className='about-page-section'>
 					<div className='header-section'>
-						<h2 className="header-title">Implementation</h2>
-						<p className="header-content">
+						<h2 className='header-title'>Implementation</h2>
+						<p className='header-content'>
 							By combining information from the planning and design phases, our team will begin to bring your project to
 							life.
 						</p>
@@ -152,10 +195,9 @@ const AboutPage = () => {
 										d='M17 19h-2q-.425 0-.712-.288T14 18t.288-.712T15 17h2v-2q0-.425.288-.712T18 14t.713.288T19 15v2h2q.425 0 .713.288T22 18t-.288.713T21 19h-2v2q0 .425-.288.713T18 22t-.712-.288T17 21zM5 20q-.825 0-1.412-.587T3 18V6q0-.825.588-1.412T5 4h1V3q0-.425.288-.712T7 2t.713.288T8 3v1h6V3q0-.425.288-.712T15 2t.713.288T16 3v1h1q.825 0 1.413.588T19 6v5q0 .425-.288.713T18 12t-.712-.288T17 11v-1H5v8h6q.425 0 .713.288T12 19t-.288.713T11 20zM5 8h12V6H5zm0 0V6z'
 									/>
 								</svg>
-							<p>Create low fidelity prototypes that communicate core structure </p>
+								<p>Create low fidelity prototypes that communicate core structure </p>
 							</div>
 						</div>
-						<span className='border-blue'></span>
 						<div className='process-container'>
 							<div className='inner-container'>
 								<h3>Milestone Prototyping</h3>
@@ -168,10 +210,9 @@ const AboutPage = () => {
 										/>
 									</g>
 								</svg>
-							<p>Refine design with focus aesthetics of the project</p>
+								<p>Refine design with focus aesthetics of the project</p>
 							</div>
 						</div>
-						<span className='border-blue'></span>
 						<div className='process-container'>
 							<div className='inner-container'>
 								<h3>Progress Reporting</h3>
@@ -181,48 +222,47 @@ const AboutPage = () => {
 										d='M12 22q-2.05 0-3.875-.788t-3.187-2.15t-2.15-3.187T2 12q0-2.075.788-3.887t2.15-3.175t3.187-2.15T12 2v2Q8.675 4 6.337 6.338T4 12t2.338 5.663T12 20t5.663-2.337T20 12h2q0 2.05-.788 3.875t-2.15 3.188t-3.175 2.15T12 22'
 									/>
 								</svg>
-							<p>Complete project design and prepare for development</p>
+								<p>Complete project design and prepare for development</p>
 							</div>
 						</div>
 					</div>
-						<div className='icon-section lower'>
-							<div className='process-container'>
-								<div className='inner-container'>
-									<h3>Data Migration</h3>
-									<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
-										<g fill='none'>
-											<path d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z' />
-											<path
-												fill='currentColor'
-												d='M9.52 3a2 2 0 0 1 1.561.75l1.4 1.75H20a2 2 0 0 1 2 2V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm0 2H4v14h16V7.5h-7.52a2 2 0 0 1-1.561-.75zM12 10a1 1 0 0 1 1 1v2.709l.414-.415a1 1 0 1 1 1.414 1.415l-2.12 2.12a1 1 0 0 1-1.415 0l-2.121-2.12a1 1 0 1 1 1.414-1.415l.414.415V11a1 1 0 0 1 1-1'
-											/>
-										</g>
-									</svg>
+					<div className='icon-section lower'>
+						<div className='process-container'>
+							<div className='inner-container'>
+								<h3>Data Migration</h3>
+								<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
+									<g fill='none'>
+										<path d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z' />
+										<path
+											fill='currentColor'
+											d='M9.52 3a2 2 0 0 1 1.561.75l1.4 1.75H20a2 2 0 0 1 2 2V19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm0 2H4v14h16V7.5h-7.52a2 2 0 0 1-1.561-.75zM12 10a1 1 0 0 1 1 1v2.709l.414-.415a1 1 0 1 1 1.414 1.415l-2.12 2.12a1 1 0 0 1-1.415 0l-2.121-2.12a1 1 0 1 1 1.414-1.415l.414.415V11a1 1 0 0 1 1-1'
+										/>
+									</g>
+								</svg>
 								<p>Create low fidelity prototypes that communicate core structure </p>
-								</div>
-							</div>
-							<span className='border-blue'></span>
-							<div className='process-container'>
-								<div className='inner-container'>
-									<h3>External Integrations</h3>
-									<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
-										<g fill='none'>
-											<path d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z' />
-											<path
-												fill='currentColor'
-												d='M16.243 9.878a1 1 0 0 1 1.32-.083l.094.083L19.778 12a5.5 5.5 0 0 1-7.596 7.952L12 19.778l-2.121-2.121a1 1 0 0 1 1.32-1.498l.094.083l2.121 2.122a3.5 3.5 0 0 0 5.091-4.8l-.141-.15l-2.121-2.121a1 1 0 0 1 0-1.415M9.17 9.171a1 1 0 0 1 1.32-.083l.095.083l4.242 4.243a1 1 0 0 1-1.32 1.497l-.094-.083l-4.243-4.242a1 1 0 0 1 0-1.415m-4.95-4.95a5.5 5.5 0 0 1 7.597-.173l.182.174l2.121 2.12A1 1 0 0 1 12.8 7.84l-.094-.083l-2.121-2.121a3.5 3.5 0 0 0-5.091 4.8l.141.15l2.121 2.12a1 1 0 0 1-1.32 1.498l-.094-.083L4.222 12a5.5 5.5 0 0 1 0-7.778Z'
-											/>
-										</g>
-									</svg>
-								<p>Refine design with focus aesthetics of the project</p>
-								</div>
 							</div>
 						</div>
+						<div className='process-container'>
+							<div className='inner-container'>
+								<h3>External Integrations</h3>
+								<svg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 24 24'>
+									<g fill='none'>
+										<path d='m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z' />
+										<path
+											fill='currentColor'
+											d='M16.243 9.878a1 1 0 0 1 1.32-.083l.094.083L19.778 12a5.5 5.5 0 0 1-7.596 7.952L12 19.778l-2.121-2.121a1 1 0 0 1 1.32-1.498l.094.083l2.121 2.122a3.5 3.5 0 0 0 5.091-4.8l-.141-.15l-2.121-2.121a1 1 0 0 1 0-1.415M9.17 9.171a1 1 0 0 1 1.32-.083l.095.083l4.242 4.243a1 1 0 0 1-1.32 1.497l-.094-.083l-4.243-4.242a1 1 0 0 1 0-1.415m-4.95-4.95a5.5 5.5 0 0 1 7.597-.173l.182.174l2.121 2.12A1 1 0 0 1 12.8 7.84l-.094-.083l-2.121-2.121a3.5 3.5 0 0 0-5.091 4.8l.141.15l2.121 2.12a1 1 0 0 1-1.32 1.498l-.094-.083L4.222 12a5.5 5.5 0 0 1 0-7.778Z'
+										/>
+									</g>
+								</svg>
+								<p>Refine design with focus aesthetics of the project</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				{/* Testing Section */}
 				<div className='about-page-section'>
 					<div className='header-section'>
-						<h2 className="header-title">Testing</h2>
+						<h2 className='header-title'>Testing</h2>
 						<p className='header-content'>
 							The best method for avoiding technical issues in your application after deployment is testing.
 						</p>
@@ -241,10 +281,9 @@ const AboutPage = () => {
 										d='M18 14a3 3 0 1 0 0 6a3 3 0 0 0 0-6m0 0V9a2 2 0 0 0-2-2h-1m-2 0l2-2v2m-2 0h2m-2 0l2 2V7m-9 4a3 3 0 1 0 0-6a3 3 0 0 0 0 6m0 0v5a2 2 0 0 0 2 2h1m2 0l-2 2v-2m2 0H9m2 0l-2-2v2'
 									/>
 								</svg>
-							<p>Create low fidelity prototypes that communicate core structure </p>
-						</div>
+								<p>Create low fidelity prototypes that communicate core structure </p>
 							</div>
-						<span className='border-blue'></span>
+						</div>
 						<div className='process-container'>
 							<div className='inner-container'>
 								<h3>Stakeholder Testing</h3>
@@ -255,7 +294,7 @@ const AboutPage = () => {
 										<path d='M22 19c0-3.314-3.134-6-7-6c-.807 0-2.103-.293-3-1.235' />
 									</g>
 								</svg>
-							<p>Refine design with focus aesthetics of the project</p>
+								<p>Refine design with focus aesthetics of the project</p>
 							</div>
 						</div>
 					</div>
@@ -263,8 +302,10 @@ const AboutPage = () => {
 				{/* Deployment Section */}
 				<div className='about-page-section'>
 					<div className='header-section'>
-						<h2 className="header-title">Deployment</h2>
-						<p className='header-content'>After making this available to the world. This is where we hand you the keys!</p>
+						<h2 className='header-title'>Deployment</h2>
+						<p className='header-content'>
+							After making this available to the world. This is where we hand you the keys!
+						</p>
 					</div>
 					<div className='icon-section'>
 						<div className='process-container'>
@@ -281,10 +322,9 @@ const AboutPage = () => {
 									/>
 								</svg>
 
-							<p>Transfer all applicable accounts necessary for your project to run into your control</p>
+								<p>Transfer all applicable accounts necessary for your project to run into your control</p>
 							</div>
 						</div>
-						<span className='border-blue'></span>
 						<div className='process-container'>
 							<div className='inner-container'>
 								<h3>Project Handoff</h3>
@@ -299,10 +339,9 @@ const AboutPage = () => {
 									/>
 								</svg>
 
-							<p>Our team will train necessary personnel on how the project functions</p>
+								<p>Our team will train necessary personnel on how the project functions</p>
 							</div>
 						</div>
-						<span className='border-blue'></span>
 						<div className='process-container'>
 							<div className='inner-container'>
 								<h3>Project Release</h3>
@@ -331,7 +370,7 @@ const AboutPage = () => {
 									</g>
 								</svg>
 
-							<p>We'll handle the lift of making your project available to the world</p>
+								<p>We'll handle the lift of making your project available to the world</p>
 							</div>
 						</div>
 					</div>
@@ -339,8 +378,8 @@ const AboutPage = () => {
 				{/* Deployment Section */}
 				<div className='about-page-section'>
 					<div className='header-section'>
-						<h2 className="header-title">Maintenance</h2>
-						<p className="header-content">
+						<h2 className='header-title'>Maintenance</h2>
+						<p className='header-content'>
 							Post Deployment project maintenance will vary project to project based on agreed upon terms upon contract
 							execution.
 						</p>

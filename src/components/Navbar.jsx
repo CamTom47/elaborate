@@ -3,18 +3,20 @@ import { Link } from "react-router";
 import "../styles/components/Navbar.scss";
 
 const Navbar = () => {
-	const [navbarHidden, setNavbarHidden] = useState(false);
+	// const [navbarHidden, setNavbarHidden] = useState(false);
 	const [lastScrollStop, setLastScrollStop] = useState(window.screenTop);
 
 	const getWindowHeight = () => {
-		if (lastScrollStop < window.scrollY) setNavbarHidden(true);
-		else setNavbarHidden(false);
+		// if (lastScrollStop < window.scrollY) setNavbarHidden(true);
+		// else setNavbarHidden(false);
 		setLastScrollStop(window.scrollY);
 	};
 	window.addEventListener("scroll", getWindowHeight);
 
 	return (
-		<div className={`navbar-container ${navbarHidden ? "hidden" : ""}`}>
+				// <div className={`navbar-container ${navbarHidden ? "hidden" : ""}`}> use to make navbar hide on scroll
+
+		<div className={`navbar-container`}>
 			<div className='navbar-content'>
 				<Link reloadDocument scrollrestoration='true' className='navbar-title' to='/'>
 					<h2>Elaborate</h2>
