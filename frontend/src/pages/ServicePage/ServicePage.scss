@@ -3,33 +3,35 @@
 .service-page-container {
 	background-image: url(../../assets/content/icon3.png);
 	background-repeat: no-repeat;
-	background-position-x: 200%;
-	background-position-y: 180%;
-	background-size: 120%;
+	background-position-x: left;
+	background-position-y: bottom;
+	background-size: 12rem;
 }
 @media (min-width: theme.$breakpoint-tablet-portrait) {
 	.service-page-container {
-		background-position-x: 85%;
-		background-position-y: 20%;
-		background-size: 150%;
+		background-position-x: left;
+		background-position-y: bottom;
+		background-size: 14rem;
 	}
 }
 @media (min-width: theme.$breakpoint-tablet-landscape) {
 	.service-page-container {
-		background-position-x: -120%;
-		background-size: 80%;
+		background-position-x: left;
+		background-position-y: bottom;
+		background-size: 16rem;
 	}
 }
 @media (min-width: theme.$breakpoint-laptop) {
 	.service-page-container {
-		background-position-x: -260%;
-		background-position-y: 40%;
-		background-size: 90%;
+		background-position-x: left;
+		background-position-y: bottom;
+		background-size: 24rem;
 	}
 }
 @media (min-width: theme.$breakpoint-desktop) {
 	.service-page-container {
-		background-position-x: -250%;
-		background-position-y: 45%;
+		background-position-x: left;
+		background-position-y: bottom;
+		background-size: 32rem;
 	}
 }

@@ -3,35 +3,35 @@
 .homepage-container {
 	background-image: url(../../assets/content/icon1.png);
 	background-repeat: no-repeat;
-	background-position-x: 150%;
-	background-position-y: 100%;
-	background-size: 60%;
+	background-position-x: calc(100vw - 10rem);
+	background-position-y: calc(100vh - 14rem);
+	background-size: 16rem;
 }
 @media (min-width: theme.$breakpoint-tablet-portrait) {
 	.homepage-container {
-		background-position-x: 150%;
-		background-position-y: 110%;
-		background-size: 60%;
+		background-position-x: calc(100vw - 18rem);
+		background-position-y: calc(100vh - 22rem);
+		background-size: 24rem;
 	}
 }
 @media (min-width: theme.$breakpoint-tablet-landscape) {
 	.homepage-container {
-		background-position-x: 150%;
-		background-position-y: 170%;
-		background-size: 60%;
+		background-position-x: calc(100vw - 18rem);
+		background-position-y: calc(100vh - 22rem);
+		background-size: 24rem;
 	}
 }
 @media (min-width: theme.$breakpoint-laptop) {
 	.homepage-container {
-		background-position-x: 130%;
-		background-position-y: 150%;
-		background-size: 50%;
+		background-position-x: calc(100vw - 25rem);
+		background-position-y: calc(100vh - 30rem);
+		background-size: 36rem;
 	}
 }
 @media (min-width: theme.$breakpoint-desktop) {
 	.homepage-container {
-		background-position-x: 130%;
-		background-position-y: 280%;
-		background-size: 50%;
+		background-position-x: calc(100vw - 30rem);
+		background-position-y: calc(100vh - 35rem);
+		background-size: 40rem;
 	}
 }
