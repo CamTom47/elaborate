@@ -4,7 +4,9 @@ import ServicePageCardPrimary from "../../components/ServicePageCardPrimary";
 import ButtonLink from "../../components/ButtonLink";
 import Footer from "../Footer/Footer";
 
-import './ServicePage.scss'
+import img3 from '../../assets/content/icon3.png'
+
+// import "./ServicePage.scss";
 
 const Services = () => {
 	// const services = {
@@ -36,11 +38,11 @@ const Services = () => {
 	};
 
 	return (
-		<div className='service-page-container flex flex-col h-screen w-full gap-y-60 items-center overflow-y-scroll'>
+		<div className={`service-page-container flex flex-col h-screen w-full gap-y-60 items-center overflow-y-scroll`}>
 			<div className='bg-primary-dark font-bold pt-8 pb-8 text-center w-full'>
-				<h1 className='text-white text-5xl'>Services</h1>
+				<h1 className='text-white text-5xl md:text-white'>Services</h1>
 			</div>
-			<div className='flex flex-col gap-y-12 mx-4 lg:mx-120'>
+			<div className='flex flex-col gap-y-12 mx-4 md:mx-12 xl:mx-40 w-fit'>
 				<div tabIndex='4' id='website-design' className='flex flex-col gap-y-4'>
 					<h2 className='text-center text-primary-dark font-bold text-3xl'>Web Design</h2>
 					<p className='w-fit text-center text-xl leading-10 '>
@@ -48,7 +50,7 @@ const Services = () => {
 						the table.
 					</p>
 				</div>
-				<div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16'>
+				<div className='flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16'>
 					<ServicePageCardPrimary
 						title='E-Commerce'
 						content='Attract clients with an intuitive E-commerce site that makes it easy for your customer to use and simple for you to manage.'
@@ -76,7 +78,7 @@ const Services = () => {
 					/>
 				</div>
 			</div>
-			<div className='flex flex-col gap-y-12 mx-4 lg:mx-120'>
+			<div className='flex flex-col gap-y-12 mx-4 md:mx-12 xl:mx-40'>
 				<div tabIndex='4' id='web-app-development' className='flex flex-col gap-y-4'>
 					<h2 className='text-center text-primary-dark font-bold text-3xl'>Web Development</h2>
 					<p className='w-fit text-center text-xl leading-10 '>
@@ -84,7 +86,7 @@ const Services = () => {
 						bring to the table
 					</p>
 				</div>
-				<div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16'>
+				<div className='flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16'>
 					<ServicePageCardPrimary
 						title='APIs'
 						content='Create APIs to meet your needs or seemlessly integrate external APIs into your existing systems.'
@@ -100,7 +102,7 @@ const Services = () => {
 				</div>
 			</div>
 			<div className='background-white'>
-				<div className='flex flex-col gap-y-12 mx-4 lg:mx-120'>
+				<div className='flex flex-col gap-y-12 mx-4 md:mx-12 xl:mx-40'>
 					<div tabIndex='3' id='mobile-development' className='flex flex-col gap-y-4'>
 						<h2 className='text-center text-primary-dark font-bold text-3xl'>Mobile Development</h2>
 						<p className='w-fit text-center text-xl leading-10 '>
@@ -108,7 +110,7 @@ const Services = () => {
 							you bring to the table
 						</p>
 					</div>
-					<div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16'>
+					<div className='flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16'>
 						<ServicePageCardPrimary
 							title='iOS'
 							content='Connect to your iOS audience through innovative and optimized mobile applications.'
@@ -117,7 +119,7 @@ const Services = () => {
 					</div>
 				</div>
 			</div>
-			<div className='flex flex-col gap-y-12 mx-4 lg:mx-120'>
+			<div className='flex flex-col gap-y-12 mx-4 md:mx-12 xl:mx-40'>
 				<div tabIndex='2' id='app-redesign' className='flex flex-col gap-y-4'>
 					<h2 className='text-center text-primary-dark font-bold text-3xl'>Redesign</h2>
 					<p className='w-fit text-center text-xl leading-10 '>
@@ -125,7 +127,7 @@ const Services = () => {
 						the table.
 					</p>
 				</div>
-				<div className='flex flex-col gap-y-24 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16'>
+				<div className='flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 lg:grid lg:grid-cols-3 lg:gap-x-12 lg:gap-y-16'>
 					<ServicePageCardPrimary
 						title='Web Redesign'
 						content='Reintroduce your presence with a new and improved website design.'
@@ -136,7 +138,7 @@ const Services = () => {
 					/>
 				</div>
 			</div>
-			<div className='px-4 flex flex-col text-center pb-32 gap-y-4 items-center'>
+			<div className='text-xl px-4 flex flex-col text-center pb-32 gap-y-4 items-center'>
 				<p>
 					Not seeing what you're looking for? We're always looking to grow our skills set. Please feel free to contact
 					us to discuss.

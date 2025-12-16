@@ -39,7 +39,6 @@
 
 	--animate-opennav: opennav 100ms linear;
 
-
 	@keyframes opennav {
 		0% {
 			transform: scaleY(0);
@@ -48,5 +47,4 @@
 			transform: scaleY(100%);
 		}
 	}
-
 }

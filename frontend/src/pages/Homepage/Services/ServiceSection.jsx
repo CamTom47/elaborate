@@ -55,7 +55,7 @@ const ServiceSection = () => {
 			<h1 className='text-wrap text-4xl text-primary-dark font-black text-center'>
 				Flexible and Intuitive Software Solutions
 			</h1>
-			<div className='flex flex-col h-fit items-center gap-y-20 lg:flex-row lg:justify-between lg:gap-x-8'>
+			<div className='flex flex-col h-fit items-center gap-y-20 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-8 xl:flex-row xl:justify-between xl:gap-x-8 xl:flex'>
 				<ServiceCard
 					title={"Web Design"}
 					description={"Design beautiful websites optimized to gain you maximum exposure and communicate your brand."}

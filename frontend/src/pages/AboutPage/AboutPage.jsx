@@ -16,7 +16,7 @@ const AboutPage = () => {
 			<div className='bg-primary-dark font-bold pt-8 pb-8 text-center w-full'>
 				<h1 className='text-white text-5xl'>About Us</h1>
 			</div>
-			<div className='flex flex-col h-full gap-y-4 py-68 items-center px-4 lg:w-5/8 lg:px-20 lg:pb-100'>
+			<div className='flex flex-col h-full gap-y-4 py-68 items-center px-4 md:w-3/4 lg:px-20 lg:pb-100'>
 				<h2 className='text-wrap text-4xl text-primary-dark font-black text-center'>Who Are We?</h2>
 				<p className='w-fit [&_b]:text-secondary text-center text-xl leading-10'>
 					<b className='text-secondary'>Frameworks Development</b> is a software development agency that focuses on
@@ -25,13 +25,12 @@ const AboutPage = () => {
 				</p>
 			</div>
 
-			<div className='flex flex-col justify-center items-center px-4 gap-y-4 lg:w-5/8 lg:px-20 lg:pb-100'>
+			<div className='flex flex-col justify-center items-center px-4 gap-y-4 md:w-3/4 lg:px-20 lg:pb-100'>
 				<h1 className='text-wrap text-4xl text-primary-dark font-black text-center'>Our Process</h1>
-				<p className='w-fit text-center text-xl leading-10 '>
+				<p className='w-fit text-center text-xl leading-10'>
 					Our development process is closely aligned with Software Development Life Cycle standards to promote:
 				</p>
-				<p className='[&_span]:text-secondary w-fit leading-12 text-center'>
-					<ul className='text-xl leading-10 [&_li]:border-b [&_li]:pb-4'>
+					<ul className='text-xl leading-10 [&_li]:border-b [&_li]:pb-4 [&_span]:text-secondary w-fit text-center md:[&_li]:py-8'>
 						<li className="border-t ">
 							Increased <span className='normal'>transparency</span> for project stakeholders.
 						</li>
@@ -45,10 +44,9 @@ const AboutPage = () => {
 							Allowance project <span className='normal'>flexibility</span> as development progresses.
 						</li>
 					</ul>
-				</p>
 			</div>
 
-			<div className='flex flex-col justify-center gap-y-20 px-4 lg:w-5/8 lg:px-20'>
+			<div className='flex flex-col justify-center gap-y-20 px-4 md:w-3/4 lg:px-20'>
 				{/* Planning Section */}
 				<div className='flex flex-col gap-y-12'>
 					<div className='flex flex-col gap-y-4'>
@@ -61,7 +59,7 @@ const AboutPage = () => {
 							project off in the right direction
 						</p>
 					</div>
-					<div className='flex flex-col items-center gap-y-12 w-full lg:flex-row lg:gap-x-12 lg:justify-center lg:grid lg:grid-cols-3'>
+					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 						<AboutCard
 							title='Project Scope'
 							text='Create a comprehensive list of project requirements'
@@ -118,7 +116,7 @@ const AboutPage = () => {
 							technicalities.
 						</p>
 					</div>
-					<div className='flex flex-col items-center gap-y-12 w-full lg:gap-x-12 lg:justify-center lg:grid lg:grid-cols-3 '>
+					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 						<AboutCard
 							title={"Draft Design"}
 							text={"Create low fidelity prototypes to communicate core structure"}
@@ -174,7 +172,7 @@ const AboutPage = () => {
 						</p>
 					</div>
 					<div className='flex flex-col gap-y-12'>
-						<div className='flex flex-col items-center gap-y-12 w-full lg:gap-x-12 lg:justify-center lg:grid lg:grid-cols-3 '>
+						<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 							<AboutCard
 								title={"Development Checkins"}
 								text={"Create low fidelity prototypes that communicate core structure"}
@@ -216,7 +214,7 @@ const AboutPage = () => {
 							/>
 						</div>
 
-						<div className='flex flex-col items-center gap-y-12 w-full lg:gap-x-12 lg:justify-center lg:grid lg:grid-cols-3 '>
+						<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 							<AboutCard
 								title={"Data Migration"}
 								text={"Create low fidelity prototypes that communicate core structure"}
@@ -258,7 +256,7 @@ const AboutPage = () => {
 							The best method for avoiding technical issues in your application after deployment is testing.
 						</p>
 					</div>
-					<div className='flex flex-col items-center gap-y-12 w-full lg:gap-x-12 lg:justify-center lg:grid lg:grid-cols-3 '>
+					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 						<AboutCard
 							title={"Built In Testing"}
 							text={"Create low fidelity prototypes that communicate core structure"}
@@ -298,7 +296,7 @@ const AboutPage = () => {
 							After making this available to the world. This is where we hand you the keys!
 						</p>
 					</div>
-					<div className='flex flex-col items-center gap-y-12 w-full lg:gap-x-12 lg:justify-center lg:grid lg:grid-cols-3 '>
+					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 						<AboutCard
 							title={"Account Transfers"}
 							text={"Transfer all applicable accounts necessary for your project to run into your control"}

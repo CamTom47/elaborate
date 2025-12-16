@@ -93,7 +93,7 @@ const Contact = () => {
 				</p>
 			</div>
 			{/* General Inquiry Section */}
-			<form onSubmit={handleSubmit(onSubmit)} className='px-4 h-fit w-full lg:px-160' action='submit'>
+			<form onSubmit={handleSubmit(onSubmit)} className='px-4 h-fit w-full xl:px-80' action='submit'>
 				{!formStep && (
 					<div className='flex flex-col items-center text-center gap-y-12'>
 						<h2 className='content-description'>
@@ -109,7 +109,7 @@ const Contact = () => {
 					</div>
 				)}
 				{formStep === "General Information" && (
-					<div className='bg-primary-dark p-4 rounded-md flex flex-col justify-between'>
+					<div className='bg-primary-dark p-4 rounded-md flex flex-col justify-between md:mx-20 lg:mx-40'>
 						<div className='w-full text-center text-white pt-4'>
 							<h2>Let's start off with some basic information</h2>
 						</div>
