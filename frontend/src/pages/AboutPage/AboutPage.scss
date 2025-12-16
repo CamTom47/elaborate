@@ -1,7 +1,37 @@
+@use "../../styles/theme.scss";
+
 .about-page-container {
 	background-image: url(../../assets/content/icon2.png);
 	background-repeat: no-repeat;
-	background-position-x: 120%;
-	background-position-y: 140%;
-	background-size: 35%;
+	background-position-x: 140%;
+	background-position-y: 100%;
+	background-size: 50%;
+}
+@media (min-width: theme.$breakpoint-tablet-portrait) {
+	.about-page-container {
+		background-position-x: 140%;
+		background-position-y: 110%;
+		background-size: 50%;
+	}
+}
+@media (min-width: theme.$breakpoint-tablet-landscape) {
+	.about-page-container {
+		background-position-x: 130%;
+		background-position-y: 120%;
+		background-size: 40%;
+	}
+}
+@media (min-width: theme.$breakpoint-laptop) {
+	.about-page-container {
+		background-position-x: 120%;
+		background-position-y: 120%;
+		background-size: 35%;
+	}
+}
+@media (min-width: theme.$breakpoint-desktop) {
+	.about-page-container {
+		background-position-x: 120%;
+		background-position-y: 120%;
+		background-size: 35%;
+	}
 }

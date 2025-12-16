@@ -25,7 +25,7 @@ const AboutPage = () => {
 				</p>
 			</div>
 
-			<div className='flex flex-col justify-center items-center px-4 gap-y-4 md:w-3/4 lg:px-20 lg:pb-100'>
+			<div className='flex flex-col justify-center items-center px-4 gap-y-4 md:py-20 md:w-3/4 lg:px-20 lg:pb-100'>
 				<h1 className='text-wrap text-4xl text-primary-dark font-black text-center'>Our Process</h1>
 				<p className='w-fit text-center text-xl leading-10'>
 					Our development process is closely aligned with Software Development Life Cycle standards to promote:

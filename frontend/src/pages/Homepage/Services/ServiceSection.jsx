@@ -51,7 +51,7 @@ const ServiceSection = () => {
 		),
 	};
 	return (
-		<div className='flex flex-col h-fit gap-y-12 pb-40 items-center px-4'>
+		<div className='flex flex-col h-fit gap-y-12 pb-40 py-24 items-center px-4'>
 			<h1 className='text-wrap text-4xl text-primary-dark font-black text-center'>
 				Flexible and Intuitive Software Solutions
 			</h1>

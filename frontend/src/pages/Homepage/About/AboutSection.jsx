@@ -6,7 +6,7 @@ const AboutSection = () => {
 			<div className='bg-primary-dark font-bold pt-8 pb-8 text-center w-full'>
 				<h1 className='text-white text-5xl'>Frameworks Development</h1>
 			</div>
-			<div className='flex flex-col h-full gap-y-12 py-80 items-center px-4 md:w-3/4 lg:px-20'>
+			<div className='flex flex-col h-full gap-y-12 py-24 md:py-60 lg:py-36 xl:py-68 2xl:py-84 items-center px-4 md:w-3/4 lg:px-20'>
 				<h2 className='text-wrap text-4xl text-primary-dark font-black text-center'>
 					Software Engineering Solutions For Your Unique Problems
 				</h2>

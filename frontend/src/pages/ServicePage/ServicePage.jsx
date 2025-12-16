@@ -4,9 +4,7 @@ import ServicePageCardPrimary from "../../components/ServicePageCardPrimary";
 import ButtonLink from "../../components/ButtonLink";
 import Footer from "../Footer/Footer";
 
-import img3 from '../../assets/content/icon3.png'
-
-// import "./ServicePage.scss";
+import "./ServicePage.scss";
 
 const Services = () => {
 	// const services = {
@@ -38,7 +36,7 @@ const Services = () => {
 	};
 
 	return (
-		<div className={`service-page-container flex flex-col h-screen w-full gap-y-60 items-center overflow-y-scroll`}>
+		<div className={`service-page-container flex flex-col h-screen w-full gap-y-36 xl:gap-y-40 items-center overflow-y-scroll`}>
 			<div className='bg-primary-dark font-bold pt-8 pb-8 text-center w-full'>
 				<h1 className='text-white text-5xl md:text-white'>Services</h1>
 			</div>

@@ -1,6 +1,35 @@
+@use "../../styles/theme.scss";
+
 .service-page-container {
 	background-image: url(../../assets/content/icon3.png);
 	background-repeat: no-repeat;
-	background-position-x: 130%;
-	background-position-y: 58%;
+	background-position-x: 200%;
+	background-position-y: 180%;
+	background-size: 120%;
+}
+@media (min-width: theme.$breakpoint-tablet-portrait) {
+	.service-page-container {
+		background-position-x: 85%;
+		background-position-y: 20%;
+		background-size: 150%;
+	}
+}
+@media (min-width: theme.$breakpoint-tablet-landscape) {
+	.service-page-container {
+		background-position-x: -120%;
+		background-size: 80%;
+	}
+}
+@media (min-width: theme.$breakpoint-laptop) {
+	.service-page-container {
+		background-position-x: -260%;
+		background-position-y: 40%;
+		background-size: 90%;
+	}
+}
+@media (min-width: theme.$breakpoint-desktop) {
+	.service-page-container {
+		background-position-x: -250%;
+		background-position-y: 45%;
+	}
 }
