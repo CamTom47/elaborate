@@ -9,7 +9,7 @@ class MessageAPI {
 	static async request(endpoint, data, method) {
 		console.debug("API Call:", endpoint, data, method);
 
-		const url = `${BASE_URL}/${endpoint}`;
+		const url = `${BASE_URL}/api/${endpoint}`;
 
 		//if the request method is a get request pass the params else pass nothing in params;
 		const params = method === "get" ? data : {};
