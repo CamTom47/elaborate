@@ -95,6 +95,9 @@ CMD ["npm", "run", "dev"]
 # =================================================
 FROM build-deps as build
 
+ARG VITE_ENV
+ENV VITE_ENV=${VITE_ENV}
+
 # Copy only necessary files for building (respects .dockerignore)
 
 COPY --chown=nodejs:nodejs . .

@@ -26,6 +26,8 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
       target: production
+      args:
+        VITE_ENV: production  
     environment:
       VITE_ENV: production
     container_name: frameworks-website

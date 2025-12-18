@@ -4,6 +4,8 @@ const BASE_URL = import.meta.env.VITE_ENV === "production" ? "https://frameworks
 
 class MessageAPI {
 	static async request(endpoint, data, method) {
+		console.log(import.meta.env.VITE_ENV)
+
 		console.debug("API Call:", endpoint, data, method);
 
 		const url = `${BASE_URL}/api/${endpoint}`;
