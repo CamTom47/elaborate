@@ -7,6 +7,7 @@ const BASE_URL =
 
 class MessageAPI {
 	static async request(endpoint, data, method) {
+		
 		console.debug("API Call:", endpoint, data, method);
 
 		const url = `${BASE_URL}/api/${endpoint}`;

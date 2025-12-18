@@ -13,6 +13,8 @@ services:
       context: ./backend
       dockerfile: Dockerfile
       target: production
+    env_file:
+      - ./backend/.env
     environment:
       NODE_ENV: production
     container_name: frameworks-server
@@ -25,6 +27,8 @@ services:
       target: production
     environment:
       NODE_ENV: production
+    env_file:
+      - ./frontend/.env
     container_name: frameworks-website
     ports:
       - 8081:8080
