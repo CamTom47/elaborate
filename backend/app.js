@@ -10,6 +10,7 @@ app.use(helmet());
 const allowedOrigins = [
 	"https://frameworksdev.com", //production frontend
 	"http://localhost:5173", //development fronted
+	"http://localhost:8081", //development fronted
 ];
 app.use(
 	cors({
