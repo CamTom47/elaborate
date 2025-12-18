@@ -1,6 +1,9 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3001";
+const BASE_URL =
+	import.meta.env.VITE_ENV === "development"
+		? import.meta.env.VITE_DEV_SERVER_URL
+		: import.meta.env.VITE_PROD_SERVER_URL;
 
 class MessageAPI {
 	static async request(endpoint, data, method) {
@@ -29,4 +32,4 @@ class MessageAPI {
 	};
 }
 
-export default MessageAPI
+export default MessageAPI;
