@@ -28,8 +28,6 @@ services:
       target: production
     environment:
       VITE_ENV: production
-      VITE_DEV_SERVER_URL: REDACTED_DEV_SERVER
-      VITE_PROD_SERVER_URL: REDACTEDE_PROD_SERVER
     container_name: frameworks-website
     ports:
       - 8081:8080
