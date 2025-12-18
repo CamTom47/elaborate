@@ -3,13 +3,14 @@ import axios from "axios";
 const BASE_URL =
 	import.meta.env.VITE_ENV === "production"
 		? import.meta.env.VITE_PROD_SERVER_URL
-		: import.meta.env.VITE_DEV_SERVER_URL
+		: import.meta.env.VITE_DEV_SERVER_URL;
 
 class MessageAPI {
 	static async request(endpoint, data, method) {
 		console.debug("API Call:", endpoint, data, method);
 
 		const url = `${BASE_URL}/api/${endpoint}`;
+		console.debug(url);
 
 		//if the request method is a get request pass the params else pass nothing in params;
 		const params = method === "get" ? data : {};
