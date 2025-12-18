@@ -24,6 +24,6 @@ app.use(
 );
 
 app.use(express.json());
-app.use("/api/message", messageRouter);
+app.use("/message", messageRouter);
 
 export default app;
