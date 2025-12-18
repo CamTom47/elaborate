@@ -2,12 +2,12 @@ import axios from "axios";
 
 const BASE_URL =
 	import.meta.env.VITE_ENV === "production"
-		? import.meta.env.VITE_PROD_SERVER_URL
-		: import.meta.env.VITE_DEV_SERVER_URL;
+		? 'localhost:3001'
+		: 'https://frameworksdev.com'
 
 class MessageAPI {
 	static async request(endpoint, data, method) {
-		
+
 		console.debug("API Call:", endpoint, data, method);
 
 		const url = `${BASE_URL}/api/${endpoint}`;
