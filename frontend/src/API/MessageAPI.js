@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const BASE_URL =
-	import.meta.env.VITE_ENV === "development"
-		? import.meta.env.VITE_DEV_SERVER_URL
-		: import.meta.env.VITE_PROD_SERVER_URL;
+	import.meta.env.VITE_ENV === "production"
+		? import.meta.env.VITE_PROD_SERVER_URL
+		: import.meta.env.VITE_DEV_SERVER_URL
 
 class MessageAPI {
 	static async request(endpoint, data, method) {
