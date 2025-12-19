@@ -26,7 +26,7 @@ app.use(
 );
 
 app.use(express.json());
-app.use("/api/message", messageRouter);
+app.use("/message", messageRouter);
 
 // Handle 404 errors. This will match everything
 app.use((req, res, next) => {
