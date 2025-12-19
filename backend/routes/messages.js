@@ -6,19 +6,20 @@ import FormData from "form-data";
 
 router.post("/", async (req, res, next) => {
 	try {
-		const { firstName, lastName, phoneNumber, email, companyName, projectDetails, selectedServices, projectPhase } = req.body;
-		console.log('req body' ,req.body)
+		const { firstName, lastName, phoneNumber, email, companyName, projectDetails, selectedServices, projectPhase } =
+			req.body;
+		console.log("req body", req.body);
 
-		console.log(selectedServices)
+		console.log(selectedServices);
 		const mailgun = new Mailgun(FormData);
 		const mg = mailgun.client({
 			username: "api",
 			key: process.env.MAILGUN_API_KEY,
 			// When you have an EU-domain, you must specify the endpoint:
-			// url: "https://api.eu.mailgun.net"
+			url: "https://api.mailgun.net",
 		});
 
-		const message = await mg.messages.create(`${process.env.MAIL_DOMAIN}`, {
+		const message = await mg.messages.create(process.env.MAIL_DOMAIN, {
 			from: `Mailgun Sandbox <postmaster@${process.env.MAIL_DOMAIN}>`,
 			to: ["Cameron Thomas <cameront@frameworksdev.com>"],
 			subject: `Frameworks Dev Inquiry Form Submission - ${firstName} ${lastName} - ${companyName}`,
@@ -29,12 +30,14 @@ router.post("/", async (req, res, next) => {
                     Preferred Email: ${email} \n
                     Company: ${companyName} \n
                     Project Details: ${projectDetails} \n
-                    Requested Service: ${selectedServices.length === 1 ? selectedServices[0] : selectedServices.join(',')} \n
+                    Requested Service: ${
+											selectedServices.length === 1 ? selectedServices[0] : selectedServices.join(",")
+										} \n
                     Project Phase: ${projectPhase}`,
 		});
 
 		//if the message was send successfully;
-		if(message.status === 200){
+		if (message.status === 200) {
 			return res.json({ message: "Your message has been sent and will be reviewed as soon as possible. Thank you!" });
 		}
 	} catch (err) {
