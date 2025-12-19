@@ -15,7 +15,7 @@ services:
       target: production
     environment:
       NODE_ENV: production
-      PORT: 3001
+      PORT: PORT
       MAILGUN_API_KEY: REDACTED_API_KEY
       MAIL_DOMAIN: REDACTED_MAIL_DOMAIN
     container_name: frameworks-server
