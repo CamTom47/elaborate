@@ -18,8 +18,8 @@ router.post("/", async (req, res, next) => {
 			// url: "https://api.eu.mailgun.net"
 		});
 
-		const message = await mg.messages.create('sandbox459e38f8ec3441e8ae59a2e64b46b8e1.mailgun.org', {
-			from: `Mailgun Sandbox <postmaster@sandbox459e38f8ec3441e8ae59a2e64b46b8e1.mailgun.org>`,
+		const message = await mg.messages.create(`${process.env.MAIL_DOMAIN}`, {
+			from: `Mailgun Sandbox <postmaster@${process.env.MAIL_DOMAIN}>`,
 			to: ["Cameron Thomas <cameront@frameworksdev.com>"],
 			subject: `Frameworks Dev Inquiry Form Submission - ${firstName} ${lastName} - ${companyName}`,
 			text: `
