@@ -16,8 +16,6 @@ const Navbar = () => {
 		setLastScrollStop(window.scrollY);
 	};
 
-	window.addEventListener("scroll", getWindowHeight);
-
 	useEffect(() => {
 		console.log(window.location.href)
 		const pathname = window.location.pathname.split("/")[1]
@@ -88,7 +86,7 @@ const Navbar = () => {
 			{showNav ? (
 
 				//HAMBURGER ACTIVE LINKS
-				<div className='absolute top-18 left-0 flex flex-col items-center  bg-white w-screen h-fit border-t **:text-xl **:border-b **:w-screen **:text-center **:py-2 animate-opennav origin-top'>
+				<div id='hamburger-nav' className='absolute top-18 left-0 flex flex-col items-center  bg-white w-screen h-fit border-t **:text-md **:border-b **:w-screen **:text-center **:py-2 animate-opennav origin-top'>
 					<Link reloadDocument scrollrestoration='true' to='/about'>
 						About
 					</Link>

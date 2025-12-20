@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import DropdownNav from "../../components/DropdownNav";
 import ServicePageCardPrimary from "../../components/ServicePageCardPrimary";
 import ButtonLink from "../../components/ButtonLink";
-import Footer from "../Footer/Footer";
+import Footer from "../../components/Footer";
 
 import "./ServicePage.scss";
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import MessageAPI from "../../API/MessageAPI.js";
-import Footer from "../Footer/Footer.jsx";
+import Footer from "../../components/Footer";
 import { useForm } from "react-hook-form";
 
 import ButtonPrimary from "../../components/ButtonPrimary.tsx";
@@ -93,7 +93,7 @@ const Contact = () => {
 				</p>
 			</div>
 			{/* General Inquiry Section */}
-			<form onSubmit={handleSubmit(onSubmit)} className='px-4 h-fit w-full xl:px-80' action='submit'>
+			<form onSubmit={handleSubmit(onSubmit)} className='px-4 h-fit w-full xl:px-80 2xl:mx-80' action='submit'>
 				{!formStep && (
 					<div className='flex flex-col items-center text-center gap-y-12'>
 						<h2 className='content-description'>
@@ -109,7 +109,7 @@ const Contact = () => {
 					</div>
 				)}
 				{formStep === "General Information" && (
-					<div className='bg-primary-dark p-4 rounded-md flex flex-col justify-between md:mx-20 lg:mx-40'>
+					<div className='bg-primary-dark p-4 rounded-md flex flex-col justify-between md:mx-20 lg:mx-40 2xl:mx-80'>
 						<div className='w-full text-center text-white pt-4'>
 							<h2>Let's start off with some basic information</h2>
 						</div>
@@ -203,7 +203,7 @@ const Contact = () => {
 
 				{/* Project Details Section */}
 				{formStep === "Project Details" && (
-					<div className='bg-primary-dark p-4 rounded-md flex flex-col'>
+					<div className='bg-primary-dark p-4 rounded-md flex flex-col justify-between md:mx-20 lg:mx-40 2xl:mx-80'>
 						<div className='w-full text-center text-white pt-4'>
 							<h2 className='content-description'>Now let's discuss project specifics</h2>
 						</div>

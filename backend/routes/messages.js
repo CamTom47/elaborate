@@ -31,7 +31,7 @@ router.post("/", async (req, res, next) => {
                     Company: ${companyName} \n
                     Project Details: ${projectDetails} \n
                     Requested Service: ${
-											selectedServices.length === 1 ? selectedServices[0] : selectedServices.join(",")
+					selectedServices.length === 1 ? selectedServices[0] : selectedServices.join(", ")
 										} \n
                     Project Phase: ${projectPhase}`,
 		});
