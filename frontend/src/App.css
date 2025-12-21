@@ -24,18 +24,23 @@
 }
 
 .main-app {
-	font-family: Reddit-Sans, sans-serif;
+	font-family: auger-mono, monospace;
+	font-style: normal;
+	font-weight: 200;
 	height: 100vh;
-	overflow: hidden;
+	overflow: scroll;
 	box-sizing: border-box;
 }
 
 @theme {
-	--color-primary: #f27b35;
-	--color-primary-dark: #8c230b;
-	--color-secondary: #5f94d9;
-	--color-background: #ffe3d0;
+	--color-primary: #F27649;
+	--color-secondary: #F24822;
+	--color-background-primary: #F2E0D5;
+	--color-background-secondary: #F2B6A0;
+	--color-base: #103B40;
 	--color-light-gray: #f2f2f2;
+	--h-navbar: 144;
+	--content: calc(100vh - 144px);
 
 	--animate-opennav: opennav 100ms linear;
 

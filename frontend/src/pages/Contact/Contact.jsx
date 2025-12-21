@@ -84,14 +84,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className=' flex flex-col justify-between h-screen w-full gap-y-12 items-center overflow-y-scroll'>
-			{/* Contact Us Next Step Instructions */}
-			<div className='bg-primary-dark font-bold pt-8 pb-8 text-center w-screen'>
-				<h2 className='text-white text-5xl'>Contact Us</h2>
-				<p className='text-white font-normal'>
-					For general inquiries and question please contact us at hello@frameworksdev.com
-				</p>
-			</div>
+		<div className=' flex flex-col justify-between h-screen w-full gap-y-12 items-center overflow-y-scroll 2xl:px-60'>
 			{/* General Inquiry Section */}
 			<form onSubmit={handleSubmit(onSubmit)} className='px-4 h-fit w-full xl:px-80 2xl:mx-80' action='submit'>
 				{!formStep && (

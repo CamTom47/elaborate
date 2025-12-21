@@ -10,12 +10,9 @@ const AboutPage = () => {
 	const [lastScrollStop, setLastScrollStop] = useState(window.screenTop);
 
 	return (
-		<div className='about-page-container h-screen flex flex-col w-full items-center overflow-y-scroll '>
-			<div className='bg-primary-dark font-bold pt-8 pb-8 text-center w-full'>
-				<h1 className='text-white text-5xl'>About Us</h1>
-			</div>
-			<div className='flex flex-col h-full gap-y-4 py-68 items-center px-4 md:w-3/4 lg:px-20 lg:pb-100'>
-				<h2 className='text-wrap text-4xl text-primary-dark font-black text-center'>Who Are We?</h2>
+		<div className='about-page-container h-fit flex flex-col w-full items-center bg-background-primary 2xl:px-60'>
+			<div className='flex flex-col h-(--content) justify-center gap-y-4 py-68 items-center px-4 md:w-3/4 lg:px-20 lg:pb-100'>
+				<h2 className='text-wrap text-3xl text-primary font-black text-center'>Who Are We?</h2>
 				<p className='w-fit [&_b]:text-secondary text-center text-xl leading-10'>
 					<b className='text-secondary'>Frameworks Development</b> is a software development agency that focuses on
 					building one of a kind, custom software that meets the needs of <b>Individiual Clients</b>, <b> Start Ups</b>,
@@ -23,22 +20,22 @@ const AboutPage = () => {
 				</p>
 			</div>
 
-			<div className='flex flex-col justify-center items-center px-4 gap-y-4 md:py-20 md:w-3/4 lg:px-20 lg:pb-100'>
-				<h1 className='text-wrap text-4xl text-primary-dark font-black text-center'>Our Process</h1>
-				<p className='w-fit text-center text-xl leading-10'>
+			<div className='flex flex-col justify-center items-center h-fit py-40 px-4 gap-y-4 bg-background-secondary md:py-20 md:w-3/4 lg:px-20 lg:pb-100'>
+				<h1 className='text-wrap text-3xl text-secondary font-black text-center'>Our Process</h1>
+				<p className='w-fit text-center text-xl text-base leading-10'>
 					Our development process is closely aligned with Software Development Life Cycle standards to promote:
 				</p>
-				<ul className='flex flex-col gap-y-6 text-xl [&_li]:p-4 [&_span]:text-secondary  [&_li]:bg-white [&_li]:rounded-md [&_li]:shadow-xl w-fit text-center md:[&_li]:py-8'>
-					<li style={{boxShadow: '0 0 10px 0 gray'}}>
+				<ul className='flex flex-col gap-y-24 text-xl [&_li]:p-4 [&_span]:text-secondary  [&_li]:text-secondary [&_li]:border-t  w-fit text-center md:[&_li]:py-8'>
+					<li >
 						Increased <span className='normal'>transparency</span> for project stakeholders.
 					</li>
-					<li style={{boxShadow: '0 0 10px 0 gray'}}>
+					<li >
 						<span className='normal'>Reliable</span> estimation and schedule forecasting.
 					</li>
-					<li style={{boxShadow: '0 0 10px 0 gray'}}>
+					<li >
 						<span className='normal'>Streamlined</span> processes for development and customer satisfaction.
 					</li>
-					<li style={{boxShadow: '0 0 10px 0 gray'}}>
+					<li >
 						Allowance project <span className='normal'>flexibility</span> as development progresses.
 					</li>
 				</ul>

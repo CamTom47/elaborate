@@ -6,7 +6,7 @@ import "./Homepage.scss";
 
 const Homepage = () => {
 	return (
-		<div className='homepage-container h-screen w-screen overflow-y-scroll'>
+		<div className='homepage-container h-fit w-screen bg-background-primary'>
 				<AboutSection></AboutSection>
 				<ServiceSection></ServiceSection>
 				<Footer></Footer>

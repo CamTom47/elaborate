@@ -36,10 +36,7 @@ const Services = () => {
 	};
 
 	return (
-		<div className={`service-page-container flex flex-col h-screen w-full gap-y-36 xl:gap-y-40 items-center overflow-y-scroll`}>
-			<div className='bg-primary-dark font-bold pt-8 pb-8 text-center w-full'>
-				<h1 className='text-white text-5xl md:text-white'>Services</h1>
-			</div>
+		<div className={`service-page-container flex flex-col h-screen w-full gap-y-36 items-center overflow-y-scroll xl:gap-y-40 2xl:px-60`}>
 			<div className='flex flex-col gap-y-12 mx-4 md:mx-12 xl:mx-40 w-fit'>
 				<div tabIndex='4' id='website-design' className='flex flex-col gap-y-4'>
 					<h2 className='text-center text-primary-dark font-bold text-3xl'>Web Design</h2>

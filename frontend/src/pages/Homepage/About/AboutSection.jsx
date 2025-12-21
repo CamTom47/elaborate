@@ -2,12 +2,9 @@ import ButtonLink from "../../../components/ButtonLink";
 
 const AboutSection = () => {
 	return (
-		<div className='h-fit flex flex-col w-full items-center'>
-			<div className='bg-primary-dark font-bold pt-8 pb-8 text-center w-full'>
-				<h1 className='text-white text-5xl'>Frameworks Development</h1>
-			</div>
-			<div className='flex flex-col h-full gap-y-12 py-24 md:py-60 lg:py-36 xl:py-68 2xl:py-84 items-center px-4 md:w-3/4 lg:px-20'>
-				<h2 className='text-wrap text-4xl text-primary-dark font-black text-center'>
+		<div className='h-(--content) flex flex-col w-full items-center'>
+			<div className='flex flex-col h-full gap-y-12 justify-center items-center px-4 md:py-60 md:w-3/4 lg:px-20 lg:py-36 xl:py-68 2xl:py-84 2xl:px-60'>
+				<h2 className='text-wrap text-3xl text-primary font-black text-center'>
 					Software Engineering Solutions For Your Unique Problems
 				</h2>
 				<div className="flex flex-col gap-y-12 justify-center items-center">
@@ -17,7 +14,6 @@ const AboutSection = () => {
 					</p>
 					<div className='flex flex-col w-full text-center gap-y-4 md:flex-row md:justify-center md:gap-x-20'>
 						<ButtonLink label='Learn More' url='/about' size='large' type='primary' dark={true} />
-						<ButtonLink label='Get In Contact' url='/contact' size='large' type='primary' dark={true} />
 					</div>
 				</div>
 			</div>
