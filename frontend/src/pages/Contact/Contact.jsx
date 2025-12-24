@@ -7,7 +7,7 @@ import ButtonPrimary from "../../components/ButtonPrimary.tsx";
 
 const Contact = () => {
 	const [formStep, setFormStep] = useState(null);
-	const [selectedServices, setSelectedServices] = useState(['Web Design']);
+	const [selectedServices, setSelectedServices] = useState(["Web Design"]);
 	const [formData, setFormData] = useState({
 		firstName: "",
 		lastName: "",
@@ -84,59 +84,52 @@ const Contact = () => {
 	};
 
 	return (
-		<div className=' flex flex-col justify-between h-screen w-full gap-y-12 items-center overflow-y-scroll'>
-			{/* Contact Us Next Step Instructions */}
-			<div className='bg-primary-dark font-bold pt-8 pb-8 text-center w-screen'>
-				<h2 className='text-white text-5xl'>Contact Us</h2>
-				<p className='text-white font-normal'>
-					For general inquiries and question please contact us at hello@frameworksdev.com
-				</p>
-			</div>
+		<div className=' flex flex-col justify-center h-fit border-box w-full items-center overflow-y-scroll bg-background-primary md:px-12 2xl:px-60'>
 			{/* General Inquiry Section */}
-			<form onSubmit={handleSubmit(onSubmit)} className='px-4 h-fit w-full xl:px-80 2xl:mx-80' action='submit'>
+			<form
+				onSubmit={handleSubmit(onSubmit)}
+				className='flex flex-col justify-center px-4 h-(--content) w-full xl:px-80 2xl:mx-80'
+				action='submit'>
 				{!formStep && (
-					<div className='flex flex-col items-center text-center gap-y-12'>
+					<div className='flex flex-col justify-center items-center text-center gap-y-12'>
 						<h2 className='content-description'>
 							If you're ready to get your project started, curious about how much it'll cost, or are wondering if your
 							idea is feasible.{" "}
 						</h2>
-						<h3 className='text-xl text-secondary'>We're ready to help.</h3>
+						<h3 className='text-xl font-bold text-base'>We're ready to help.</h3>
 						<ButtonPrimary
 							label='Get Started'
-							type=''
+							type='primary'
 							dark={true}
 							action={() => setFormStep("General Information")}></ButtonPrimary>
 					</div>
 				)}
 				{formStep === "General Information" && (
-					<div className='bg-primary-dark p-4 rounded-md flex flex-col justify-between md:mx-20 lg:mx-40 2xl:mx-80'>
-						<div className='w-full text-center text-white pt-4'>
+					<div className='bg-primary-dark p-4 rounded-md flex flex-col justify-center md:mx-20 lg:mx-40 2xl:mx-80'>
+						<div className='w-full text-center  text-primary'>
 							<h2>Let's start off with some basic information</h2>
 						</div>
 						<div className='flex flex-col gap-y-4 py-8 '>
-							<div className='text-white text-2xl text-center'>General Information</div>
-							<div className='flex flex-col gap-y-4'>
+							<div className='flex flex-col gap-y-4 [&_input]:rounded-md [&_input]:w-full [&_input]:border [&_input]:border-base [&_input]:h-8 [&_input]:px-2 [&_input]:bg-white'>
 								<div className='form-div'>
-									<label className='text-xl text-white font-light'>First Name</label>
+									<label className='text-xl text-base font-light'>First Name</label>
 									{errors.firstName?.type === "required" && <p role='alert'>First name is required</p>}
 									<input
 										{...register("firstName", { required: { value: true, message: "First Name is required" } })}
 										aria-invalid={errors.firstname ? "true" : "false"}
 										id='firstName'
-										className='rounded-md w-full bg-white h-8 px-2'
 										type='text'
 										onChange={handleInput}
 										value={formData.firstName}
 									/>
 								</div>
 								<div className='form-div'>
-									<label className='text-xl text-white font-light'>Last Name</label>
+									<label className='text-xl text-base font-light'>Last Name</label>
 									{errors.lastName?.type === "required" && <p role='alert'>Last name is required</p>}
 									<input
 										{...register("lastName", { required: { value: true, message: "Last Name is required" } })}
 										aria-invalid={errors.lastName ? "true" : "false"}
 										id='lastName'
-										className='rounded-md w-full bg-white h-8 px-2'
 										type='text'
 										onChange={handleInput}
 										value={formData.lastName}
@@ -144,7 +137,7 @@ const Contact = () => {
 								</div>
 
 								<div className='form-div'>
-									<label className='text-xl text-white font-light'>Phone Number</label>
+									<label className='text-xl text-base font-light'>Phone Number</label>
 									{errors.phoneNumber?.type === "required" && <p role='alert'>Phone Number is required</p>}
 									{errors.phoneNumber?.type === "pattern" && <p role='alert'>{errors.phoneNumber.message}</p>}
 									<input
@@ -157,24 +150,17 @@ const Contact = () => {
 											message: "Invalid Phone Number",
 										})}
 										id='phoneNumber'
-										className='rounded-md w-full bg-white h-8 px-2'
 										type='text'
 										onChange={handleInput}
 										value={formData.phoneNumber}
 									/>
 								</div>
 								<div className='form-div'>
-									<label className='text-xl text-white font-light'>Company Name</label>
-									<input
-										id='companyName'
-										className='rounded-md w-full bg-white h-8 px-2'
-										type='text'
-										onChange={handleInput}
-										value={formData.companyName}
-									/>
+									<label className='text-xl text-base font-light'>Company Name</label>
+									<input id='companyName' type='text' onChange={handleInput} value={formData.companyName} />
 								</div>
 								<div className='form-div'>
-									<label className='text-xl text-white font-light'>Email</label>
+									<label className='text-xl text-base font-light'>Email</label>
 									{errors.email?.type === "required" && <p role='alert'>{errors.email.message}</p>}
 									{errors.email?.type === "pattern" && <p role='alert'>{errors.email.message}</p>}
 									<input
@@ -186,7 +172,6 @@ const Contact = () => {
 											},
 										})}
 										id='email'
-										className='rounded-md w-full bg-white h-8 px-2'
 										type='text'
 										value={formData.email}
 										onChange={handleInput}
@@ -203,15 +188,14 @@ const Contact = () => {
 
 				{/* Project Details Section */}
 				{formStep === "Project Details" && (
-					<div className='bg-primary-dark p-4 rounded-md flex flex-col justify-between md:mx-20 lg:mx-40 2xl:mx-80'>
-						<div className='w-full text-center text-white pt-4'>
+					<div className='p-4 rounded-md flex flex-col justify-center gap-y-8 md:mx-20 lg:mx-40 2xl:mx-80'>
+						<div className='w-full text-center text-primary'>
 							<h2 className='content-description'>Now let's discuss project specifics</h2>
 						</div>
-						<div className='flex flex-col justify-between gap-y-4 pt-12 '>
-							<div className='text-white text-2xl text-center'>Project Details</div>
+						<div className='flex flex-col justify-between gap-y-8 lg:grid lg:grid-cols-2'>
 							<div className='flex flex-col gap-y-4'>
-								<p className='text-xl text-white font-light'>Service Type</p>
-								<div className='flex flex-col [&_label]:text-white gap-y-4 lg:gap-y-0'>
+								<p className='text-xl text-base font-light'>Service Type</p>
+								<div className='flex flex-col [&_label]:text-base gap-y-2 lg:gap-y-0'>
 									<div className='flex gap-x-4 items-center'>
 										<input
 											value='Web Design'
@@ -237,10 +221,14 @@ const Contact = () => {
 							</div>
 
 							<div className='flex flex-col gap-y-4'>
-								<label className='text-xl text-white font-light' htmlFor=''>
+								<label className='text-xl text-base font-light' htmlFor=''>
 									Phase Of Project
 								</label>
-								<select onChange={handleInput} className='rounded-md w-full bg-white h-8' name='' id='projectPhase'>
+								<select
+									onChange={handleInput}
+									className='rounded-md w-full border border-base bg-white px-4 h-8'
+									name=''
+									id='projectPhase'>
 									<option default> Select A Phase</option>
 									<option value='Ideation'>Ideation</option>
 									<option value='Technical Documentation'>Technical Documentation</option>
@@ -248,15 +236,16 @@ const Contact = () => {
 									<option value='Working Solution'>Working Solution</option>
 								</select>
 							</div>
-							<div className='flex flex-col gap-y-4'>
-								<label className='text-xl text-white font-light'>Additional Details</label>
+							<div className='flex flex-col gap-y-4 lg:col-span-2'>
+								<label className='text-xl text-base font-light'>Additional Details</label>
 								<textarea
 									onChange={handleInput}
-									className='bg-white rounded-md h-40 p-2'
+									className='border border-base rounded-md bg-white h-40 p-2'
 									name=''
 									id='projectDetails'></textarea>
 							</div>
 
+						</div>
 							<div className='flex flex-col gap-y-4 lg:flex-row lg:justify-around'>
 								<ButtonPrimary
 									label='Previous'
@@ -266,7 +255,6 @@ const Contact = () => {
 								/>
 								<ButtonPrimary label='Submit' type='primary' dark={true} action={handleSubmit(onSubmit)} />
 							</div>
-						</div>
 					</div>
 				)}
 

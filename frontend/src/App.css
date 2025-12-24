@@ -24,20 +24,32 @@
 }
 
 .main-app {
-	font-family: Reddit-Sans, sans-serif;
+	font-family: auger-mono, monospace;
+	font-style: normal;
+	font-weight: 200;
 	height: 100vh;
-	overflow: hidden;
+	overflow: scroll;
 	box-sizing: border-box;
+	background-color: var(--color-background-primary);
 }
 
 @theme {
-	--color-primary: #f27b35;
-	--color-primary-dark: #8c230b;
-	--color-secondary: #5f94d9;
-	--color-background: #ffe3d0;
+	--color-primary: #f27649;
+	--color-secondary: #f24822;
+	--color-background-primary: #f2e0d5;
+	--color-background-secondary: #f2b6a0;
+	--color-base: #103b40;
 	--color-light-gray: #f2f2f2;
+	--h-navbar: 120px;
+	--content: calc(100vh - 120px);
 
 	--animate-opennav: opennav 100ms linear;
+	--animate-iconEnter: iconEnter 400ms linear;
+	--animate-iconLeave: iconLeave 300ms linear;
+	--animate-buttonEnter: buttonEnter 400ms linear;
+	--animate-buttonLeave: buttonLeave 300ms linear;
+	--animate-logoEnter: logoEnter 400ms linear;
+	--animate-logoLeave: logoLeave 300ms linear;
 
 	@keyframes opennav {
 		0% {
@@ -45,6 +57,55 @@
 		}
 		100% {
 			transform: scaleY(100%);
+		}
+	}
+
+	@keyframes iconEnter {
+		0% {
+			transform: translate(-240px, 0);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	@keyframes iconLeave {
+		0% {
+			transform: translate(240px, 0);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	@keyframes buttonEnter {
+		0% {
+			transform: translate(-240px, 0);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	@keyframes buttonLeave {
+		0% {
+			transform: translate(240px, 0);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	@keyframes logoEnter {
+		0% {
+			transform: translate(0, -240px);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
+	}
+	@keyframes logoLeave {
+		0% {
+			transform: translate(0, 240px);
+		}
+		100% {
+			transform: translate(0, 0);
 		}
 	}
 }

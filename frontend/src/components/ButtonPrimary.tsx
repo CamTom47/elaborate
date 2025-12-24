@@ -3,18 +3,17 @@ import React from "react";
 interface ButtonPrimaryProps {
 	label: string;
 	action?: () => void;
-	type: 'submit' | 'reset' | 'button';
+	type: 'primary'
 	size: string;
 	outline?: boolean;
 	dark: boolean
 }
 
-const ButtonPrimary = ({ label, action, type = 'submit', size, outline, dark }: ButtonPrimaryProps): React.JSX.Element => {
+const ButtonPrimary = ({ label, action, type, size, outline, dark }: ButtonPrimaryProps): React.JSX.Element => {
 	return (
 		<button
-			type={type}
 			onClick={action}
-			className="bg-primary font-semibold py-2 px-8 rounded-full text-black text-md shadow-md hover:bg-white hover:outline-primary hover:outline duration-100 lg:w-60">
+			className={`outline-2  font-semibold py-2 px-4 text-center rounded-sm  text-sm  duration-100 ${type === 'primary' ? 'text-primary outline-primary hover:bg-primary hover:text-white hover:outline' : 'text-base outline-base hover:bg-base hover:text-background-base'}  lg:px-12`}>
 			{label}
 		</button>
 	);

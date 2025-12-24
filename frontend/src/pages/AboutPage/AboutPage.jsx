@@ -10,50 +10,45 @@ const AboutPage = () => {
 	const [lastScrollStop, setLastScrollStop] = useState(window.screenTop);
 
 	return (
-		<div className='about-page-container h-screen flex flex-col w-full items-center overflow-y-scroll '>
-			<div className='bg-primary-dark font-bold pt-8 pb-8 text-center w-full'>
-				<h1 className='text-white text-5xl'>About Us</h1>
-			</div>
-			<div className='flex flex-col h-full gap-y-4 py-68 items-center px-4 md:w-3/4 lg:px-20 lg:pb-100'>
-				<h2 className='text-wrap text-4xl text-primary-dark font-black text-center'>Who Are We?</h2>
+		<div className='about-page-container h-fit flex flex-col w-full items-center bg-background-primary 2xl:px-60'>
+			<div className='flex flex-col h-(--content) justify-center gap-y-4 py-68 items-center px-4 md:px-32 lg:px-40'>
+				<h2 className='text-wrap text-3xl text-primary font-black text-center'>Who Are We?</h2>
 				<p className='w-fit [&_b]:text-secondary text-center text-xl leading-10'>
 					<b className='text-secondary'>Frameworks Development</b> is a software development agency that focuses on
-					building one of a kind, custom software that meets the needs of <b>Individiual Clients</b>, <b> Start Ups</b>,
+					building one of a kind, custom software that meets the needs of <b>Individual Clients</b>, <b> Start Ups</b>,
 					and <b>Small Businesses</b>.
 				</p>
 			</div>
 
-			<div className='flex flex-col justify-center items-center px-4 gap-y-4 md:py-20 md:w-3/4 lg:px-20 lg:pb-100'>
-				<h1 className='text-wrap text-4xl text-primary-dark font-black text-center'>Our Process</h1>
-				<p className='w-fit text-center text-xl leading-10'>
+			<div className='flex flex-col justify-center items-center h-fit py-40 px-4 gap-y-4 bg-background-secondary md:py-20 md:px-32 lg:px-40 lg:pb-100'>
+				<h1 className='text-wrap text-3xl text-secondary font-black text-center'>Our Process</h1>
+				<p className='w-fit text-center text-xl text-base leading-10'>
 					Our development process is closely aligned with Software Development Life Cycle standards to promote:
 				</p>
-				<ul className='flex flex-col gap-y-6 text-xl [&_li]:p-4 [&_span]:text-secondary  [&_li]:bg-white [&_li]:rounded-md [&_li]:shadow-xl w-fit text-center md:[&_li]:py-8'>
-					<li style={{boxShadow: '0 0 10px 0 gray'}}>
+				<ul className='flex flex-col gap-y-24 text-xl [&_li]:p-4 [&_span]:text-secondary  [&_li]:text-secondary [&_li]:border-t  w-fit text-center md:[&_li]:py-8'>
+					<li>
 						Increased <span className='normal'>transparency</span> for project stakeholders.
 					</li>
-					<li style={{boxShadow: '0 0 10px 0 gray'}}>
+					<li>
 						<span className='normal'>Reliable</span> estimation and schedule forecasting.
 					</li>
-					<li style={{boxShadow: '0 0 10px 0 gray'}}>
+					<li>
 						<span className='normal'>Streamlined</span> processes for development and customer satisfaction.
 					</li>
-					<li style={{boxShadow: '0 0 10px 0 gray'}}>
+					<li>
 						Allowance project <span className='normal'>flexibility</span> as development progresses.
 					</li>
 				</ul>
 			</div>
 
-			<div className='flex flex-col justify-center gap-y-20 px-4 md:w-3/4 lg:px-20'>
+			<div className='flex flex-col justify-center gap-y-20 px-4 bg-background-primary md:px-32 lg:px-40'>
 				{/* Planning Section */}
 				<div className='flex flex-col gap-y-12'>
 					<div className='flex flex-col gap-y-4'>
-						<h2
-							id='planning'
-							className='text-center text-wrap text-4xl text-primary-dark font-black mt-40 lg:text-start'>
+						<h2 id='planning' className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>
 							Planning
 						</h2>
-						<p className='text-center text-center w-fit text-xl leading-10 lg:text-start lg:text-start'>
+						<p className='text-center w-fit text-xl leading-10 lg:text-start'>
 							During the planning phase our primary goal is to gain an understanding of your vision. We'll discuss the
 							details of what you aim to achieve and develop a plan that will act as a strong foundation to start the
 							project off in the right direction
@@ -109,7 +104,7 @@ const AboutPage = () => {
 				{/* Design section */}
 				<div className='flex flex-col gap-y-12'>
 					<div className='flex flex-col gap-y-4'>
-						<h2 className='text-center text-wrap text-4xl text-primary-dark font-black mt-40 lg:text-start'>Design</h2>
+						<h2 className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>Design</h2>
 						<p className='text-center w-fit text-xl leading-10 lg:text-start'>
 							Before we dive into the technical side of things, let's talk design. By collaborating back and forth and
 							landing on an effective User Interface, our team is able to steam like the remainder of the
@@ -165,7 +160,7 @@ const AboutPage = () => {
 				{/* Implementation */}
 				<div className='flex flex-col gap-y-12'>
 					<div className='flex flex-col gap-y-4'>
-						<h2 className='text-center text-wrap text-4xl text-primary-dark font-black mt-40 lg:text-start'>
+						<h2 className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>
 							Implementation
 						</h2>
 						<p className='text-center w-fit  text-xl leading-10 lg:text-start'>
@@ -253,7 +248,7 @@ const AboutPage = () => {
 				{/* Testing Section */}
 				<div className='flex flex-col gap-y-12'>
 					<div className='flex flex-col gap-y-4'>
-						<h2 className='text-center text-wrap text-4xl text-primary-dark font-black mt-40 lg:text-start'>Testing</h2>
+						<h2 className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>Testing</h2>
 						<p className='text-center w-fit  text-xl leading-10 lg:text-start'>
 							The best method for avoiding technical issues in your application after deployment is testing.
 						</p>
@@ -293,9 +288,7 @@ const AboutPage = () => {
 				{/* Deployment Section */}
 				<div className='flex flex-col gap-y-12'>
 					<div className='flex flex-col gap-y-4'>
-						<h2 className='text-center text-wrap text-4xl text-primary-dark font-black mt-40 lg:text-start'>
-							Deployment
-						</h2>
+						<h2 className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>Deployment</h2>
 						<p className='text-center w-fit  text-xl leading-10 lg:text-start'>
 							After making this available to the world. This is where we hand you the keys!
 						</p>
@@ -368,9 +361,7 @@ const AboutPage = () => {
 				{/* Deployment Section */}
 				<div className='flex flex-col gap-y-12 pb-40'>
 					<div className='flex flex-col gap-y-4 text-center'>
-						<h2 className='text-center text-wrap text-4xl text-primary-dark font-black mt-40 lg:text-start'>
-							Maintenance
-						</h2>
+						<h2 className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>Maintenance</h2>
 						<p className='text-center w-fit  text-xl leading-10 lg:text-start'>
 							Post Deployment project maintenance will vary project to project based on agreed upon terms upon contract
 							execution.
