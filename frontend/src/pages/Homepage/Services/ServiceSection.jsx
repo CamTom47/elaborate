@@ -52,7 +52,7 @@ const ServiceSection = () => {
 	};
 	return (
 		<div className='flex flex-col h-fit gap-y-12 pb-40 py-40 items-center px-4 bg-background-secondary'>
-			<h1 className='text-wrap text-3xl text-secondary font-black text-center md:w-3/4'>
+			<h1 className='text-wrap text-3xl text-secondary font-black text-center md:px-32'>
 				Flexible and Intuitive Software Solutions
 			</h1>
 			<div className='flex flex-col h-fit items-center gap-y-20 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-8 xl:flex-row xl:justify-between xl:gap-x-8 xl:flex'>
