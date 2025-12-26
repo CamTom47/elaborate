@@ -25,7 +25,7 @@ const ButtonLink = ({
 			reloadDocument
 			scrollrestoration='true'
 			to={url}
-			className={`outline-2  font-semibold py-2 px-4 text-center rounded-sm  text-sm  duration-100 ${type === 'primary' ? 'text-primary outline-primary hover:bg-primary hover:text-white hover:outline' : 'text-base outline-base hover:bg-base hover:text-background-base'} lg:w-fit lg:px-8`}>
+			className={`outline-2  font-semibold py-2 px-4 text-center rounded-sm  text-sm  duration-100 ${type === 'primary' ? 'text-primary outline-primary hover:bg-primary hover:text-white hover:outline' : 'text-base outline-base hover:bg-base hover:text-background-base'} lg:w-fit lg:px-4`}>
 			{label}
 		</Link>
 	);

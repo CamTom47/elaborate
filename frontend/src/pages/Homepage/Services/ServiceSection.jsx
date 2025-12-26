@@ -51,33 +51,35 @@ const ServiceSection = () => {
 		),
 	};
 	return (
-		<div className='flex flex-col h-fit gap-y-12 pb-40 py-40 items-center px-4 bg-background-secondary'>
+		<div className='relative flex flex-col h-fit gap-y-12 pb-40 py-40 items-center px-4 bg-background-secondary'>
+			<div className='absolute bg-[url(/art/frameworks-development-stair-frames-3-cream.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-padding bg-bottom-left p-24 right-0 top-0 rotate-180 md:p-24 md:bg-size-[auto_160px]'></div>
+
 			<h1 className='text-wrap text-3xl text-secondary font-black text-center md:px-32'>
 				Flexible and Intuitive Software Solutions
 			</h1>
-			<div className='flex flex-col h-fit items-center gap-y-20 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-8 xl:flex-row xl:justify-between xl:gap-x-8 xl:flex'>
+			<div className='relative flex flex-col h-fit items-center gap-y-20 md:grid md:grid-cols-2 md:gap-y-8 md:gap-x-8 xl:flex-row xl:justify-between xl:gap-x-8 xl:flex'>
 				<ServiceCard
 					title={"Web Design"}
-					description={"Design beautiful websites optimized to gain you maximum exposure and communicate your brand."}
+					description={"Design beautiful websites optimized to gain you maximum exposure and communicate your brand"}
 					url='/services/website-design-nav'
 					icon={svgObject.webDesign}></ServiceCard>
 				<ServiceCard
 					title={"Web Development"}
 					description={
-						"Build robust applications and tools to meet your needs using Front-end, Back-end, and Full-Stack toolsets."
+						"Build robust applications and tools to meet your needs using Front-end, Back-end, and Full-Stack toolsets"
 					}
 					url='/services/web-dev-nav'
 					icon={svgObject.webDev}></ServiceCard>
 				<ServiceCard
 					title={"Mobile Development"}
 					description={
-						"Meet your customers where they are. Create custom mobile applications compatible with iOS and Android."
+						"Meet your customers where they are. Create custom mobile applications compatible with iOS and Android"
 					}
 					url='/services/mobile-dev-nav'
 					icon={svgObject.mobileDev}></ServiceCard>
 				<ServiceCard
 					title={"Redesign"}
-					description={"Update your existing Website or Application to your current needs."}
+					description={"Update your existing Website or Application to your current needs"}
 					url='/services/app-redesign-nav'
 					icon={svgObject.redesign}></ServiceCard>
 			</div>

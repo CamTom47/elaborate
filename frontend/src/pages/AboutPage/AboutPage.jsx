@@ -2,7 +2,6 @@ import { useState } from "react";
 import AboutCard from "../../components/AboutCard";
 import Footer from "../../components/Footer";
 
-import "./AboutPage.scss";
 const AboutPage = () => {
 	const processArray = ["Planning", "Design", "Implementation", "Testing", "Deployment", "Maintenance"];
 
@@ -10,48 +9,52 @@ const AboutPage = () => {
 	const [lastScrollStop, setLastScrollStop] = useState(window.screenTop);
 
 	return (
-		<div className='about-page-container h-fit flex flex-col w-full items-center bg-background-primary 2xl:px-60'>
-			<div className='flex flex-col h-(--content) justify-center gap-y-4 py-68 items-center px-4 md:px-32 lg:px-40'>
+		<div className='h-fit flex flex-col w-full items-center bg-background-primary '>
+			<div className='relative flex flex-col h-(--content) justify-center gap-y-4 py-68 items-center px-4 md:px-32 lg:px-40 xl:px-80 2xl:px-120'>
+				{/* <div className='absolute bg-[url(/art/frameworks-development-stair-frames-2-peach.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-bottom-right p-16 right-0 bottom-0'></div> */}
 				<h2 className='text-wrap text-3xl text-primary font-black text-center'>Who Are We?</h2>
 				<p className='w-fit [&_b]:text-secondary text-center text-xl leading-10'>
-					<b className='text-secondary'>Frameworks Development</b> is a software development agency that focuses on
-					building one of a kind, custom software that meets the needs of <b>Individual Clients</b>, <b> Start Ups</b>,
-					and <b>Small Businesses</b>.
+					<b>Frameworks Development</b> is a software development agency that focuses on building one of a kind, custom
+					software that meets the needs of <b>Individual Clients</b>, <b> Start Ups</b>, and <b>Small Businesses</b>.
 				</p>
+				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-peach.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-top-left p-20  left-4 top-54 md:p-26 md:bg-size-[auto_120px] md:left-24 md:top-60 lg:left-60 lg:top-32 xl:left-132 xl:top-68 2xl:left-180 2xl:top-80'></div>
 			</div>
 
-			<div className='flex flex-col justify-center items-center h-fit py-40 px-4 gap-y-4 bg-background-secondary md:py-20 md:px-32 lg:px-40 lg:pb-100'>
+			<div className='relative flex flex-col justify-center items-center h-fit w-full py-40 px-4 gap-y-4 bg-background-secondary md:px-32 lg:px-40 xl:px-80 2xl:px-120'>
+				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-2-cream.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-bottom-right p-16 right-8 top-28 rotate-270 md:p-24 md:bg-size-[auto_120px] md:top-18 md:right-40 lg:right-76 lg:top-20 xl:right-140 xl:top-20 2xl:right-188'></div>
 				<h1 className='text-wrap text-3xl text-secondary font-black text-center'>Our Process</h1>
 				<p className='w-fit text-center text-xl text-base leading-10'>
 					Our development process is closely aligned with Software Development Life Cycle standards to promote:
 				</p>
 				<ul className='flex flex-col gap-y-24 text-xl [&_li]:p-4 [&_span]:text-secondary  [&_li]:text-secondary [&_li]:border-t  w-fit text-center md:[&_li]:py-8'>
 					<li>
-						Increased <span className='normal'>transparency</span> for project stakeholders.
+						Increased <span className='normal'>transparency</span> for project stakeholders
 					</li>
 					<li>
-						<span className='normal'>Reliable</span> estimation and schedule forecasting.
+						<span className='normal'>Reliable</span> estimation and schedule forecasting
 					</li>
 					<li>
-						<span className='normal'>Streamlined</span> processes for development and customer satisfaction.
+						<span className='normal'>Streamlined</span> processes for development and customer satisfaction
 					</li>
 					<li>
-						Allowance project <span className='normal'>flexibility</span> as development progresses.
+						Allowance project <span className='normal'>flexibility</span> as development progresses
 					</li>
 				</ul>
 			</div>
 
-			<div className='flex flex-col justify-center gap-y-20 px-4 bg-background-primary md:px-32 lg:px-40'>
+			<div className='relative flex flex-col justify-center gap-y-20 bg-background-primary md:px-32 lg:px-40 xl:px-80 2xl:px-120'>
 				{/* Planning Section */}
-				<div className='flex flex-col gap-y-12'>
+
+				<div className='relative flex flex-col gap-y-12 px-4'>
+					{/* <div className='absolute bg-[url(/art/frameworks-development-stair-frames-2-peach.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-bottom-right p-16 top-0 left-0 rotate-180'></div> */}
 					<div className='flex flex-col gap-y-4'>
-						<h2 id='planning' className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>
+						<h2 id='planning' className='text-center text-wrap text-3xl text-primary font-black mt-40 lg:text-start'>
 							Planning
 						</h2>
 						<p className='text-center w-fit text-xl leading-10 lg:text-start'>
-							During the planning phase our primary goal is to gain an understanding of your vision. We'll discuss the
-							details of what you aim to achieve and develop a plan that will act as a strong foundation to start the
-							project off in the right direction
+							During the planning phase, our primary goal is to gain an understanding of your vision. We'll discuss the
+							details of what you aim to achieve and develop a plan that will act as a strong foundation to kick the
+							project off in the right direction.
 						</p>
 					</div>
 					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
@@ -72,7 +75,7 @@ const AboutPage = () => {
 						/>
 						<AboutCard
 							title={"Project Objectives"}
-							text={"Establish milestones and goals to track project success."}
+							text={"Establish milestones and goals to track project success"}
 							icon={
 								<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 									<g fill='none' stroke='currentColor' strokeLinecap='round' strokeLinejoin='round' strokeWidth='2'>
@@ -102,13 +105,13 @@ const AboutPage = () => {
 					</div>
 				</div>
 				{/* Design section */}
-				<div className='flex flex-col gap-y-12'>
+				<div className='relative flex flex-col gap-y-12'>
+					{/* <div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-teal.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-bottom-right p-20 right-0 top-4 scale-x-[-1]'></div> */}
 					<div className='flex flex-col gap-y-4'>
-						<h2 className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>Design</h2>
+						<h2 className='text-center text-wrap text-3xl text-primary font-black mt-40 lg:text-start'>Design</h2>
 						<p className='text-center w-fit text-xl leading-10 lg:text-start'>
-							Before we dive into the technical side of things, let's talk design. By collaborating back and forth and
-							landing on an effective User Interface, our team is able to steam like the remainder of the
-							technicalities.
+							Before we dive into the technical side of things. We'll collaborate back and forth and land on a design
+							for your project. This will allow us to streamline the remainder of the project.
 						</p>
 					</div>
 					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
@@ -130,7 +133,7 @@ const AboutPage = () => {
 						/>
 						<AboutCard
 							title={"Mock Design"}
-							text={"Refine design with focus aesthetics of the project"}
+							text={"Refine the design with a focus on the aesthetics of the project"}
 							icon={
 								<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 									<path
@@ -142,7 +145,7 @@ const AboutPage = () => {
 						/>
 						<AboutCard
 							title={"Design Buyoff"}
-							text={"Complete project design and prepare for development"}
+							text={"Sign off on the design of the project and get ready for development"}
 							icon={
 								<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 									<g fill='none'>
@@ -158,21 +161,23 @@ const AboutPage = () => {
 					</div>
 				</div>
 				{/* Implementation */}
-				<div className='flex flex-col gap-y-12'>
+				<div className='relative flex flex-col gap-y-12'>
+					{/* <div className='absolute bg-[url(/art/frameworks-development-stair-frames-3-peach.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-top-left p-20 right-4 top-4 scale-x-[-1]'></div> */}
+
 					<div className='flex flex-col gap-y-4'>
-						<h2 className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>
+						<h2 className='text-center text-wrap text-3xl text-primary font-black mt-40 lg:text-start'>
 							Implementation
 						</h2>
 						<p className='text-center w-fit  text-xl leading-10 lg:text-start'>
-							By combining information from the planning and design phases, our team will begin to bring your project to
+							By combining the progress of the planning and design phases, our team will begin to bring your project to
 							life.
 						</p>
 					</div>
 					<div className='flex flex-col gap-y-12'>
 						<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 							<AboutCard
-								title={"Development Checkins"}
-								text={"Create low fidelity prototypes that communicate core structure"}
+								title={"Development Check-Ins"}
+								text={"Meet regularly to discuss project updates and maintain team alignment"}
 								icon={
 									<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 										<path
@@ -184,7 +189,7 @@ const AboutPage = () => {
 							/>
 							<AboutCard
 								title={"Milestone Prototyping"}
-								text={"Refine design with focus aesthetics of the project"}
+								text={"Clarify milestones and define project success"}
 								icon={
 									<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 										<g fill='none'>
@@ -197,7 +202,7 @@ const AboutPage = () => {
 									</svg>
 								}
 							/>
-							<AboutCard
+							{/* <AboutCard
 								title={"Progress Reporting"}
 								text={"Complete project design and prepare for development"}
 								icon={
@@ -208,13 +213,13 @@ const AboutPage = () => {
 										/>
 									</svg>
 								}
-							/>
+							/> */}
 						</div>
 
 						<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 							<AboutCard
 								title={"Data Migration"}
-								text={"Create low fidelity prototypes that communicate core structure"}
+								text={"Ensure that any of your existing data is successfully migrated to the new project."}
 								icon={
 									<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 										<g fill='none'>
@@ -229,7 +234,7 @@ const AboutPage = () => {
 							/>
 							<AboutCard
 								title={"External Integrations"}
-								text={"Refine design with focus aesthetics of the project"}
+								text={"Seamlessly integrate external APIs into your project for additional functionality"}
 								icon={
 									<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 										<g fill='none'>
@@ -248,15 +253,16 @@ const AboutPage = () => {
 				{/* Testing Section */}
 				<div className='flex flex-col gap-y-12'>
 					<div className='flex flex-col gap-y-4'>
-						<h2 className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>Testing</h2>
+						<h2 className='text-center text-wrap text-3xl text-primary font-black mt-40 lg:text-start'>Testing</h2>
 						<p className='text-center w-fit  text-xl leading-10 lg:text-start'>
-							The best method for avoiding technical issues in your application after deployment is testing.
+							During this phase we'll test everything that has been built to date to ensure that it'll hold up once
+							released into the world.
 						</p>
 					</div>
 					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 						<AboutCard
 							title={"Built In Testing"}
-							text={"Create low fidelity prototypes that communicate core structure"}
+							text={"Run the application through internally built tests to ensure it is work as intended"}
 							icon={
 								<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 									<path
@@ -272,7 +278,7 @@ const AboutPage = () => {
 						/>
 						<AboutCard
 							title={"Stakeholder Testing"}
-							text={"Refine design with focus aesthetics of the project"}
+							text={"Allow all stakeholders to test the application to ensure it meets their desires"}
 							icon={
 								<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 									<g fill='none' stroke='currentColor' strokeLinecap='round' strokeLinejoin='round' strokeWidth='2'>
@@ -288,15 +294,15 @@ const AboutPage = () => {
 				{/* Deployment Section */}
 				<div className='flex flex-col gap-y-12'>
 					<div className='flex flex-col gap-y-4'>
-						<h2 className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>Deployment</h2>
+						<h2 className='text-center text-wrap text-3xl text-primary font-black mt-40 lg:text-start'>Deployment</h2>
 						<p className='text-center w-fit  text-xl leading-10 lg:text-start'>
-							After making this available to the world. This is where we hand you the keys!
+							Now that the application is functional, it's time to hand over the keys.
 						</p>
 					</div>
 					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 						<AboutCard
 							title={"Account Transfers"}
-							text={"Transfer all applicable accounts necessary for your project to run into your control"}
+							text={"Transfer ownership of all applicable accounts associated with your project to you"}
 							icon={
 								<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 									<path
@@ -361,14 +367,15 @@ const AboutPage = () => {
 				{/* Deployment Section */}
 				<div className='flex flex-col gap-y-12 pb-40'>
 					<div className='flex flex-col gap-y-4 text-center'>
-						<h2 className='text-center text-wrap text-4xl text-primary font-black mt-40 lg:text-start'>Maintenance</h2>
+						<h2 className='text-center text-wrap text-3xl text-primary font-black mt-40 lg:text-start'>Maintenance</h2>
 						<p className='text-center w-fit  text-xl leading-10 lg:text-start'>
-							Post Deployment project maintenance will vary project to project based on agreed upon terms upon contract
+							Post deployment project maintenance will vary project to project based on agreed upon terms upon contract
 							execution.
 						</p>
 					</div>
 				</div>
 			</div>
+			
 			<Footer></Footer>
 		</div>
 	);

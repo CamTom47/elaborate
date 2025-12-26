@@ -84,7 +84,7 @@ const Contact = () => {
 	};
 
 	return (
-		<div className=' flex flex-col justify-center h-fit border-box w-full items-center overflow-y-scroll bg-background-primary md:px-12 2xl:px-60'>
+		<div className=' flex flex-col justify-center h-fit border-box w-full items-center overflow-y-scroll bg-background-primary md:px-12 2xl:px-20'>
 			{/* General Inquiry Section */}
 			<form
 				onSubmit={handleSubmit(onSubmit)}
