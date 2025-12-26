@@ -33,7 +33,7 @@ const Navbar = ({ isTopOfScreen }) => {
 			 *  - show icon offscreen, add exit animation
 			 * 	- show logo onscreen, add enter animation
 			 *  - show button onscreen, add enter animation
-			 * 
+			 *
 			 * ICON EXIT
 			 * BUTTON ENTER
 			 * LOGO ENTER
@@ -61,7 +61,7 @@ const Navbar = ({ isTopOfScreen }) => {
 			 * -show icon onscreen, add enter animation
 			 * -show logo offscreen, add exit animation
 			 * -show button offscreen, add exit animation
-			 * 
+			 *
 			 * ICON ENTER
 			 * BUTTON EXIT
 			 * LOGO EXIT
@@ -126,7 +126,7 @@ const Navbar = ({ isTopOfScreen }) => {
 				//HAMBURGER ACTIVE LINKS
 				<div
 					id='hamburger-nav'
-					className='absolute flex  bottom-0 left-1/2 -translate-x-1/2   justify-center mx-auto items-center min-w-12 w-7/8 max-w-120 h-fit  **:text-md **:w-screen **:text-center **:py-2 **:text-base animate-opennav origin-top'>
+					className='absolute flex bottom-0 left-1/2 -translate-x-1/2 justify-center mx-auto items-center min-w-12 w-7/8 max-w-120 h-fit  **:text-md **:w-full **:text-center **:py-2 **:text-base animate-opennav origin-top lg:right-8 lg:top-20 lg:left-auto lg:items-end lg:translate-x-0 lg: lg:flex-col lg:w-1/4 lg:**:text-end 2xl:top-28 2xl:right-20'>
 					<Link reloadDocument scrollrestoration='true' to='/about'>
 						About
 					</Link>
