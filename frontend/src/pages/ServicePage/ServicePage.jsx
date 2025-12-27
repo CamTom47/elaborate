@@ -33,17 +33,17 @@ const Services = () => {
 	};
 
 	return (
-		<div className={`relative flex flex-col h-fit w-full items-center bg-background-primary`}>
-			<div className='flex flex-col gap-y-12 px-4 py-40 w-fit md:mx-12 lg:px-40 xl:mx-40 2xl:px-60'>
-				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-3-peach.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-padding bg-bottom-left p-24 right-12 top-28 rotate-180 md:right-52 lg:right-88 xl:right-3/8 2xl:right-200'></div>
-				<div tabIndex='4' id='website-design' className='flex flex-col gap-y-4'>
-					<h2 className='text-wrap text-3xl text-primary font-black text-center'>Web Design</h2>
+		<div className={`flex flex-col h-fit w-full items-center bg-background-primary`}>
+			<div className='@container relative flex flex-col items-center gap-y-12 px-4 py-40 w-full md:mx-12'>
+				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-3-peach.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-padding bg-bottom-left p-24 right-0 top-0 rotate-180 md:bg-size-[auto_160px]'></div>
+				<div tabIndex='4' id='website-design' className='@2xl:w-3/4 @7xl:w-1/2 relative flex flex-col gap-y-4'>
+					<h2 className='text-wrap text-3xl text-primary font-black text-center pt-6'>Web Design</h2>
 					<p className='w-fit text-center text-xl leading-10 '>
 						A well designed website a person's first interaction with your company and should reflect what you bring to
 						the table.
 					</p>
 				</div>
-				<div className='flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:gap-x-12 lg:gap-y-16'>
+				<div className='@lg:w-full @3xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:gap-x-12 lg:gap-y-16 xl:grid-cols-3'>
 					<ServicePageCardPrimary
 						title='E-Commerce'
 						content='Attract clients with an intuitive E-commerce site that makes it easy for your customer to use and simple for you to manage.'
@@ -66,17 +66,16 @@ const Services = () => {
 					/>
 				</div>
 			</div>
-			<div className='relative flex flex-col gap-y-12 px-4 py-40 bg-background-secondary w-full md:px-12 lg:px-40 xl:px-60 2xl:px-100 '>
-				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-cream.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-bottom-right p-16 left-4 top-20 rotate-90 scale-x-[-1] md:rotate-0 md:scale-x-[1] md:left-28 lg:left-60 xl:left-5/16 2xl:left-172'></div>
-
-				<div tabIndex='4' id='web-app-development' className='flex flex-col gap-y-4 items-center'>
-					<h2 className='text-center text-secondary font-bold text-3xl'>Web Development</h2>
+			<div className='@container relative flex flex-col items-center gap-y-12 px-4 py-40 w-full bg-background-secondary md:mx-12 '>
+				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-cream.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-bottom-right p-28 left-0 top-0 rotate-90 scale-x-[-1] md:bg-top-left md:rotate-0 md:scale-x-[1] md:left-0 md:top-0 md:bg-size-[auto_160px]'></div>
+				<div tabIndex='4' id='web-app-development' className='@2xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-4'>
+					<h2 className='text-center text-secondary font-bold text-3xl pt-6'>Web Development</h2>
 					<p className='w-fit text-center text-xl leading-10 '>
 						A well designed website is often a person's first interaction with your company and should reflect what you
 						bring to the table
 					</p>
 				</div>
-				<div className='flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:gap-x-12 lg:gap-y-16'>
+				<div className='@lg:w-full @3xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:gap-x-12 lg:gap-y-16 xl:grid-cols-3'>
 					<ServicePageCardPrimary
 						title='APIs'
 						content='Create APIs to meet your needs or seemlessly integrate external APIs into your existing systems.'
@@ -94,34 +93,32 @@ const Services = () => {
 					/>
 				</div>
 			</div>
-			<div className='relative flex flex-col gap-y-12 px-4 py-40 md:mx-12 lg:px-40 xl:mx-40'>
-				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-peach.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-top-left p-16 right-4 top-20 rotate-90 md:right-28 lg:right-56 xl:right-88 2xl:right-144'></div>
-
-				<div tabIndex='3' id='mobile-development' className='flex flex-col gap-y-4'>
-					<h2 className='text-wrap text-3xl text-primary font-black text-center'>Mobile Development</h2>
+			<div className='@container relative flex flex-col items-center gap-y-12 px-4 py-40 w-full md:mx-12'>
+					<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-peach.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-top-left p-28 right-0 top-0 rotate-90 md:rotate-0 md:scale-x-[-1] md:top-0 md:bg-size-[auto_160px]'></div>
+				<div tabIndex='3' id='mobile-development' className=' relative @2xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-4'>
+					<h2 className='text-wrap text-3xl text-primary font-black text-center pt-6'>Mobile Development</h2>
 					<p className='w-fit text-center text-xl leading-10 '>
 						A well designed website is often a person's first interaction with your company and should reflect what you
 						bring to the table
 					</p>
 				</div>
-				<div className='flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:grid-cols-1 lg:gap-x-12 lg:gap-y-16'>
+				<div className='@lg:w-full @3xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:gap-x-12 lg:gap-y-16 xl:grid-cols-3'>
 					<ServicePageCardPrimary
 						title='iOS'
 						content='Connect to your iOS audience through innovative and optimized mobile applications.'
 					/>
 				</div>
 			</div>
-			<div className='relative flex flex-col gap-y-12 px-4 py-40 bg-background-secondary w-full md:px-12 lg:px-60 xl:px-100'>
-				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-2-cream.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-bottom-right p-16 left-16 top-28 rotate-90 scale-x-[-1] md:left-60 lg:left-92 xl:left-152 2xl:left-204'></div>
-
-				<div tabIndex='2' id='app-redesign' className='flex flex-col gap-y-4 items-center'>
-					<h2 className='text-center text-secondary font-bold text-3xl'>Redesign</h2>
+			<div className='@container relative flex flex-col items-center gap-y-12 px-4 py-40 w-full bg-background-secondary md:mx-12 '>
+					<div className='absolute bg-[url(/art/frameworks-development-stair-frames-2-cream.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-bottom-right p-28 left-0 top-0 rotate-90 scale-x-[-1] md:top-0 md:bg-size-[auto_160px]'></div>
+				<div tabIndex='2' id='app-redesign' className='relative @2xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-4'>
+					<h2 className='text-center text-secondary font-bold text-3xl pt-6'>Redesign</h2>
 					<p className='w-fit text-center text-xl leading-10 '>
 						A well designed website a person's first interaction with your company and should reflect what you bring to
 						the table.
 					</p>
 				</div>
-				<div className='flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:gap-x-12 lg:gap-y-16'>
+				<div className='@lg:w-full @3xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:gap-x-12 lg:gap-y-16 xl:grid-cols-3'>
 					<ServicePageCardPrimary
 						title='Web Redesign'
 						content='Reintroduce your presence with a new and improved website design.'
@@ -134,7 +131,7 @@ const Services = () => {
 					/>
 				</div>
 			</div>
-			<div className='text-xl px-4 py-60 flex flex-col text-center gap-y-4 items-center lg:px-40 xl:px-100'>
+			<div className='text-xl px-4 py-60 flex flex-col text-center gap-y-4 items-center lg:px-40 md:w-3/4 2xl:w-1/2'>
 				<p>
 					Not seeing what you're looking for? We're always looking to grow our skills set. Please feel free to contact
 					us to discuss.
