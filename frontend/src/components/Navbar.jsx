@@ -95,7 +95,7 @@ const Navbar = ({ isTopOfScreen }) => {
 		<div
 			id='navbar'
 			className='box-border sticky top-0 flex flex-col h-(--navbar) bg-background-primary border-b border-background-secondary z-20 lg:border-none lg:bg-transparent'>
-			<div className='box-border grid grid-cols-3 relative justify-between items-start pt-8 pb-4 px-9 w-full 2xl:pt-16 2xl:px-20'>
+			<div className='grid grid-cols-3 relative justify-between items-start pt-8 pb-4 px-9 w-full 2xl:pt-16 2xl:px-20'>
 				{/* <div className='flex gap-x-2 justify-start items-center md:hidden'>
 					<a href='mailto:hello@frameworksdev.com' className='m-0 p-0'>
 						<svg className='text-base' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'>
@@ -114,7 +114,7 @@ const Navbar = ({ isTopOfScreen }) => {
 						<ButtonLink label='Contact' url='/contact' type={"primary"}></ButtonLink>
 					</div>
 				</div>
-				<a id='logo' href='/' className={`flex mx-auto items-center size-32 -translate-y-1/4`}>
+				<a id='logo' href='/' className={`flex mx-auto items-center size-32 -translate-y-1/4 xl:size-42`}>
 					<img src={logo} alt='Frameworks Development Logo' />
 				</a>
 				<div className='flex justify-end'>

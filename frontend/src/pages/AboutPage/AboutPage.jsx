@@ -9,19 +9,18 @@ const AboutPage = () => {
 	const [lastScrollStop, setLastScrollStop] = useState(window.screenTop);
 
 	return (
-		<div className='h-fit flex flex-col w-full items-center bg-background-primary '>
+		<div className='relative h-fit flex flex-col w-full items-center bg-background-primary '>
+			<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-peach.png)] bg-size-[auto_160px] bg-no-repeat bg-origin-border bg-top-left p-28 left-0 top-0'></div>
 			<div className='relative flex flex-col h-(--content) justify-center gap-y-4 py-68 items-center px-4 md:px-32 lg:px-40 xl:px-80 2xl:px-120'>
-				{/* <div className='absolute bg-[url(/art/frameworks-development-stair-frames-2-peach.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-bottom-right p-16 right-0 bottom-0'></div> */}
 				<h2 className='text-wrap text-3xl text-primary font-black text-center'>Who Are We?</h2>
 				<p className='w-fit [&_b]:text-secondary text-center text-xl leading-10'>
 					<b>Frameworks Development</b> is a software development agency that focuses on building one of a kind, custom
 					software that meets the needs of <b>Individual Clients</b>, <b> Start Ups</b>, and <b>Small Businesses</b>.
 				</p>
-				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-peach.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-top-left p-20  left-4 top-54 md:p-26 md:bg-size-[auto_120px] md:left-24 md:top-60 lg:left-60 lg:top-32 xl:left-132 xl:top-68 2xl:left-180 2xl:top-80'></div>
 			</div>
 
-			<div className='relative flex flex-col justify-center items-center h-fit w-full py-40 px-4 gap-y-4 bg-background-secondary md:px-32 lg:px-40 xl:px-80 2xl:px-120'>
-				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-2-cream.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-bottom-right p-16 right-8 top-28 rotate-270 md:p-24 md:bg-size-[auto_120px] md:top-18 md:right-40 lg:right-76 lg:top-20 xl:right-140 xl:top-20 2xl:right-188'></div>
+			<div className='relative flex flex-col justify-center items-center h-fit  w-full py-40 px-4 gap-y-4 bg-background-secondary md:px-32 lg:px-40 xl:px-80 2xl:px-120'>
+				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-2-cream.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-bottom-right p-24 right-0 top-0 rotate-270 md:bg-size-[auto_160px]'></div>
 				<h1 className='text-wrap text-3xl text-secondary font-black text-center'>Our Process</h1>
 				<p className='w-fit text-center text-xl text-base leading-10'>
 					Our development process is closely aligned with Software Development Life Cycle standards to promote:
@@ -42,7 +41,7 @@ const AboutPage = () => {
 				</ul>
 			</div>
 
-			<div className='relative flex flex-col justify-center gap-y-20 bg-background-primary md:px-32 lg:px-40 xl:px-80 2xl:px-120'>
+			<div className='relative flex flex-col justify-center gap-y-20 bg-background-primary md:w-3/4 xl:w-5/8 2xl:w-1/2'>
 				{/* Planning Section */}
 
 				<div className='relative flex flex-col gap-y-12 px-4'>
@@ -57,7 +56,7 @@ const AboutPage = () => {
 							project off in the right direction.
 						</p>
 					</div>
-					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
+					<div className='flex flex-col items-center gap-y-12 w-full md:gap-x-12 md:justify-center md:grid md:grid-cols-2 xl:grid-cols-3'>
 						<AboutCard
 							title='Project Scope'
 							text='Create a comprehensive list of project requirements'
@@ -114,7 +113,7 @@ const AboutPage = () => {
 							for your project. This will allow us to streamline the remainder of the project.
 						</p>
 					</div>
-					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
+					<div className='flex flex-col items-center gap-y-12 w-full md:gap-x-12 md:justify-center md:grid md:grid-cols-2 xl:grid-cols-3'>
 						<AboutCard
 							title={"Draft Design"}
 							text={"Create low fidelity prototypes to communicate core structure"}
@@ -174,7 +173,7 @@ const AboutPage = () => {
 						</p>
 					</div>
 					<div className='flex flex-col gap-y-12'>
-						<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
+						<div className='flex flex-col items-center gap-y-12 w-full md:gap-x-12 md:justify-center md:grid md:grid-cols-2 xl:grid-cols-3'>
 							<AboutCard
 								title={"Development Check-Ins"}
 								text={"Meet regularly to discuss project updates and maintain team alignment"}
@@ -202,21 +201,6 @@ const AboutPage = () => {
 									</svg>
 								}
 							/>
-							{/* <AboutCard
-								title={"Progress Reporting"}
-								text={"Complete project design and prepare for development"}
-								icon={
-									<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
-										<path
-											fill='currentColor'
-											d='M12 22q-2.05 0-3.875-.788t-3.187-2.15t-2.15-3.187T2 12q0-2.075.788-3.887t2.15-3.175t3.187-2.15T12 2v2Q8.675 4 6.337 6.338T4 12t2.338 5.663T12 20t5.663-2.337T20 12h2q0 2.05-.788 3.875t-2.15 3.188t-3.175 2.15T12 22'
-										/>
-									</svg>
-								}
-							/> */}
-						</div>
-
-						<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
 							<AboutCard
 								title={"Data Migration"}
 								text={"Ensure that any of your existing data is successfully migrated to the new project."}
@@ -259,7 +243,7 @@ const AboutPage = () => {
 							released into the world.
 						</p>
 					</div>
-					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
+					<div className='flex flex-col items-center gap-y-12 w-full md:gap-x-12 md:justify-center md:grid md:grid-cols-2 xl:grid-cols-3'>
 						<AboutCard
 							title={"Built In Testing"}
 							text={"Run the application through internally built tests to ensure it is work as intended"}
@@ -299,7 +283,7 @@ const AboutPage = () => {
 							Now that the application is functional, it's time to hand over the keys.
 						</p>
 					</div>
-					<div className='flex flex-col items-center gap-y-12 w-full xl:gap-x-12 xl:justify-center xl:grid xl:grid-cols-3'>
+					<div className='flex flex-col items-center gap-y-12 w-full md:gap-x-12 md:justify-center md:grid md:grid-cols-2 xl:grid-cols-3'>
 						<AboutCard
 							title={"Account Transfers"}
 							text={"Transfer ownership of all applicable accounts associated with your project to you"}
@@ -375,7 +359,7 @@ const AboutPage = () => {
 					</div>
 				</div>
 			</div>
-			
+
 			<Footer></Footer>
 		</div>
 	);
