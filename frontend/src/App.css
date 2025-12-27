@@ -40,8 +40,8 @@
 	--color-background-secondary: #f2b6a0;
 	--color-base: #103b40;
 	--color-light-gray: #f2f2f2;
-	--h-navbar: 176px;
-	--content: calc(100vh - 176px);
+	--h-navbar: 140px;
+	--content: calc(100vh - 140px);
 
 	--animate-opennav: opennav 100ms linear;
 	--animate-iconEnter: iconEnter 400ms linear;
