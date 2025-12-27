@@ -10,7 +10,7 @@ const AboutPage = () => {
 
 	return (
 		<div className='relative h-fit flex flex-col w-full items-center bg-background-primary '>
-			<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-peach.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-top-left p-28 left-0 top-0 mdbg-size-[auto_160px]'></div>
+			<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-peach.png)] bg-size-[auto_80px] bg-no-repeat bg-origin-border bg-top-left p-28 left-0 top-0 md:bg-size-[auto_160px]'></div>
 			<div className='relative flex flex-col h-(--content) justify-center gap-y-4 py-68 items-center px-4 md:px-32 lg:px-40 xl:px-80 2xl:px-120'>
 				<h2 className='text-wrap text-3xl text-primary font-black text-center'>Who Are We?</h2>
 				<p className='w-fit [&_b]:text-secondary text-center text-xl leading-10'>
