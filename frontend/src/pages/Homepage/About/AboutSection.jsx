@@ -3,7 +3,7 @@ const AboutSection = () => {
 	return (
 		<div className='relative h-(--content) flex flex-col w-full items-center'>
 			<div className='absolute bg-[url(/art/frameworks-development-stair-frames-3-peach.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-bottom-left p-16 right-0 bottom-0 scale-x-[-1] md:p-24 md:bg-size-[auto_160px]'></div>
-			<div className='flex flex-col h-full gap-y-12 justify-center items-center px-4 md:w-3/4 lg:w-1/2'>
+			<div className='flex flex-col h-full gap-y-4 justify-center items-center px-4 md:w-3/4 lg:w-1/2'>
 				<h2 className={`text-wrap text-2xl text-primary font-black text-center`}>
 					Software Engineering Solutions For Your Unique Problems
 				</h2>
