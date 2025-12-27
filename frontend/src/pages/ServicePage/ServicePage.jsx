@@ -71,8 +71,7 @@ const Services = () => {
 				<div tabIndex='4' id='web-app-development' className='@2xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-4'>
 					<h2 className='text-center text-secondary font-bold text-3xl pt-6'>Web Development</h2>
 					<p className='w-fit text-center text-xl leading-10 '>
-						A well designed website is often a person's first interaction with your company and should reflect what you
-						bring to the table
+						Bring your ideas to life faster than ever with modernized technologies.
 					</p>
 				</div>
 				<div className='@lg:w-full @3xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:gap-x-12 lg:gap-y-16 xl:grid-cols-3'>
@@ -94,12 +93,11 @@ const Services = () => {
 				</div>
 			</div>
 			<div className='@container relative flex flex-col items-center gap-y-12 px-4 py-40 w-full md:mx-12'>
-					<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-peach.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-top-left p-28 right-0 top-0 rotate-90 md:rotate-0 md:scale-x-[-1] md:top-0 md:bg-size-[auto_160px]'></div>
+				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-1-peach.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-top-left p-28 right-0 top-0 rotate-90 md:rotate-0 md:scale-x-[-1] md:top-0 md:bg-size-[auto_160px]'></div>
 				<div tabIndex='3' id='mobile-development' className=' relative @2xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-4'>
 					<h2 className='text-wrap text-3xl text-primary font-black text-center pt-6'>Mobile Development</h2>
 					<p className='w-fit text-center text-xl leading-10 '>
-						A well designed website is often a person's first interaction with your company and should reflect what you
-						bring to the table
+						Reach your audience where they are by designing, building, and deploying your applications to mobile.
 					</p>
 				</div>
 				<div className='@lg:w-full @3xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:gap-x-12 lg:gap-y-16 xl:grid-cols-3'>
@@ -110,12 +108,11 @@ const Services = () => {
 				</div>
 			</div>
 			<div className='@container relative flex flex-col items-center gap-y-12 px-4 py-40 w-full bg-background-secondary md:mx-12 '>
-					<div className='absolute bg-[url(/art/frameworks-development-stair-frames-2-cream.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-bottom-right p-28 left-0 top-0 rotate-90 scale-x-[-1] md:top-0 md:bg-size-[auto_160px]'></div>
+				<div className='absolute bg-[url(/art/frameworks-development-stair-frames-2-cream.png)] bg-size-[auto_120px] bg-no-repeat bg-origin-border bg-bottom-right p-28 left-0 top-0 rotate-90 scale-x-[-1] md:top-0 md:bg-size-[auto_160px]'></div>
 				<div tabIndex='2' id='app-redesign' className='relative @2xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-4'>
 					<h2 className='text-center text-secondary font-bold text-3xl pt-6'>Redesign</h2>
 					<p className='w-fit text-center text-xl leading-10 '>
-						A well designed website a person's first interaction with your company and should reflect what you bring to
-						the table.
+						Update your your existing website/application with a modern and intuitive design.
 					</p>
 				</div>
 				<div className='@lg:w-full @3xl:w-3/4 @7xl:w-1/2 flex flex-col gap-y-24 items-center md:grid md:grid-cols-2 md:place-items-center lg:gap-x-12 lg:gap-y-16 xl:grid-cols-3'>

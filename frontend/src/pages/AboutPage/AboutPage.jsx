@@ -36,7 +36,7 @@ const AboutPage = () => {
 						<span className='normal'>Streamlined</span> processes for development and customer satisfaction
 					</li>
 					<li>
-						Allowance project <span className='normal'>flexibility</span> as development progresses
+						Allowances for <span className='normal'>flexibility</span>in the project as development progresses
 					</li>
 				</ul>
 			</div>
@@ -203,7 +203,7 @@ const AboutPage = () => {
 							/>
 							<AboutCard
 								title={"Data Migration"}
-								text={"Ensure that any of your existing data is successfully migrated to the new project."}
+								text={"Ensure that any of your existing data is successfully migrated to the new project"}
 								icon={
 									<svg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 24 24'>
 										<g fill='none'>

@@ -94,7 +94,7 @@ const Navbar = ({ isTopOfScreen }) => {
 	return (
 		<div
 			id='navbar'
-			className='box-border sticky top-0 flex flex-col h-(--navbar) bg-background-primary border-b border-background-secondary z-20 lg:border-none lg:bg-transparent'>
+			className='box-border sticky top-0 flex flex-col max-h-[140px] bg-background-primary z-20 lg:border-none lg:bg-transparent'>
 			<div className='grid grid-cols-3 relative justify-between items-start pt-8 pb-4 px-9 w-full 2xl:pt-16 2xl:px-20'>
 				{/* <div className='flex gap-x-2 justify-start items-center md:hidden'>
 					<a href='mailto:hello@frameworksdev.com' className='m-0 p-0'>
@@ -126,7 +126,7 @@ const Navbar = ({ isTopOfScreen }) => {
 				//HAMBURGER ACTIVE LINKS
 				<div
 					id='hamburger-nav'
-					className='absolute flex bottom-0 left-1/2 -translate-x-1/2 justify-center mx-auto items-center min-w-12 w-7/8 max-w-120 h-fit  **:text-md **:w-full **:text-center **:py-2 **:text-base animate-opennav origin-top lg:right-8 lg:top-20 lg:left-auto lg:items-end lg:translate-x-0 lg: lg:flex-col lg:w-1/4 lg:**:text-end 2xl:top-28 2xl:right-20'>
+					className='absolute flex bg-background-primary border-b border-background-secondary -bottom-8 left-1/2 -translate-x-1/2 justify-center mx-auto items-center min-w-12 w-full h-fit  **:text-md **:w-full **:text-center **:py-2 **:text-base animate-opennav origin-top md:bg-transparent md:border-none lg:right-8 lg:top-20 lg:left-auto lg:items-end lg:translate-x-0 lg: lg:flex-col lg:w-1/4 lg:**:text-end 2xl:top-28 2xl:right-20'>
 					<Link reloadDocument scrollrestoration='true' to='/about'>
 						About
 					</Link>
