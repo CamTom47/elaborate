@@ -8,13 +8,13 @@ const Footer = () => {
 
 			<div className='flex flex-col items-start justify-end '>
 				<h2 className='text-lg underline'>Company</h2>
-				<Link className='text-md' reloadDocument scrollrestoration='true' to='/about'>
+				<Link className='text-md hover:underline duration-75' reloadDocument scrollrestoration='true' to='/about'>
 					About
 				</Link>
-				<Link className='text-md' reloadDocument scrollrestoration='true' to='/services'>
+				<Link className='text-md hover:underline duration-75' reloadDocument scrollrestoration='true' to='/services'>
 					Services
 				</Link>
-				<Link className='text-md' reloadDocument scrollrestoration='true' to='/contact'>
+				<Link className='text-md hover:underline duration-75' reloadDocument scrollrestoration='true' to='/contact'>
 					Contact
 				</Link>
 			</div>

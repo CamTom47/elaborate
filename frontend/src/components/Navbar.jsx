@@ -118,7 +118,7 @@ const Navbar = ({ isTopOfScreen }) => {
 					<img src={logo} alt='Frameworks Development Logo' />
 				</a>
 				<div className='flex justify-end'>
-					<HamburgerMenu action={() => setShowNav(!showNav)}></HamburgerMenu>
+					<HamburgerMenu action={() => setShowNav(!showNav)} active={showNav}></HamburgerMenu>
 				</div>
 			</div>
 
@@ -127,16 +127,22 @@ const Navbar = ({ isTopOfScreen }) => {
 				<div
 					id='hamburger-nav'
 					className='absolute flex bg-background-primary border-b border-background-secondary -bottom-8 left-1/2 -translate-x-1/2 justify-center mx-auto items-center min-w-12 w-full h-fit  **:text-md **:w-full **:text-center **:py-2 **:text-base animate-opennav origin-top md:bg-transparent md:border-none lg:right-8 lg:top-20 lg:left-auto lg:items-end lg:translate-x-0 lg: lg:flex-col lg:w-1/4 lg:**:text-end 2xl:top-28 2xl:right-20'>
-					<Link reloadDocument scrollrestoration='true' to='/about'>
+					<Link className="hover:underline hover:underline-offset-8" reloadDocument scrollrestoration='true' to='/about'>
 						About
 					</Link>
-					<Link reloadDocument scrollrestoration='true' to='/services'>
-						Services
-					</Link>
+					<div>
+						<Link className="hover:underline hover:underline-offset-8" reloadDocument scrollrestoration='true' to='/services'>
+							Services
+						</Link>
+						<span className='border-b'></span>
+					</div>
 					{/* <Link to='/portfolio'>Case Studies</Link> */}
-					<Link reloadDocument scrollrestoration='true' to='/contact'>
-						Contact
-					</Link>
+					<div>
+						<Link className="hover:underline hover:underline-offset-8" reloadDocument scrollrestoration='true' to='/contact'>
+							Contact
+						</Link>
+						<span className='border-b'></span>
+					</div>
 				</div>
 			) : (
 				""
